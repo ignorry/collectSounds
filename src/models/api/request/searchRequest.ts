@@ -1,9 +1,9 @@
 /**
  * @typedef SearchRequest
  * @prop {string} part - specifies a comma-separated list of one or more video resource properties that the API response will include.
- * @prop {boolean} [forContentOwner] - restricts the search to only retrieve videos owned by the content owner identified by the onBehalfOfContentOwner parameter.
- * @prop {boolean} [forDeveloper] - restricts the search to only retrieve videos uploaded via the developer's application or website. 
- * @prop {boolean} [forMine] - restricts the search to only retrieve videos owned by the authenticated user.
+ * @prop {string} [forContentOwner] - restricts the search to only retrieve videos owned by the content owner identified by the onBehalfOfContentOwner parameter.
+ * @prop {string} [forDeveloper] - restricts the search to only retrieve videos uploaded via the developer's application or website. 
+ * @prop {string} [forMine] - restricts the search to only retrieve videos owned by the authenticated user.
  * @prop {string} [relatedToVideoId] - retrieves a list of videos that are related to the video that the parameter value identifies.
  * @prop {string} [channelId] - ndicates that the API response should only contain resources created by the channel.
  * @prop {string} [channelType] - lets you restrict a search to a particular type of channel. (any | show)
@@ -34,9 +34,9 @@
  */
 export type SearchRequest = {
   part: string;
-  forContentOwner?: boolean;
-  forDeveloper?: boolean;
-  forMine?: boolean;
+  forContentOwner?: string;
+  forDeveloper?: string;
+  forMine?: string;
   relatedToVideoId?: string;
   channelId?: string;
   channelType?: string;

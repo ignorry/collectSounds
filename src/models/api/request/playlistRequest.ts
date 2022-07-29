@@ -3,7 +3,7 @@
  * @prop {string} part - specifies a comma-separated list of one or more video resource properties that the API response will include.
  * @prop {string} [channelId] - ndicates that the API response should only contain resources created by the channel.
  * @prop {string} [id]
- * @prop {boolean} [mine] - Set this parameter's value to true to instruct the API to only return playlists owned by the authenticated user.
+ * @prop {string} [mine] - Set this parameter's value to true to instruct the API to only return playlists owned by the authenticated user.
  * @prop {string} [hl] -  instructs the API to retrieve localized resource metadata for a specific application language that the YouTube website supports.
  * @prop {number} [maxResults] - specifies the maximum number of items that should be returned in the result set.
  * @prop {string} [onBehalfOfContentOwner] - intended exclusively for YouTube content partners.
@@ -14,7 +14,7 @@ export type PlaylistIdRequest = {
   part: string;
   channelId?: string;
   id?: string;
-  mine?: boolean;
+  mine?: string;
   hl?: string;
   maxResults?: number;
   onBehalfOfContentOwner?: string;
