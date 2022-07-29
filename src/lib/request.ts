@@ -72,7 +72,7 @@ const request = async <T extends object>( url: string, options?: RequestInit ): 
 
 /**
  * get request
- * @param {string} host - e.g http://example.com/
+ * @param {string} host - e.g http://example.com
  * @param {string} path - e.g /some/path
  * @param {QueryParams} [query] - object of query params (key: value)
  * @param {RequestInit} [options]
