@@ -12,7 +12,7 @@ const defaultRetryOptions: RetryOptions = {
   retryDelay: 2000,
 };
 
-const queryParams = ( params?: QueryParams ) => {
+export const queryParams = ( params?: QueryParams ) => {
   if ( !params ) {
       return '';
   }
@@ -34,7 +34,7 @@ const queryParams = ( params?: QueryParams ) => {
   return result.toString();
 }
 
-const fetchRetry = async ( url: string, init?: RequestInit, retryOptions: RetryOptions = defaultRetryOptions ) => {
+export const fetchRetry = async ( url: string, init?: RequestInit, retryOptions: RetryOptions = defaultRetryOptions ) => {
   const { retryCount, retryDelay } = retryOptions;
 
   for ( let attempt = 0; attempt <= Math.max( retryCount, 0 ); attempt++ ) {
@@ -50,8 +50,6 @@ const fetchRetry = async ( url: string, init?: RequestInit, retryOptions: RetryO
           }
       }
   }
-
-  return Promise.reject( 'Unable to fetch. Check retryOptions values' );
 }
 
 /**
@@ -60,7 +58,7 @@ const fetchRetry = async ( url: string, init?: RequestInit, retryOptions: RetryO
  * @param {RequestInit} [options] 
  * @returns {Promise<object>} response of fetch in json
  */
-const request = async <T extends object>( url: string, options?: RequestInit ): Promise<T> => {
+export const request = async <T extends object>( url: string, options?: RequestInit ): Promise<T> => {
   const response = await fetchRetry( url, options );
 
   if ( response.ok ) {
