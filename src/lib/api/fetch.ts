@@ -17,7 +17,7 @@ const T_ONE_API_HOST = process.env.T_ONE_API_HOST ?? "";
 const YOUTUBE_API_TOKEN = process.env.YOUTUBE_API_TOKEN ?? "";
 const T_ONE_API_TOKEN = process.env.T_ONE_API_TOKEN ?? "";
 
-type QueryParams = {
+export type QueryParams = {
   [key: string]: string | number | string[] | undefined;
 };
 
@@ -26,7 +26,7 @@ type QueryParams = {
  * @param {QueryParams} obj 
  * @returns object with assigned youtube key property
  */
-const assignKey = ( obj: QueryParams ): QueryParams => ({ ...obj, key: YOUTUBE_API_TOKEN });
+export const assignKey = ( obj: QueryParams ): QueryParams => ({ ...obj, key: YOUTUBE_API_TOKEN });
 
 const youtubeHeaders: RequestInit = {
   headers: {
