@@ -34,7 +34,7 @@ export type Video = {
  * @typedef Playlist
  * @prop {"video"} type - type of content. always "video" for this type
  * @prop {string} id
- * @prop {Array<Video>} [videos] - array of videos contained in a playlist
+ * @prop {Map<string, Video>} [videos] - map of videos contained in a playlist
  * @prop {string} title
  * @prop {string} description
  * @prop {string} lang - language in ISO format e.g 'en'
@@ -45,7 +45,7 @@ export type Video = {
 export type Playlist = {
   type: "playlist";
   id: string;
-  videos?: Array<Video>;
+  videos?: Map<string, Video>;
   title: string;
   description: string;
   lang: string;
@@ -58,8 +58,8 @@ export type Playlist = {
  * @typedef Channel
  * @prop {"video"} type - type of content. always "video" for this type
  * @prop {string} id
- * @prop {Array<Video>} [videos] - array of videos contained in a channel
- * @prop {Array<Playlist>} [playlists] - array of videos contained in a channel
+ * @prop {Map<string, Video>} [videos] - map of videos contained in a channel
+ * @prop {Map<string, Playlist>} [playlists] - map of videos contained in a channel
  * @prop {string} title
  * @prop {string} description
  * @prop {string} customUrl
@@ -69,8 +69,8 @@ export type Playlist = {
 export type Channel = {
   type: "channel";
   id: string;
-  videos?: Array<Video>;
-  playlists?: Array<Playlist>;
+  videos?: Map<string, Video>;
+  playlists?: Map<string, Playlist>;
   title: string;
   description: string;
   customUrl: string;
