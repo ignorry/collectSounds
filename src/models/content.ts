@@ -77,3 +77,8 @@ export type Channel = {
   thumbnails: Thumbnails;
   tags?: Array<string>;
 }
+
+/**
+ * combine content types
+ */
+export type Content = Video | Playlist | Channel;
