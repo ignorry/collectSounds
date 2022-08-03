@@ -7,13 +7,15 @@ import * as PERSIST_CONSTANTS from "redux-persist/lib/constants";
 import logger from "redux-logger";
 
 import saved from "./slices/saved";
-import options from "./slices/options"
+import options from "./slices/options";
+import queue from "./slices/queue";
 
 enableMapSet();
 
 const rootReducer = combineReducers({
   saved,
   options,
+  queue,
 });
 
 const persistConfig = {
