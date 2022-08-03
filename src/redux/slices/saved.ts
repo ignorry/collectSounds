@@ -29,24 +29,6 @@ const saved = createSlice({
   initialState,
   reducers: {
     /**
-     * add synchronized device peer
-     * @param state 
-     * @param {PayloadAction<string>} action - new id
-     */
-    addPeerId: ( state, action: PayloadAction<string> ) => {
-      state.syncPeers.push( action.payload )
-    },
-    /**
-     * delete synchronized device peer
-     * @param state 
-     * @param {PayloadAction<string>} action - id
-     */
-    deletePeerId: ( state, action: PayloadAction<string> ) => {
-      var index = state.syncPeers.indexOf( action.payload );
-      if (index !== -1)
-        state.syncPeers.splice(index, 1);
-    },
-    /**
      * add item to data map
      * @param state 
      * @param {PayloadAction<Array<Content>>} action - array of new Content objects
@@ -187,8 +169,6 @@ const saved = createSlice({
 });
 
 export const {
-  addPeerId,
-  deletePeerId,
   addItem,
   deleteItem,
   addVideoToParent,

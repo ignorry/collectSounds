@@ -1,8 +1,6 @@
 import { Channel, Playlist, Video } from "../../models/content";
 import store from "../../redux/index";
 import {
-  addPeerId,
-  deletePeerId,
   addItem,
   deleteItem,
   addVideoToParent,
@@ -17,25 +15,6 @@ import {
 
 describe( 'test saved slice', () => {
   // it's imposible to clean store before every test
-
-  it( 'addPeerId', () => {
-    store.dispatch( addPeerId( 'first' ) );
-
-    const peerIds = store.getState().saved.syncPeers;
-
-    expect( peerIds ).toStrictEqual( ['first'] );
-  });
-
-  it( 'deletePeerId', () => {
-    store.dispatch( addPeerId( 'second' ) );
-    store.dispatch( addPeerId( 'third' ) );
-
-    store.dispatch( deletePeerId( 'second' ) );
-
-    const peerIds = store.getState().saved.syncPeers;
-
-    expect( peerIds ).toStrictEqual( ['first', 'third'] );
-  });
 
   it( 'addItem', () => {
     store.dispatch( addItem([ { type: 'video', id: 'id' } as Video ]) );
