@@ -9,16 +9,13 @@ import {
 /**
  * @typedef SavedState
  * @prop {Map<string, Content>} data - collection of all saved content
- * @prop {Array<string>} syncPeers - ids of synchronized peers
  */
 export type SavedState = {
   data: Map<string, Content>,
-  syncPeers: Array<string>
 }
 
 const initialState: SavedState = {
-  data: new Map(),
-  syncPeers: [],
+  data: new Map()
 };
 
 /**
