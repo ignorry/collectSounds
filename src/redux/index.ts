@@ -9,6 +9,7 @@ import logger from "redux-logger";
 import saved from "./slices/saved";
 import options from "./slices/options";
 import queue from "./slices/queue";
+import errorMessage from "./slices/errorMessage";
 
 enableMapSet();
 
@@ -16,6 +17,7 @@ const rootReducer = combineReducers({
   saved,
   options,
   queue,
+  errorMessage,
 });
 
 const persistConfig = {
