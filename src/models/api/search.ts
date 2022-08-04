@@ -27,7 +27,7 @@ export type SearchItem = {
     channelId?: string;
     playlistId?: string;
   },
-  snippet: {
+  snippet?: {
     publishedAt: string;
     channelId: string;
     title: string;
