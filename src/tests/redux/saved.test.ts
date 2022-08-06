@@ -41,6 +41,7 @@ describe( 'test saved slice', () => {
     store.dispatch( deleteItem([ 'id', 'toDel' ]) );
 
     const data = store.getState().saved.data;
+    const deleted = Array.from( store.getState().saved.deleted, item => item[0] );
 
     const expected = new Map();
     const newPlaylists = new Map();
@@ -48,6 +49,7 @@ describe( 'test saved slice', () => {
     expected.set( 'ch', { id: 'ch', type: 'channel', playlists: newPlaylists } );
 
     expect( data ).toStrictEqual( expected );
+    expect( deleted ).toStrictEqual( [ 'id', 'toDel' ] );
   });
 
   it( 'addVideoToParent', () => {

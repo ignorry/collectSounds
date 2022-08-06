@@ -9,13 +9,16 @@ import {
 /**
  * @typedef SavedState
  * @prop {Map<string, Content>} data - collection of all saved content
+ * @prop {Map<string, number>} deleted - collections of all deleted items (key: id, value: timestamp of removal) 
  */
 export type SavedState = {
   data: Map<string, Content>,
+  deleted: Map<string, number>
 }
 
 const initialState: SavedState = {
-  data: new Map()
+  data: new Map(),
+  deleted: new Map()
 };
 
 /**
@@ -41,6 +44,8 @@ const saved = createSlice({
      */
     deleteItem: ( state, action: PayloadAction<Array<string>> ) =>
       action.payload.forEach( id => {
+        state.deleted.set( id, new Date().getTime() );
+
         state.data.delete( id );
 
         state.data.forEach( content => {
