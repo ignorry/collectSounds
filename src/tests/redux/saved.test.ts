@@ -1,3 +1,4 @@
+import MockDate from "mockdate";
 import { Channel, Playlist, Video } from "../../models/content";
 import store from "../../redux/index";
 import {
@@ -15,6 +16,9 @@ import {
 
 describe( 'test saved slice', () => {
   // it's imposible to clean store before every test
+  beforeAll(() => {
+    MockDate.set(1434319925275);
+  });
 
   it( 'addItem', () => {
     store.dispatch( addItem([ { type: 'video', id: 'id' } as Video ]) );
@@ -111,7 +115,7 @@ describe( 'test saved slice', () => {
 
     const expected = new Map();
     const videos = new Map();
-    videos.set( 'vid', { id: 'vid', type: 'video', audioUrl: 'audio' } );
+    videos.set( 'vid', { id: 'vid', type: 'video', audioUrl: 'audio', lastModified: 1434319925275 } );
     const playlists = new Map();
     playlists.set( 'pl', { id: 'pl', type: 'playlist', videos: videos } );
     expected.set( 'ch', { id: 'ch', type: 'channel', playlists: playlists, videos: new Map() });
@@ -129,7 +133,7 @@ describe( 'test saved slice', () => {
 
     const expected = new Map();
     const videos = new Map();
-    videos.set( 'vid', { id: 'vid', type: 'video', audioUrl: 'audio' } );
+    videos.set( 'vid', { id: 'vid', type: 'video', audioUrl: 'audio', lastModified: 1434319925275 } );
     expected.set( 'ch', { id: 'ch', type: 'channel', playlists: new Map(), videos: videos });
 
     expect( data ).toStrictEqual( expected );
@@ -145,7 +149,7 @@ describe( 'test saved slice', () => {
     const data = store.getState().saved.data;
 
     const expected = new Map();
-    expected.set( 'vid', { id: 'vid', type: 'video', audioUrl: 'audio' } );
+    expected.set( 'vid', { id: 'vid', type: 'video', audioUrl: 'audio', lastModified: 1434319925275 } );
 
     expect( data ).toStrictEqual( expected );
   });
@@ -160,7 +164,7 @@ describe( 'test saved slice', () => {
     const data = store.getState().saved.data;
 
     const expected = new Map();
-    expected.set( 'pl', { id: 'pl', type: 'playlist', tags: ['tag'] } );
+    expected.set( 'pl', { id: 'pl', type: 'playlist', tags: ['tag'], lastModified: 1434319925275 } );
 
     expect( data ).toStrictEqual( expected );
   });
@@ -177,7 +181,7 @@ describe( 'test saved slice', () => {
 
     const expected = new Map();
     const playlists = new Map();
-    playlists.set( 'pl', { id: 'pl', type: 'playlist', tags: ['tag'] } );
+    playlists.set( 'pl', { id: 'pl', type: 'playlist', tags: ['tag'], lastModified: 1434319925275 } );
     expected.set( 'ch', { id: 'ch', type: 'channel', playlists: playlists } );
 
     expect( data ).toStrictEqual( expected );
@@ -193,7 +197,7 @@ describe( 'test saved slice', () => {
     const data = store.getState().saved.data;
 
     const expected = new Map();
-    expected.set( 'ch', { id: 'ch', type: 'channel', tags: ['tag'] } );
+    expected.set( 'ch', { id: 'ch', type: 'channel', tags: ['tag'], lastModified: 1434319925275 } );
 
     expect( data ).toStrictEqual( expected );
 

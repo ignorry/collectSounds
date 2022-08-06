@@ -37,6 +37,7 @@ export const parseVideoItem = ( obj: ApiVideo ): Video => {
     channelTitle: obj.snippet.channelTitle,
     thumbnails: obj.snippet.thumbnails,
     duration: parseISOToNumber( obj.contentDetails.duration ),
+    lastModified: new Date().getTime()
   }
 }
 
@@ -58,6 +59,7 @@ export const parsePlaylistItem = ( obj: ApiPlaylist ): Playlist => {
     lang: obj.snippet.defaultLanguage,
     channelTitle: obj.snippet.channelTitle,
     thumbnails: obj.snippet.thumbnails,
+    lastModified: new Date().getTime()
   }
 }
 
@@ -78,6 +80,7 @@ export const parseChannelItem = ( obj: ApiChannel ): Channel => {
     description: obj.snippet.description,
     customUrl: obj.snippet.customUrl,
     thumbnails: obj.snippet.thumbnails,
+    lastModified: new Date().getTime()
   }
 }
 

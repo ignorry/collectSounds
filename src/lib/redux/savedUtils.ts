@@ -67,7 +67,7 @@ export type UpdateChannelPayload = {
  * @returns new Video object
  */
 export const updateVideo = ( prev: Video, update: UpdateVideoPayload ): Video =>
-  ({...prev, ...update});
+  ({...prev, ...update, lastModified: new Date().getTime() });
 
 /**
  * udpates Playlist object
@@ -76,7 +76,7 @@ export const updateVideo = ( prev: Video, update: UpdateVideoPayload ): Video =>
  * @returns new Playlist object
  */
 export const updatePlaylist = ( prev: Playlist, update: UpdatePlaylistPayload ): Playlist =>
-  ({...prev, ...update});
+  ({...prev, ...update, lastModified: new Date().getTime() });
 
 /**
  * udpates Channel object
@@ -85,4 +85,4 @@ export const updatePlaylist = ( prev: Playlist, update: UpdatePlaylistPayload ):
  * @returns new Channel object
  */
 export const updateChannel = ( prev: Channel, update: UpdateChannelPayload ): Channel =>
-  ({...prev, ...update});
+  ({...prev, ...update, lastModified: new Date().getTime() });

@@ -1,3 +1,4 @@
+import MockDate from "mockdate";
 import { Video, Playlist, Channel } from "../../models/content";
 import { 
   UpdateVideoPayload,
@@ -7,6 +8,10 @@ import {
 } from "../../lib/redux/savedUtils";
 
 describe( 'test updateVideo', () => {
+  beforeAll(() => {
+    MockDate.set(1434319925275);
+  });
+
   test( 'must update Video', () => {
     const newVideo = updateVideo(
       {
@@ -23,12 +28,17 @@ describe( 'test updateVideo', () => {
     expect( newVideo ).toStrictEqual( {
       id: "id",
       audioUrl: "second",
-      passed: 10
+      passed: 10,
+      lastModified: 1434319925275
     });
   });
 });
 
 describe( 'test updatePlaylist', () => {
+  beforeAll(() => {
+    MockDate.set(1434319925275);
+  });
+
   test( 'must update Playlist', () => {
     const newPlaylist = updatePlaylist(
       {
@@ -41,12 +51,17 @@ describe( 'test updatePlaylist', () => {
 
     expect( newPlaylist ).toStrictEqual( {
       id: "id",
-      tags: ["val"]
+      tags: ["val"],
+      lastModified: 1434319925275
     });
   });
 });
 
 describe( 'test updateChannel', () => {
+  beforeAll(() => {
+    MockDate.set(1434319925275);
+  });
+
   test( 'must update Channel', () => {
     const newChannel = updateChannel(
       {
@@ -59,7 +74,8 @@ describe( 'test updateChannel', () => {
 
     expect( newChannel ).toStrictEqual( {
       id: "id",
-      tags: ["val"]
+      tags: ["val"],
+      lastModified: 1434319925275
     });
   });
 });
