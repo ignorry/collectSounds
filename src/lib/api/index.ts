@@ -143,9 +143,13 @@ export const getSearch = async ( filters: SearchFilters ): Promise<Array<Content
     return item.id.channelId;
   });
 
-  const videos: Array<Video> = await getVideoById( videoIds.join( ',' ) );
-  const playlists: Array<Playlist> = await getPlaylistById( playlistIds.join( ',' ) );
-  const channels: Array<Channel> = await  getChannelById( channelIds.join( ',' ) );
+  console.log( 'ids: ' + ids + ' ' + videoIds + ' ' + playlistIds + ' ' + channelIds );
+
+  const videos: Array<Video> = videoIds.length > 0 ? await getVideoById( videoIds.join( ',' ) ) : [];
+  console.log( `${JSON.stringify( videos )}`);
+  const playlists: Array<Playlist> = playlistIds.length > 0 ? await getPlaylistById( playlistIds.join( ',' ) ) : [];
+  console.log( `${JSON.stringify( playlists )}`);
+  const channels: Array<Channel> = channelIds.length > 0 ? await getChannelById( channelIds.join( ',' ) ) : [];
 
   // ids array needed to save order of contents
 
