@@ -14,6 +14,7 @@ import { Thumbnails } from "./api/primitives";
  * @prop {number} duration - in ms
  * @prop {number} [passed] - passed duration in ms
  * @prop {Array<string>} [tags] - given by user
+ * @prop {number} lastModified - used for synchronization
  */
 export type Video = {
   type: "video";
@@ -28,6 +29,7 @@ export type Video = {
   duration: number;
   passed?: number;
   tags?: Array<string>;
+  lastModified: number;
 }
 
 /**
@@ -41,6 +43,7 @@ export type Video = {
  * @prop {string} channelTitle
  * @prop {Thumbnails} thumbnails
  * @prop {Array<string>} [tags] - given by user
+ * @prop {number} lastModified - used for synchronization
  */
 export type Playlist = {
   type: "playlist";
@@ -52,6 +55,7 @@ export type Playlist = {
   channelTitle: string;
   thumbnails: Thumbnails;
   tags?: Array<string>;
+  lastModified: number;
 }
 
 /**
@@ -65,6 +69,7 @@ export type Playlist = {
  * @prop {string} customUrl
  * @prop {Thumbnails} thumbnails
  * @prop {Array<string>} [tags] - given by user
+ * @prop {number} lastModified - used for synchronization
  */
 export type Channel = {
   type: "channel";
@@ -76,6 +81,7 @@ export type Channel = {
   customUrl: string;
   thumbnails: Thumbnails;
   tags?: Array<string>;
+  lastModified: number;
 }
 
 /**
