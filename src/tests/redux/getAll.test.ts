@@ -1,18 +1,10 @@
-import MockDate from "mockdate";
 import { getAll } from "../../lib/redux/getAll";
-import { Channel, Content, Playlist, Video } from "../../models/content";
+import { Channel, Playlist, Video } from "../../models/content";
 import store from "../../redux/index";
 import {
   addItem,
-  deleteItem,
   addVideoToParent,
   addPlaylistToParent,
-  updateVideo,
-  updatePlaylist,
-  updateChannel,
-  getVideo,
-  getPlaylist,
-  getChannel
 } from "../../redux/slices/saved";
 
 describe( 'test getAll()', () => {
