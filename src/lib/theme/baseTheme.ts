@@ -4,7 +4,7 @@ export const baseTheme: Theme = {
   iconSize: 1.5,
 
   colors: {
-    main: '00fa9a',
+    main: '#00fa9a',
   },
 
   gaps: {
