@@ -32,4 +32,15 @@ describe( 'Icon componenet', () => {
 
     expect( elem.getAttribute( 'href' ) ).toBe( 'icons.svg#icon' );
   });
+
+  it( 'matches to snapshot', () => {
+    const result = render(
+    <ThemeProvider theme={ getTheme( true ) } >
+      <Icon name="icon"/>
+      <GlobalStyles/>
+    </ThemeProvider>
+    );
+
+    expect( result ).toMatchSnapshot();
+  })
 });
