@@ -37,4 +37,15 @@ describe( 'Label component', () => {
     expect( window.getComputedStyle( elem ).fontSize ).toBe( `${baseTheme.font.secondary.size}rem` );
     expect( +window.getComputedStyle( elem ).opacity ).toBe( baseTheme.font.secondary.opacity );
   });
+
+  it( 'matches to snapshot', () => {
+    const result = render(
+      <ThemeProvider theme={ getTheme( true ) } >
+        <Label text="text"/>
+        <GlobalStyles/>
+      </ThemeProvider>
+    );
+
+    expect( result ).toMatchSnapshot();
+  });
 });
