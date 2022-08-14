@@ -2,9 +2,15 @@ import { Theme } from "../../models/theme";
 
 export const baseTheme: Theme = {
   iconSize: 1.5,
+  rangeSize: 0.2,
 
   colors: {
     main: '#00fa9a',
+  },
+
+  decorative: {
+    borderRadius: 4,
+    padding: 3,
   },
 
   gaps: {

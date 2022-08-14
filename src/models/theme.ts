@@ -6,11 +6,17 @@ export enum ThemeEnum  {
 // all sizes in rem
 export type Theme = {
   iconSize: number,
+  rangeSize: number,
   colors: {
     main: string,
     bg?: string,
     bgSecondary?: string,
     font?: string,
+    darkBg?: string,
+  },
+  decorative: { // in px
+    borderRadius: number;
+    padding: number;
   },
   gaps: {
     small: number,

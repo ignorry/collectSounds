@@ -8,9 +8,11 @@ export const lightTheme: DefaultTheme = {
 
   colors: {
     ...baseTheme.colors,
+    main: '#00bb88',
     bg: '#ffffff',
     bgSecondary: '#f1f1f1',
     font: '#000000',
+    darkBg: '#d9d9d9'
   },
 }
 
@@ -20,9 +22,10 @@ export const darkTheme: DefaultTheme = {
 
   colors: {
     ...baseTheme.colors,
-    bg: '#1f1f1f',
-    bgSecondary: '#252525',
+    bg: '#000000',
+    bgSecondary: '#2a2a2a',
     font: '#ffffff',
+    darkBg: '#121212'
   },
 }
 

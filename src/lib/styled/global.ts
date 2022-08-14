@@ -11,7 +11,7 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    background: ${ ({ theme }) => theme.colors.bg };
+    background: rgba(0,0,0,0);
   }
 
   *::before,
@@ -23,6 +23,7 @@ export default createGlobalStyle`
     font-family: 'Roboto';
     font-size: ${ ({ theme }) => `${theme.font.primary.size}rem` };
     color: ${ ({ theme }) => theme.colors.font };
+    background: ${ ({ theme }) => theme.colors.bg };
   }
 
   a {
