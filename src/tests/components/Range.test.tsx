@@ -1,5 +1,6 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { ThemeProvider } from "styled-components";
 import { getTheme } from "../../lib/theme";
 import GlobalStyles from "../../lib/styled/global";
@@ -22,6 +23,23 @@ describe( 'Range component', () => {
     expect( +elem.value ).toBe( 10 );
     expect( +elem.max ).toBe( 20 );
   });
+
+  it( 'handles change event', async () => {
+    const callback = jest.fn();
+
+    const result = render(
+      <ThemeProvider theme={ getTheme( true ) } >
+        <Range callback={callback} value={10}/>
+        <GlobalStyles/>
+      </ThemeProvider>
+    );
+
+    const input = result.container.querySelector( 'input' );
+
+    await fireEvent.change( input, { target: { value: 15 } });
+
+    expect( callback ).toBeCalled();
+  })
 
   it( 'matches to snapshot', () => {
     const result = render(
