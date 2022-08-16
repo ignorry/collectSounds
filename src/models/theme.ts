@@ -7,6 +7,7 @@ export enum ThemeEnum  {
 export type Theme = {
   iconSize: number,
   rangeSize: number,
+  spinnerSize: number,
   colors: {
     main: string,
     bg?: string,

@@ -3,6 +3,7 @@ import { Theme } from "../../models/theme";
 export const baseTheme: Theme = {
   iconSize: 1.5,
   rangeSize: 0.2,
+  spinnerSize: 1.5,
 
   colors: {
     main: '#00fa9a',
