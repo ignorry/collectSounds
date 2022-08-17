@@ -1,0 +1,338 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component matches to snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-hHLeRK iHqIYi"
+      >
+        <button
+          class="sc-dkzDqf jAeszh"
+        >
+          <div
+            class="sc-hKMtZM gAVSLE"
+          >
+            <img
+              class="sc-eCYdqJ kmuXoH"
+              src="http://video.com"
+            />
+            <div
+              class="sc-jSMfEi grMTtl"
+            >
+              <input
+                class="sc-gsnTZi loLAgq"
+                max="59000"
+                type="range"
+                value="5000"
+              />
+            </div>
+            <span
+              class="sc-gKXOVf gxZVoN"
+            >
+              <p
+                class="sc-bczRLJ gFcYdr"
+              >
+                59
+              </p>
+            </span>
+          </div>
+          <div
+            class="sc-iBkjds fGvrQA"
+          >
+            <div
+              class="sc-ftvSup gNwYiK"
+            >
+              <p
+                class="sc-bczRLJ dSaBFM"
+              >
+                title
+              </p>
+            </div>
+            <div
+              class="sc-papXJ zWNMs"
+            >
+              <p
+                class="sc-bczRLJ gFcYdr"
+              >
+                channelTitle
+              </p>
+            </div>
+            <p
+              class="sc-bczRLJ gFcYdr"
+            >
+              publishedAt
+            </p>
+          </div>
+        </button>
+        <button
+          class="sc-kDDrLX rAkeG"
+        >
+          <div
+            class="sc-iqcoie iPhNjZ"
+          >
+            <img
+              class="sc-crXcEl bQYoUs"
+              src="http://playlist.com"
+            />
+            <span
+              class="sc-evZas bnzzEm"
+            >
+              <p
+                class="sc-bczRLJ dSaBFM"
+              >
+                0
+              </p>
+              <svg
+                class="sc-jqUVSM gEzVvj"
+              >
+                <use
+                  href="icons.svg#playlistThumbnail"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            class="sc-breuTD ojFJZ"
+          >
+            <div
+              class="sc-ksZaOG dROsiD"
+            >
+              <p
+                class="sc-bczRLJ dSaBFM"
+              >
+                title
+              </p>
+            </div>
+            <div
+              class="sc-hAZoDl edibgv"
+            >
+              <p
+                class="sc-bczRLJ gFcYdr"
+              >
+                channelTitle
+              </p>
+            </div>
+          </div>
+        </button>
+        <button
+          class="sc-fnykZs fQbyBm"
+        >
+          <div
+            class="sc-fEOsli eikSeL"
+          >
+            <img
+              class="sc-bjUoiL bveUKH"
+              src="http://channel.com"
+            />
+          </div>
+          <div
+            class="sc-idiyUo bxcaai"
+          >
+            <div
+              class="sc-dIouRR kgSaMP"
+            >
+              <p
+                class="sc-bczRLJ dSaBFM"
+              >
+                title
+              </p>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-hHLeRK iHqIYi"
+    >
+      <button
+        class="sc-dkzDqf jAeszh"
+      >
+        <div
+          class="sc-hKMtZM gAVSLE"
+        >
+          <img
+            class="sc-eCYdqJ kmuXoH"
+            src="http://video.com"
+          />
+          <div
+            class="sc-jSMfEi grMTtl"
+          >
+            <input
+              class="sc-gsnTZi loLAgq"
+              max="59000"
+              type="range"
+              value="5000"
+            />
+          </div>
+          <span
+            class="sc-gKXOVf gxZVoN"
+          >
+            <p
+              class="sc-bczRLJ gFcYdr"
+            >
+              59
+            </p>
+          </span>
+        </div>
+        <div
+          class="sc-iBkjds fGvrQA"
+        >
+          <div
+            class="sc-ftvSup gNwYiK"
+          >
+            <p
+              class="sc-bczRLJ dSaBFM"
+            >
+              title
+            </p>
+          </div>
+          <div
+            class="sc-papXJ zWNMs"
+          >
+            <p
+              class="sc-bczRLJ gFcYdr"
+            >
+              channelTitle
+            </p>
+          </div>
+          <p
+            class="sc-bczRLJ gFcYdr"
+          >
+            publishedAt
+          </p>
+        </div>
+      </button>
+      <button
+        class="sc-kDDrLX rAkeG"
+      >
+        <div
+          class="sc-iqcoie iPhNjZ"
+        >
+          <img
+            class="sc-crXcEl bQYoUs"
+            src="http://playlist.com"
+          />
+          <span
+            class="sc-evZas bnzzEm"
+          >
+            <p
+              class="sc-bczRLJ dSaBFM"
+            >
+              0
+            </p>
+            <svg
+              class="sc-jqUVSM gEzVvj"
+            >
+              <use
+                href="icons.svg#playlistThumbnail"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          class="sc-breuTD ojFJZ"
+        >
+          <div
+            class="sc-ksZaOG dROsiD"
+          >
+            <p
+              class="sc-bczRLJ dSaBFM"
+            >
+              title
+            </p>
+          </div>
+          <div
+            class="sc-hAZoDl edibgv"
+          >
+            <p
+              class="sc-bczRLJ gFcYdr"
+            >
+              channelTitle
+            </p>
+          </div>
+        </div>
+      </button>
+      <button
+        class="sc-fnykZs fQbyBm"
+      >
+        <div
+          class="sc-fEOsli eikSeL"
+        >
+          <img
+            class="sc-bjUoiL bveUKH"
+            src="http://channel.com"
+          />
+        </div>
+        <div
+          class="sc-idiyUo bxcaai"
+        >
+          <div
+            class="sc-dIouRR kgSaMP"
+          >
+            <p
+              class="sc-bczRLJ dSaBFM"
+            >
+              title
+            </p>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
