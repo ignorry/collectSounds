@@ -15,8 +15,15 @@ export const baseTheme: Theme = {
   },
 
   gaps: {
+    smallest: 0.2,
     small: 0.5,
     big: 1
+  },
+
+  thumbnail: {
+    size: 5,
+    infoColor: 'rgba(0,0,0,0.8)',
+    infoWidth: 4,
   },
 
   media: {

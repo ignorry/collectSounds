@@ -20,8 +20,14 @@ export type Theme = {
     padding: number;
   },
   gaps: {
+    smallest: number,
     small: number,
     big: number,
+  },
+  thumbnail: {
+    size: number,
+    infoColor: string,
+    infoWidth: 4,
   },
   media: {
     small: string,
