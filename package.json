@@ -23,6 +23,7 @@
     "@types/redux-logger": "^3.0.9",
     "@types/styled-components": "^5.1.25",
     "copy-webpack-plugin": "^11.0.0",
+    "intersection-observer": "^0.12.2",
     "mockdate": "^3.0.5",
     "peerjs": "^1.4.6",
     "react": "^18.2.0",
