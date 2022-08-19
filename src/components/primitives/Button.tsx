@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styled from "styled-components";
 
 import Icon from "./Icon";
@@ -17,13 +17,13 @@ export const ButtonStyled = styled.button`
  * @prop {Function} callback - callback on click
  * @prop {boolean} secondary - use seconday label
  * @prop {string} pic - name of icon in sprite
- * @prop {string} text - text to be displayed in button
+ * @prop {string|ReactNode} text - text to be displayed in button
  */
 export type Props = {
   callback: Function,
   secondary?: boolean,
   pic?: string,
-  text?: string,
+  text?: string | ReactNode,
 }
 
 const Button: React.FC<Props> = ( props: Props ) =>

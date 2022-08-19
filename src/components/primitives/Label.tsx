@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styled from "styled-components";
 
 export const P = styled.p<{ secondary: boolean }>`
@@ -8,11 +8,11 @@ export const P = styled.p<{ secondary: boolean }>`
 
 /**
  * @typedef Props
- * @prop {string} text - display text
+ * @prop {string | ReactNode} text - display text
  * @prop {boolean} secondary - use secondary color
  */
 export type Props = {
-  text: string,
+  text: string | ReactNode,
   secondary?: boolean,
 }
 

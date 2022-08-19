@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styled from "styled-components";
 
 import Icon from "./Icon";
@@ -18,14 +18,14 @@ const ButtonStyled = styled.button<{ active: boolean }>`
  * @prop {boolean} secondary - use secondary label
  * @prop {boolean} active - is button active
  * @prop {string} pic - name of icon in sprite
- * @prop {string} text - text to be displayed in button
+ * @prop {string|ReactNode} text - text to be displayed in button
  */
 export type Props = {
   callback: Function,
   secondary?: boolean,
   active: boolean,
   pic?: string,
-  text?: string,
+  text?: string | ReactNode,
 }
 
 const ToggleButton: React.FC<Props> = ( props: Props ) =>

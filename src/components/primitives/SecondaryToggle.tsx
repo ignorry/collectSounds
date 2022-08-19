@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styled from "styled-components";
 
 import Label from "./Label";
@@ -15,12 +15,12 @@ const ButtonStyled = styled.button<{ active: boolean }>`
  * @typedef Props
  * @prop {Function} callback - callback on click
  * @prop {boolean} active - is button active
- * @prop {string} text - text to be displayed in button
+ * @prop {string|ReactNode} text - text to be displayed in button
  */
 export type Props = {
   callback: Function,
   active: boolean,
-  text: string,
+  text: string | ReactNode,
 }
 
 const ToggleButton: React.FC<Props> = ( props: Props ) =>
