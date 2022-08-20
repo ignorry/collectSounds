@@ -15,6 +15,10 @@ export const Div = styled.div<{ display: boolean }>`
 export const Content = styled.div<{ display: boolean }>`
   height: ${ props => props.display ? 'auto' : 0 };
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: ${ ({ theme }) => `${ theme.gaps.small }rem` };
+  padding-top: ${ props => props.display ? ({ theme }) => `${ theme.gaps.small }rem` : 0 };
 `;
 
 /**
@@ -22,11 +26,13 @@ export const Content = styled.div<{ display: boolean }>`
  * @prop {string} label - display in left of active value
  * @prop {any} [children] - react prop
  * @prop {string} [icon] - name of icon to be displayed in button
+ * @prop {boolean} [dontHandleOutside] - if true, will not close when clicking outside
  */
 export type Props = {
   label: string,
   children?: any,
   icon?: string,
+  dontHandleOutside?: boolean;
 }
 
 const Collapse: React.FC<Props> = ( props: Props ) => {
@@ -36,7 +42,8 @@ const Collapse: React.FC<Props> = ( props: Props ) => {
   const toggleDisplay = () => setDisplay( ! display );
 
   useEffect( () => {
-    clickOutside( containerRef.current , () => setDisplay( false ) )
+    if ( ! props.dontHandleOutside )
+      clickOutside( containerRef.current , () => setDisplay( false ) )
   }, []);
 
   return (
