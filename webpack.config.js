@@ -1,12 +1,14 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: "./src/index.tsx",
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "index-bundle.js"
+    filename: "index-bundle.js",
+    publicPath: "/"
   },
   module: {
     rules: [
@@ -34,9 +36,13 @@ module.exports = {
           },
         }
       ],
-    })
+    }),
+    new Dotenv(),
   ],
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
+  devServer: {
+    historyApiFallback: true,
+  }
 };
