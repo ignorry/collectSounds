@@ -14,12 +14,18 @@ const Container = styled.button`
 `;
 
 const Thumbnail = styled.div`
-  height: ${ ({ theme }) => `${ theme.thumbnail.size }rem` };
+  height: ${ ({ theme }) => `${ theme.thumbnail.height }rem` };
+  width: ${ ({ theme }) => `${ theme.thumbnail.width }rem` };
+  overflow: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 `;
 
 const Img = styled.img`
-  height: ${ ({ theme }) => `${ theme.thumbnail.size }rem` };
+  width: ${ ({ theme }) => `${ theme.thumbnail.width }rem` };
 `;
 
 const Length = styled.span`
