@@ -5,6 +5,7 @@ import {
   getPlaylistVideos,
   getChannelVideos,
   getChannelPlaylists,
+  getPopularVideos,
   getSearch
 } from "../../lib/api";
 import {
@@ -33,6 +34,29 @@ describe( 'getVideoById', () => {
 
   it( 'receives video object', async () => {
     const res = await getVideoById( 'someid' );
+
+    expect( res[0].id ).toStrictEqual( 'test' );
+  });
+});
+
+describe( 'getPopularVideos', () => {
+  beforeEach( () => {
+    global.fetch = jest.fn(() => 
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({
+          items: [{
+            id: 'test',
+            snippet: {},
+            contentDetails: {},
+          }]
+        } as VideoIdResponse ),
+      }),
+    ) as any;
+  });
+
+  it( 'receives video object', async () => {
+    const res = await getPopularVideos();
 
     expect( res[0].id ).toStrictEqual( 'test' );
   });
@@ -194,17 +218,17 @@ describe( 'getSearch', () => {
           json: () => Promise.resolve({
             items: [{
               id: {
-                kind: 'playlist',
+                kind: 'youtube#playlist',
                 playlistId: 'playlistId',
               },
             },{
               id: {
-                kind: 'channel',
+                kind: 'youtube#channel',
                 channelId: 'channelId',
               },
             },{
               id: {
-                kind: 'video',
+                kind: 'youtube#video',
                 videoId: 'videoId',
               },
             }]
@@ -245,7 +269,7 @@ describe( 'getSearch', () => {
     }) as any;
   });
 
-  it( 'receives video object', async () => {
+  it( 'receives data', async () => {
     const res = await getSearch({});
 
     expect( res[0].id ).toStrictEqual( 'playlistId' );

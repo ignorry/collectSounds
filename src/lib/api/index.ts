@@ -28,6 +28,20 @@ export const getVideoById = async ( id: string ): Promise<Array<Video>> => {
 }
 
 /**
+ * fetch popular videos
+ * @returns {Promise<Array<Video>>}
+ */
+export const getPopularVideos = async (): Promise<Array<Video>> => {
+  const res = await fetchVideo({
+    part: 'snippet,contentDetails',
+    chart: 'mostPopular',
+    maxResults: 10,
+  });
+
+  return parseVideo( res );
+}
+
+/**
  * fetch playlist by id
  * @param {string} id - playlist id
  * @returns {Promise<Array<Playlist>>}
@@ -108,12 +122,14 @@ export const getChannelPlaylists = async ( id: string ): Promise<Array<Playlist>
  * @prop {string} type - restricts a search query to only retrieve a particular type of resource
  * @prop {string} videoDuration - filters video search results based on their duration
  * @prop {string} saveSearch - indicates whether the search results should include restricted content as well as standard content
+ * @prop {string} q - search query
  */
 export type SearchFilters = {
   order?: 'date' | 'rating' | 'relevance' | 'title' | 'videoCount' | 'viewCount';
-  type?: 'video' | 'playlist' | 'channel',
+  type?: 'video' | 'playlist' | 'channel';
   videoDuration?: 'any' | 'long' | 'medium' | 'short';
-  saveSearch?: 'moderate' | 'none' | 'strict'
+  saveSearch?: 'moderate' | 'none' | 'strict';
+  q?: string;
 }
 
 /**
@@ -124,17 +140,17 @@ export type SearchFilters = {
 export const getSearch = async ( filters: SearchFilters ): Promise<Array<Content>> => {
   const res = await fetchSearch({...filters,
     part: 'id',
-    maxResults: 10,
+    maxResults: 30,
   });
 
   const videoIds: Array<string> = [];
   const playlistIds: Array<string> = [];
   const channelIds: Array<string> = [];
   const ids: Array<string> = res.items.map( item => {
-    if ( item.id.kind === 'video' ) {
+    if ( item.id.kind === 'youtube#video' ) {
       videoIds.push( item.id.videoId );
       return item.id.videoId;
-    } else if ( item.id.kind === 'playlist' ) {
+    } else if ( item.id.kind === 'youtube#playlist' ) {
       playlistIds.push( item.id.playlistId );
       return item.id.playlistId;
     }
@@ -143,12 +159,8 @@ export const getSearch = async ( filters: SearchFilters ): Promise<Array<Content
     return item.id.channelId;
   });
 
-  console.log( 'ids: ' + ids + ' ' + videoIds + ' ' + playlistIds + ' ' + channelIds );
-
   const videos: Array<Video> = videoIds.length > 0 ? await getVideoById( videoIds.join( ',' ) ) : [];
-  console.log( `${JSON.stringify( videos )}`);
   const playlists: Array<Playlist> = playlistIds.length > 0 ? await getPlaylistById( playlistIds.join( ',' ) ) : [];
-  console.log( `${JSON.stringify( playlists )}`);
   const channels: Array<Channel> = channelIds.length > 0 ? await getChannelById( channelIds.join( ',' ) ) : [];
 
   // ids array needed to save order of contents
