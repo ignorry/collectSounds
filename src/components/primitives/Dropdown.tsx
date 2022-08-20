@@ -11,6 +11,7 @@ export const Div = styled.div<{ display: boolean }>`
   border: 1px solid ${ props => props.display ? ({ theme }) => theme.colors.main : ({ theme }) => 'rgba(0,0,0,0)' };
   border-radius: ${ ({ theme }) => `${ theme.decorative.borderRadius }px` };
   padding: ${ ({ theme }) => `${ theme.decorative.padding }px`};
+  background: ${ ({ theme }) => theme.colors.darkBg };
   text-align: center;
 `;
 

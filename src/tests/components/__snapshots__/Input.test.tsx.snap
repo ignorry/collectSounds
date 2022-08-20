@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <input
-        class="sc-bczRLJ fQzunI"
+        class="sc-bczRLJ dldCsv"
         placeholder="placeholder"
         value="val"
       />
@@ -14,7 +14,7 @@ Object {
   </body>,
   "container": <div>
     <input
-      class="sc-bczRLJ fQzunI"
+      class="sc-bczRLJ dldCsv"
       placeholder="placeholder"
       value="val"
     />
