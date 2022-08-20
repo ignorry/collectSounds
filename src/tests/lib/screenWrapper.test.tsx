@@ -1,6 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { FormattedMessage } from "react-intl";
+import { ThemeProvider } from "styled-components";
+import { getTheme } from "../../lib/theme";
+import GlobalStyles from "../../lib/styled/global";
 
 import ScreenWrapper from "../../lib/screenWrapper";
 
@@ -13,9 +15,12 @@ describe( 'screenWrapper', () => {
 
   it( 'renders children', async () => {
     const result = await render(
-      <ScreenWrapper file='search' skeleton={ <p>skeleton</p> }>
-        <p>content</p>
-      </ScreenWrapper>
+      <ThemeProvider theme={ getTheme( true ) } >
+        <ScreenWrapper file='search' skeleton={ <p>skeleton</p> }>
+          <p>content</p>
+        </ScreenWrapper>
+        <GlobalStyles/>
+      </ThemeProvider>
     );
 
     await new Promise( resolve => setTimeout( resolve, 100 ) );
