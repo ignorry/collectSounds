@@ -2,14 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const InputStyled = styled.input<{ }>`
-  height: ${ ({ theme }) => `${ theme.iconSize }rem` };
   line-height: ${ ({ theme }) => `${ theme.iconSize }rem` };
   font-size: ${ ({ theme }) => `${ theme.font.secondary.size }rem` };
   color: ${ ({ theme }) => theme.colors.font };
   background: ${ ({ theme }) => theme.colors.darkBg };
   border: 1px solid ${ ({ theme }) => theme.colors.darkBg };
   border-radius: ${ ({ theme }) => `${ theme.decorative.borderRadius }px` };
-  padding: ${ ({ theme }) => `${ theme.decorative.padding }px`};
+  padding: ${ ({ theme }) => `${ theme.gaps.smallest }rem ${ theme.gaps.small }rem`};
 
   &:focus {
     border: 1px solid ${ ({ theme }) => theme.colors.main };
@@ -25,6 +24,7 @@ const InputStyled = styled.input<{ }>`
  * @typedef Props
  * @prop {Function} callback - callback on input
  * @prop {string} value
+ * @prop {string} [placeholder]
  */
 export type Props = {
   callback: Function,
