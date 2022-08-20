@@ -4,6 +4,7 @@ export const baseTheme: Theme = {
   iconSize: 1.5,
   rangeSize: 0.2,
   spinnerSize: 1.5,
+  contentWidth: 60,
 
   colors: {
     main: '#00fa9a',
@@ -21,13 +22,19 @@ export const baseTheme: Theme = {
   },
 
   thumbnail: {
-    size: 5,
+    width: 9,
+    height: 5,
     infoColor: 'rgba(0,0,0,0.8)',
     infoWidth: 4,
   },
 
+  error: {
+    backgroundColor: 'rgba(0,0,0,0.7)',
+    width: 30,
+  },
+
   media: {
-    small: '(max-width: 767px)',
+    small: '(max-width: 1400px)',
   },
 
   font: {
@@ -39,13 +46,6 @@ export const baseTheme: Theme = {
       size: 0.8,
       opacity: 0.7
     }
-  },
-
-  sizes: {
-    list: { maxWidth: 800 },
-    footer: { height: 60 },
-    play: { minimizedHeight: 80 },
-    modal: { maxWidth: 540 },
   },
 
   durations: {

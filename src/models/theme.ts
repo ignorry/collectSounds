@@ -8,6 +8,7 @@ export type Theme = {
   iconSize: number,
   rangeSize: number,
   spinnerSize: number,
+  contentWidth: number,
   colors: {
     main: string,
     bg?: string,
@@ -25,9 +26,14 @@ export type Theme = {
     big: number,
   },
   thumbnail: {
-    size: number,
+    width: number,
+    height: number,
     infoColor: string,
     infoWidth: 4,
+  },
+  error: {
+    backgroundColor: string,
+    width: number,
   },
   media: {
     small: string,
@@ -41,12 +47,6 @@ export type Theme = {
       size: number,
       opacity: number,
     },
-  },
-  sizes: {
-    list: { maxWidth: number },
-    footer: { height: number },
-    play: { minimizedHeight: number },
-    modal: { maxWidth: number },
   },
   durations: {
     ms300: number,
