@@ -24,13 +24,26 @@ const AllTheProviders = ( { children }: any ) => (
 );
 
 describe( 'root component', () => {
+  it( 'renders Component', async () => {
+    const result = render(
+      <Root />,
+      { wrapper: AllTheProviders }
+    );
+
+    await new Promise( resolve => setTimeout( resolve, 100 ) );
+
+    const button = result.container.querySelector( 'button' );
+
+    expect( button ).toBeTruthy();
+  });
+
   it( 'matches to snapshot', async () => {
     const result = render(
       <Root />,
       { wrapper: AllTheProviders }
     );
 
-    await new Promise( resolve => setTimeout( resolve, 10 ) );
+    await new Promise( resolve => setTimeout( resolve, 100 ) );
 
     expect( result ).toMatchSnapshot();
   });
