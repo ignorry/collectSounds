@@ -30,7 +30,7 @@ describe( 'Navigation component', () => {
       { wrapper: AllTheProviders }
     );
 
-    await new Promise( resolve => setTimeout( resolve, 20 ) );
+    await new Promise( resolve => setTimeout( resolve, 200 ) );
 
     const icons = result.container.querySelectorAll( 'button' );
 
@@ -43,7 +43,7 @@ describe( 'Navigation component', () => {
       { wrapper: AllTheProviders }
     );
 
-    await new Promise( resolve => setTimeout( resolve, 20 ) );
+    await new Promise( resolve => setTimeout( resolve, 150 ) );
 
     result.container.querySelectorAll( 'button' )[0].click();
     await new Promise( resolve => setTimeout( resolve, 10 ) );
@@ -68,7 +68,7 @@ describe( 'Navigation component', () => {
       { wrapper: AllTheProviders }
     );
 
-    await new Promise( resolve => setTimeout( resolve, 10 ) );
+    await new Promise( resolve => setTimeout( resolve, 150 ) );
 
     expect( result ).toMatchSnapshot();
   });

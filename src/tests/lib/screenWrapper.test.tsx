@@ -23,7 +23,7 @@ describe( 'screenWrapper', () => {
       </ThemeProvider>
     );
 
-    await new Promise( resolve => setTimeout( resolve, 100 ) );
+    await new Promise( resolve => setTimeout( resolve, 200 ) );
 
     const label = result.container.querySelector( 'p' );
 
