@@ -23,14 +23,14 @@ const AllTheProviders = ( { children }: any ) => (
   </Provider>
 );
 
-describe( 'Error component', () => {
+describe( 'Navigation component', () => {
   it( 'render all buttons', async () => {
     const result = render(
       <Navigation />,
       { wrapper: AllTheProviders }
     );
 
-    await new Promise( resolve => setTimeout( resolve, 10 ) );
+    await new Promise( resolve => setTimeout( resolve, 20 ) );
 
     const icons = result.container.querySelectorAll( 'button' );
 
@@ -43,18 +43,22 @@ describe( 'Error component', () => {
       { wrapper: AllTheProviders }
     );
 
-    await new Promise( resolve => setTimeout( resolve, 10 ) );
+    await new Promise( resolve => setTimeout( resolve, 20 ) );
 
     result.container.querySelectorAll( 'button' )[0].click();
+    await new Promise( resolve => setTimeout( resolve, 10 ) );
     expect( window.location.pathname.split( '/' )[1] ).toBe( 'search' );
-
+    await new Promise( resolve => setTimeout( resolve, 10 ) );
     result.container.querySelectorAll( 'button' )[1].click();
+    await new Promise( resolve => setTimeout( resolve, 10 ) );
     expect( window.location.pathname.split( '/' )[1] ).toBe( 'saved' );
-    
+    await new Promise( resolve => setTimeout( resolve, 10 ) );
     result.container.querySelectorAll( 'button' )[2].click();
+    await new Promise( resolve => setTimeout( resolve, 10 ) );
     expect( window.location.pathname.split( '/' )[1] ).toBe( 'queue' );
-
+    await new Promise( resolve => setTimeout( resolve, 10 ) );
     result.container.querySelectorAll( 'button' )[3].click();
+    await new Promise( resolve => setTimeout( resolve, 1 ) );
     expect( window.location.pathname.split( '/' )[1] ).toBe( 'settings' );
   });
 

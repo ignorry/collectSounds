@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Error component matches to snapshot 1`] = `
+exports[`Navigation component matches to snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
