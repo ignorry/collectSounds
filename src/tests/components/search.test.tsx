@@ -1,5 +1,5 @@
 import React from "react";
-import { render} from "@testing-library/react";
+import { render, waitFor, screen } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
 import { getTheme } from "../../lib/theme";
 import GlobalStyles from "../../lib/styled/global";
@@ -31,8 +31,9 @@ describe( 'search component', () => {
       { wrapper: AllTheProviders }
     );
 
-    await new Promise( resolve => setTimeout( resolve, 300 ) );
-
-    expect( result ).toMatchSnapshot();
+    await waitFor( () => {
+      expect( screen.getByText( 'Relevance' ) ).toBeDefined();
+      expect( result ).toMatchSnapshot();
+    });
   });
 });

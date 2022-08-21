@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
 import { getTheme } from "../../lib/theme";
 import GlobalStyles from "../../lib/styled/global";
@@ -46,20 +46,28 @@ describe( 'Navigation component', () => {
     await new Promise( resolve => setTimeout( resolve, 150 ) );
 
     result.container.querySelectorAll( 'button' )[0].click();
-    await new Promise( resolve => setTimeout( resolve, 10 ) );
-    expect( window.location.pathname.split( '/' )[1] ).toBe( 'search' );
-    await new Promise( resolve => setTimeout( resolve, 10 ) );
+
+    await waitFor( () => {
+      expect( window.location.pathname.split( '/' )[1] ).toBe( 'search' );
+    });
+
     result.container.querySelectorAll( 'button' )[1].click();
-    await new Promise( resolve => setTimeout( resolve, 10 ) );
-    expect( window.location.pathname.split( '/' )[1] ).toBe( 'saved' );
-    await new Promise( resolve => setTimeout( resolve, 10 ) );
+    
+    await waitFor( () => {
+      expect( window.location.pathname.split( '/' )[1] ).toBe( 'saved' );
+    });
+    
     result.container.querySelectorAll( 'button' )[2].click();
-    await new Promise( resolve => setTimeout( resolve, 10 ) );
-    expect( window.location.pathname.split( '/' )[1] ).toBe( 'queue' );
-    await new Promise( resolve => setTimeout( resolve, 10 ) );
+    
+    await waitFor( () => {
+      expect( window.location.pathname.split( '/' )[1] ).toBe( 'queue' );
+    });
+    
     result.container.querySelectorAll( 'button' )[3].click();
-    await new Promise( resolve => setTimeout( resolve, 1 ) );
-    expect( window.location.pathname.split( '/' )[1] ).toBe( 'settings' );
+    
+    await waitFor( () => {
+      expect( window.location.pathname.split( '/' )[1] ).toBe( 'settings' );
+    });
   });
 
   it( 'matches to snapshot', async () => {
