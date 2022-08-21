@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render} from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
 import { getTheme } from "../../lib/theme";
 import GlobalStyles from "../../lib/styled/global";
@@ -8,7 +8,7 @@ import store from "../../redux/index";
 import { LangProvider } from "../../lib/localization";
 import { BrowserRouter } from "react-router-dom";
 
-import Root from "../../components/screens/root";
+import Search from "../../components/screens/search";
 
 const AllTheProviders = ( { children }: any ) => (
   <Provider store={store}>
@@ -23,27 +23,15 @@ const AllTheProviders = ( { children }: any ) => (
   </Provider>
 );
 
-describe( 'root component', () => {
-  it( 'renders Component', async () => {
-    const result = render(
-      <Root />,
-      { wrapper: AllTheProviders }
-    );
-
-    await new Promise( resolve => setTimeout( resolve, 300 ) );
-
-    const button = result.container.querySelector( 'button' );
-
-    expect( button ).toBeTruthy();
-  });
+describe( 'search component', () => {
 
   it( 'matches to snapshot', async () => {
     const result = render(
-      <Root />,
+      <Search />,
       { wrapper: AllTheProviders }
     );
 
-    await new Promise( resolve => setTimeout( resolve, 300 ) );
+    await new Promise( resolve => setTimeout( resolve, 200 ) );
 
     expect( result ).toMatchSnapshot();
   });

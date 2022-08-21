@@ -1,0 +1,576 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search component matches to snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-bczRLJ dcAMCs"
+      >
+        <div>
+          <div
+            class="sc-himrzO bLhFNW"
+          >
+            <div
+              class="sc-crXcEl gyTpyo"
+            >
+              <div
+                class="sc-evZas ifwYNU"
+              >
+                <input
+                  class="sc-eCYdqJ xFWwA"
+                  placeholder="search or paste a link"
+                  value=""
+                />
+                <button
+                  class="sc-jqUVSM gxRnWx"
+                >
+                  <svg
+                    class="sc-jSMfEi dVuJCf"
+                  >
+                    <use
+                      href="icons.svg#search"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="sc-ftvSup imwcFg"
+              >
+                <button
+                  class="sc-iBkjds eFibse"
+                >
+                  <svg
+                    class="sc-jSMfEi gjhtMD"
+                  >
+                    <use
+                      href="icons.svg#filters"
+                    />
+                  </svg>
+                  <p
+                    class="sc-gKXOVf kcOvaw"
+                  >
+                    Filters
+                  </p>
+                </button>
+                <div
+                  class="sc-papXJ tlqlC"
+                >
+                  <div
+                    class="sc-kDDrLX EbWDM"
+                  >
+                    <button
+                      class="sc-jqUVSM gxRnWx"
+                    >
+                      <p
+                        class="sc-gKXOVf iFDOxD"
+                      >
+                        Relevance
+                      </p>
+                    </button>
+                    <ul
+                      class="sc-iqcoie kXtBqm"
+                    >
+                      <li>
+                        <button
+                          class="sc-jqUVSM gxRnWx"
+                        >
+                          <p
+                            class="sc-gKXOVf iFDOxD"
+                          >
+                            Date
+                          </p>
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="sc-jqUVSM gxRnWx"
+                        >
+                          <p
+                            class="sc-gKXOVf iFDOxD"
+                          >
+                            Rating
+                          </p>
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="sc-jqUVSM gxRnWx"
+                        >
+                          <p
+                            class="sc-gKXOVf iFDOxD"
+                          >
+                            Title
+                          </p>
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="sc-jqUVSM gxRnWx"
+                        >
+                          <p
+                            class="sc-gKXOVf iFDOxD"
+                          >
+                            Video count
+                          </p>
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="sc-jqUVSM gxRnWx"
+                        >
+                          <p
+                            class="sc-gKXOVf iFDOxD"
+                          >
+                            View count
+                          </p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="sc-kDDrLX EbWDM"
+                  >
+                    <button
+                      class="sc-jqUVSM gxRnWx"
+                    >
+                      <p
+                        class="sc-gKXOVf iFDOxD"
+                      >
+                        All
+                      </p>
+                    </button>
+                    <ul
+                      class="sc-iqcoie kXtBqm"
+                    >
+                      <li>
+                        <button
+                          class="sc-jqUVSM gxRnWx"
+                        >
+                          <p
+                            class="sc-gKXOVf iFDOxD"
+                          >
+                            Video
+                          </p>
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="sc-jqUVSM gxRnWx"
+                        >
+                          <p
+                            class="sc-gKXOVf iFDOxD"
+                          >
+                            Playlist
+                          </p>
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="sc-jqUVSM gxRnWx"
+                        >
+                          <p
+                            class="sc-gKXOVf iFDOxD"
+                          >
+                            Channel
+                          </p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="sc-kDDrLX EbWDM"
+                  >
+                    <button
+                      class="sc-jqUVSM gxRnWx"
+                    >
+                      <p
+                        class="sc-gKXOVf iFDOxD"
+                      >
+                        Any
+                      </p>
+                    </button>
+                    <ul
+                      class="sc-iqcoie kXtBqm"
+                    >
+                      <li>
+                        <button
+                          class="sc-jqUVSM gxRnWx"
+                        >
+                          <p
+                            class="sc-gKXOVf iFDOxD"
+                          >
+                            Long
+                          </p>
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="sc-jqUVSM gxRnWx"
+                        >
+                          <p
+                            class="sc-gKXOVf iFDOxD"
+                          >
+                            Medium
+                          </p>
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          class="sc-jqUVSM gxRnWx"
+                        >
+                          <p
+                            class="sc-gKXOVf iFDOxD"
+                          >
+                            Short
+                          </p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-gXmSlM ccwRMo"
+          >
+            <div
+              class="sc-cCsOjp bgWZeL"
+            >
+              <div
+                class="sc-gsnTZi hpCOUh"
+              >
+                <svg
+                  class="sc-dkzDqf kmidNr"
+                  viewBox="25 25 50 50"
+                >
+                  <circle
+                    class="sc-hKMtZM ijPyFt"
+                    cx="50"
+                    cy="50"
+                    fill="none"
+                    r="20"
+                    stroke-miterlimit="10"
+                    stroke-width="5"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-bczRLJ dcAMCs"
+    >
+      <div>
+        <div
+          class="sc-himrzO bLhFNW"
+        >
+          <div
+            class="sc-crXcEl gyTpyo"
+          >
+            <div
+              class="sc-evZas ifwYNU"
+            >
+              <input
+                class="sc-eCYdqJ xFWwA"
+                placeholder="search or paste a link"
+                value=""
+              />
+              <button
+                class="sc-jqUVSM gxRnWx"
+              >
+                <svg
+                  class="sc-jSMfEi dVuJCf"
+                >
+                  <use
+                    href="icons.svg#search"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="sc-ftvSup imwcFg"
+            >
+              <button
+                class="sc-iBkjds eFibse"
+              >
+                <svg
+                  class="sc-jSMfEi gjhtMD"
+                >
+                  <use
+                    href="icons.svg#filters"
+                  />
+                </svg>
+                <p
+                  class="sc-gKXOVf kcOvaw"
+                >
+                  Filters
+                </p>
+              </button>
+              <div
+                class="sc-papXJ tlqlC"
+              >
+                <div
+                  class="sc-kDDrLX EbWDM"
+                >
+                  <button
+                    class="sc-jqUVSM gxRnWx"
+                  >
+                    <p
+                      class="sc-gKXOVf iFDOxD"
+                    >
+                      Relevance
+                    </p>
+                  </button>
+                  <ul
+                    class="sc-iqcoie kXtBqm"
+                  >
+                    <li>
+                      <button
+                        class="sc-jqUVSM gxRnWx"
+                      >
+                        <p
+                          class="sc-gKXOVf iFDOxD"
+                        >
+                          Date
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-jqUVSM gxRnWx"
+                      >
+                        <p
+                          class="sc-gKXOVf iFDOxD"
+                        >
+                          Rating
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-jqUVSM gxRnWx"
+                      >
+                        <p
+                          class="sc-gKXOVf iFDOxD"
+                        >
+                          Title
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-jqUVSM gxRnWx"
+                      >
+                        <p
+                          class="sc-gKXOVf iFDOxD"
+                        >
+                          Video count
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-jqUVSM gxRnWx"
+                      >
+                        <p
+                          class="sc-gKXOVf iFDOxD"
+                        >
+                          View count
+                        </p>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="sc-kDDrLX EbWDM"
+                >
+                  <button
+                    class="sc-jqUVSM gxRnWx"
+                  >
+                    <p
+                      class="sc-gKXOVf iFDOxD"
+                    >
+                      All
+                    </p>
+                  </button>
+                  <ul
+                    class="sc-iqcoie kXtBqm"
+                  >
+                    <li>
+                      <button
+                        class="sc-jqUVSM gxRnWx"
+                      >
+                        <p
+                          class="sc-gKXOVf iFDOxD"
+                        >
+                          Video
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-jqUVSM gxRnWx"
+                      >
+                        <p
+                          class="sc-gKXOVf iFDOxD"
+                        >
+                          Playlist
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-jqUVSM gxRnWx"
+                      >
+                        <p
+                          class="sc-gKXOVf iFDOxD"
+                        >
+                          Channel
+                        </p>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="sc-kDDrLX EbWDM"
+                >
+                  <button
+                    class="sc-jqUVSM gxRnWx"
+                  >
+                    <p
+                      class="sc-gKXOVf iFDOxD"
+                    >
+                      Any
+                    </p>
+                  </button>
+                  <ul
+                    class="sc-iqcoie kXtBqm"
+                  >
+                    <li>
+                      <button
+                        class="sc-jqUVSM gxRnWx"
+                      >
+                        <p
+                          class="sc-gKXOVf iFDOxD"
+                        >
+                          Long
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-jqUVSM gxRnWx"
+                      >
+                        <p
+                          class="sc-gKXOVf iFDOxD"
+                        >
+                          Medium
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-jqUVSM gxRnWx"
+                      >
+                        <p
+                          class="sc-gKXOVf iFDOxD"
+                        >
+                          Short
+                        </p>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-gXmSlM ccwRMo"
+        >
+          <div
+            class="sc-cCsOjp bgWZeL"
+          >
+            <div
+              class="sc-gsnTZi hpCOUh"
+            >
+              <svg
+                class="sc-dkzDqf kmidNr"
+                viewBox="25 25 50 50"
+              >
+                <circle
+                  class="sc-hKMtZM ijPyFt"
+                  cx="50"
+                  cy="50"
+                  fill="none"
+                  r="20"
+                  stroke-miterlimit="10"
+                  stroke-width="5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
