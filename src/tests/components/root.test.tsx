@@ -30,7 +30,7 @@ describe( 'root component', () => {
       { wrapper: AllTheProviders }
     );
 
-    await new Promise( resolve => setTimeout( resolve, 100 ) );
+    await new Promise( resolve => setTimeout( resolve, 200 ) );
 
     const button = result.container.querySelector( 'button' );
 
@@ -43,7 +43,7 @@ describe( 'root component', () => {
       { wrapper: AllTheProviders }
     );
 
-    await new Promise( resolve => setTimeout( resolve, 100 ) );
+    await new Promise( resolve => setTimeout( resolve, 200 ) );
 
     expect( result ).toMatchSnapshot();
   });
