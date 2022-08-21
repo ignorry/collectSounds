@@ -31,7 +31,7 @@ describe( 'search component', () => {
       { wrapper: AllTheProviders }
     );
 
-    await new Promise( resolve => setTimeout( resolve, 200 ) );
+    await new Promise( resolve => setTimeout( resolve, 300 ) );
 
     expect( result ).toMatchSnapshot();
   });
