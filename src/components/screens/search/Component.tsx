@@ -41,11 +41,8 @@ const Component: React.FC = () => {
   }, [queries]);
 
   useEffect( () => {
-    console.log( 'useEffect works' );
     getPopularVideos().then( items => setRes( items.filter( item => item) ) );
-  }, [])
-
-  console.log( 'res : ', res );
+  }, []);
 
   const list = res ? <List items={ res.map( item => ({
     content: item,
