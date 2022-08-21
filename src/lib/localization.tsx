@@ -10,7 +10,8 @@ export type Page =
   'video' |
   'playlist' |
   'channel' |
-  'synchronization';
+  'synchronization' |
+  'root';
 
 /**
  * import specific translation file
