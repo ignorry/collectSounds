@@ -1,0 +1,568 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search Component matches to snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          class="sc-jIZahH bbnbdZ"
+        >
+          <div
+            class="sc-papXJ kEIprk"
+          >
+            <div
+              class="sc-jqUVSM hWOGQF"
+            >
+              <input
+                class="sc-bczRLJ dldCsv"
+                placeholder="search or paste a link"
+                value=""
+              />
+              <button
+                class="sc-gKXOVf feeGsc"
+              >
+                <svg
+                  class="sc-gsnTZi dRHeag"
+                >
+                  <use
+                    href="icons.svg#search"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="sc-eCYdqJ FxPOW"
+            >
+              <button
+                class="sc-hKMtZM fntRFW"
+              >
+                <svg
+                  class="sc-gsnTZi gSmFuM"
+                >
+                  <use
+                    href="icons.svg#filters"
+                  />
+                </svg>
+                <p
+                  class="sc-dkzDqf krpKaR"
+                >
+                  Filters
+                </p>
+              </button>
+              <div
+                class="sc-jSMfEi jmXqhj"
+              >
+                <div
+                  class="sc-iBkjds envIss"
+                >
+                  <button
+                    class="sc-gKXOVf feeGsc"
+                  >
+                    <p
+                      class="sc-dkzDqf QiTYm"
+                    >
+                      Relevance
+                    </p>
+                  </button>
+                  <ul
+                    class="sc-ftvSup hiVoSg"
+                  >
+                    <li>
+                      <button
+                        class="sc-gKXOVf feeGsc"
+                      >
+                        <p
+                          class="sc-dkzDqf QiTYm"
+                        >
+                          Date
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-gKXOVf feeGsc"
+                      >
+                        <p
+                          class="sc-dkzDqf QiTYm"
+                        >
+                          Rating
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-gKXOVf feeGsc"
+                      >
+                        <p
+                          class="sc-dkzDqf QiTYm"
+                        >
+                          Title
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-gKXOVf feeGsc"
+                      >
+                        <p
+                          class="sc-dkzDqf QiTYm"
+                        >
+                          Video count
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-gKXOVf feeGsc"
+                      >
+                        <p
+                          class="sc-dkzDqf QiTYm"
+                        >
+                          View count
+                        </p>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="sc-iBkjds envIss"
+                >
+                  <button
+                    class="sc-gKXOVf feeGsc"
+                  >
+                    <p
+                      class="sc-dkzDqf QiTYm"
+                    >
+                      All
+                    </p>
+                  </button>
+                  <ul
+                    class="sc-ftvSup hiVoSg"
+                  >
+                    <li>
+                      <button
+                        class="sc-gKXOVf feeGsc"
+                      >
+                        <p
+                          class="sc-dkzDqf QiTYm"
+                        >
+                          Video
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-gKXOVf feeGsc"
+                      >
+                        <p
+                          class="sc-dkzDqf QiTYm"
+                        >
+                          Playlist
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-gKXOVf feeGsc"
+                      >
+                        <p
+                          class="sc-dkzDqf QiTYm"
+                        >
+                          Channel
+                        </p>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="sc-iBkjds envIss"
+                >
+                  <button
+                    class="sc-gKXOVf feeGsc"
+                  >
+                    <p
+                      class="sc-dkzDqf QiTYm"
+                    >
+                      Any
+                    </p>
+                  </button>
+                  <ul
+                    class="sc-ftvSup hiVoSg"
+                  >
+                    <li>
+                      <button
+                        class="sc-gKXOVf feeGsc"
+                      >
+                        <p
+                          class="sc-dkzDqf QiTYm"
+                        >
+                          Long
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-gKXOVf feeGsc"
+                      >
+                        <p
+                          class="sc-dkzDqf QiTYm"
+                        >
+                          Medium
+                        </p>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="sc-gKXOVf feeGsc"
+                      >
+                        <p
+                          class="sc-dkzDqf QiTYm"
+                        >
+                          Short
+                        </p>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-himrzO fFHvJr"
+        >
+          <div
+            class="sc-gXmSlM jicgWJ"
+          >
+            <div
+              class="sc-bZkfAO jqINJn"
+            >
+              <svg
+                class="sc-kLLXSd lkUvQx"
+                viewBox="25 25 50 50"
+              >
+                <circle
+                  class="sc-ikZpkk hkhsXg"
+                  cx="50"
+                  cy="50"
+                  fill="none"
+                  r="20"
+                  stroke-miterlimit="10"
+                  stroke-width="5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        class="sc-jIZahH bbnbdZ"
+      >
+        <div
+          class="sc-papXJ kEIprk"
+        >
+          <div
+            class="sc-jqUVSM hWOGQF"
+          >
+            <input
+              class="sc-bczRLJ dldCsv"
+              placeholder="search or paste a link"
+              value=""
+            />
+            <button
+              class="sc-gKXOVf feeGsc"
+            >
+              <svg
+                class="sc-gsnTZi dRHeag"
+              >
+                <use
+                  href="icons.svg#search"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="sc-eCYdqJ FxPOW"
+          >
+            <button
+              class="sc-hKMtZM fntRFW"
+            >
+              <svg
+                class="sc-gsnTZi gSmFuM"
+              >
+                <use
+                  href="icons.svg#filters"
+                />
+              </svg>
+              <p
+                class="sc-dkzDqf krpKaR"
+              >
+                Filters
+              </p>
+            </button>
+            <div
+              class="sc-jSMfEi jmXqhj"
+            >
+              <div
+                class="sc-iBkjds envIss"
+              >
+                <button
+                  class="sc-gKXOVf feeGsc"
+                >
+                  <p
+                    class="sc-dkzDqf QiTYm"
+                  >
+                    Relevance
+                  </p>
+                </button>
+                <ul
+                  class="sc-ftvSup hiVoSg"
+                >
+                  <li>
+                    <button
+                      class="sc-gKXOVf feeGsc"
+                    >
+                      <p
+                        class="sc-dkzDqf QiTYm"
+                      >
+                        Date
+                      </p>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="sc-gKXOVf feeGsc"
+                    >
+                      <p
+                        class="sc-dkzDqf QiTYm"
+                      >
+                        Rating
+                      </p>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="sc-gKXOVf feeGsc"
+                    >
+                      <p
+                        class="sc-dkzDqf QiTYm"
+                      >
+                        Title
+                      </p>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="sc-gKXOVf feeGsc"
+                    >
+                      <p
+                        class="sc-dkzDqf QiTYm"
+                      >
+                        Video count
+                      </p>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="sc-gKXOVf feeGsc"
+                    >
+                      <p
+                        class="sc-dkzDqf QiTYm"
+                      >
+                        View count
+                      </p>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="sc-iBkjds envIss"
+              >
+                <button
+                  class="sc-gKXOVf feeGsc"
+                >
+                  <p
+                    class="sc-dkzDqf QiTYm"
+                  >
+                    All
+                  </p>
+                </button>
+                <ul
+                  class="sc-ftvSup hiVoSg"
+                >
+                  <li>
+                    <button
+                      class="sc-gKXOVf feeGsc"
+                    >
+                      <p
+                        class="sc-dkzDqf QiTYm"
+                      >
+                        Video
+                      </p>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="sc-gKXOVf feeGsc"
+                    >
+                      <p
+                        class="sc-dkzDqf QiTYm"
+                      >
+                        Playlist
+                      </p>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="sc-gKXOVf feeGsc"
+                    >
+                      <p
+                        class="sc-dkzDqf QiTYm"
+                      >
+                        Channel
+                      </p>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="sc-iBkjds envIss"
+              >
+                <button
+                  class="sc-gKXOVf feeGsc"
+                >
+                  <p
+                    class="sc-dkzDqf QiTYm"
+                  >
+                    Any
+                  </p>
+                </button>
+                <ul
+                  class="sc-ftvSup hiVoSg"
+                >
+                  <li>
+                    <button
+                      class="sc-gKXOVf feeGsc"
+                    >
+                      <p
+                        class="sc-dkzDqf QiTYm"
+                      >
+                        Long
+                      </p>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="sc-gKXOVf feeGsc"
+                    >
+                      <p
+                        class="sc-dkzDqf QiTYm"
+                      >
+                        Medium
+                      </p>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="sc-gKXOVf feeGsc"
+                    >
+                      <p
+                        class="sc-dkzDqf QiTYm"
+                      >
+                        Short
+                      </p>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-himrzO fFHvJr"
+      >
+        <div
+          class="sc-gXmSlM jicgWJ"
+        >
+          <div
+            class="sc-bZkfAO jqINJn"
+          >
+            <svg
+              class="sc-kLLXSd lkUvQx"
+              viewBox="25 25 50 50"
+            >
+              <circle
+                class="sc-ikZpkk hkhsXg"
+                cx="50"
+                cy="50"
+                fill="none"
+                r="20"
+                stroke-miterlimit="10"
+                stroke-width="5"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

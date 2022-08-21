@@ -1,3 +1,20 @@
 {
-  "pageName": "search"
+  "pageName": "search",
+  "input": "search or paste a link",
+  "emptyRes": "there's nothing",
+  "filters": "Filters",
+  "date": "Date",
+  "rating": "Rating",
+  "relevance": "Relevance",
+  "title": "Title",
+  "videoCount": "Video count",
+  "viewCount": "View count",
+  "all": "All",
+  "video": "Video",
+  "playlist": "Playlist",
+  "channel": "Channel",
+  "any": "Any",
+  "long": "Long",
+  "medium": "Medium",
+  "short": "Short"
 }
