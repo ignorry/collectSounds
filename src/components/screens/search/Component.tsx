@@ -34,6 +34,11 @@ const Component: React.FC = () => {
   const handleSearch = ( queries: SearchFilters ) => {
     setQueries( queries );
 
+    if ( /^https:\/\/www.youtube.com\/watch\?v=/.test( queries.q ) )
+      navigate( `/search/video/${ queries.q.split( '=' )[1].split( '&' )[0] }` );
+    if ( /^https:\/\/www.youtube.com\/playlist\?list=/.test( queries.q ) )
+      navigate( `/search/playlist/${ queries.q.split( '=' )[1].split( '&' )[0] }` );
+
     const stringified = queryString.stringify( queries );
     window.history.pushState('', '', `${ window.location.origin }${ window.location.pathname }?${ stringified }` );
 

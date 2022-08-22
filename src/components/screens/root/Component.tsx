@@ -6,6 +6,7 @@ import Navigation from "./components/Navigation";
 import Error from "./components/Error";
 
 import Search from "../search";
+import Video from "../video";
 
 export const Content = styled.div`
   display: flex;
@@ -42,6 +43,7 @@ const Component: React.FC = () => (
     </Nav>
     <Routes>
       <Route path='/' element={ <Search/> }/>
+      <Route path='search/video/:id' element={ <Video/> }/>
       <Route path='search' element={ <Search/> }/>
     </Routes>
     <Error />
