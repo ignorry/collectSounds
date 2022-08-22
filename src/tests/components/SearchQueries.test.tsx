@@ -28,7 +28,7 @@ const AllTheProviders = ( { children }: any ) => (
 describe( 'SearchQueries Component', () => {
   it( 'renders correctly', async () => {
     const result = render(
-      <SearchQueries callback={() => {}}/>,
+      <SearchQueries queries={{}} callback={() => {}}/>,
       { wrapper: AllTheProviders }
     );
 
@@ -43,7 +43,26 @@ describe( 'SearchQueries Component', () => {
     const callback = jest.fn();
 
     const result = render(
-      <SearchQueries callback={callback}/>,
+      <SearchQueries queries={{}} callback={callback}/>,
+      { wrapper: AllTheProviders }
+    );
+
+    await new Promise( resolve => setTimeout( resolve, 100 ) );
+
+    result.container.querySelector( 'button' ).click();
+
+    expect( callback ).toBeCalled();
+  });
+
+  it( 'handles click on search button with specified filters', async () => {
+    const callback = jest.fn();
+
+    const result = render(
+      <SearchQueries queries={{
+        q: 'q',
+        type: 'video',
+        videoDuration: 'short'
+      }} callback={callback}/>,
       { wrapper: AllTheProviders }
     );
 
@@ -56,7 +75,7 @@ describe( 'SearchQueries Component', () => {
 
   it( 'matches to snapshot', async () => {
     const result = render(
-      <SearchQueries callback={() => {}} />,
+      <SearchQueries queries={{}} callback={() => {}} />,
       { wrapper: AllTheProviders }
     );
 

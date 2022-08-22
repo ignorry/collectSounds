@@ -4,6 +4,7 @@ import { getPopularVideos, getSearch, SearchFilters } from "../../../lib/api";
 import { Content } from "../../../models/content";
 import { useNavigate } from "react-router-dom";
 import { useIntl } from "react-intl";
+import queryString from "query-string";
 
 import SearchQueries from "./components/SearchQueries";
 import List, { Props as ListProps } from "../../content/List";
@@ -27,11 +28,15 @@ const Component: React.FC = () => {
   const navigate = useNavigate();
   const intl = useIntl();
 
-  const [queries, setQueries] = useState<SearchFilters | null>( null );
+  const [queries, setQueries] = useState<SearchFilters | null>( queryString.parse( location.search ) );
   const [res, setRes] = useState<Array<Content> | null>( null );
 
   const handleSearch = ( queries: SearchFilters ) => {
     setQueries( queries );
+
+    const stringified = queryString.stringify( queries );
+    window.history.pushState('', '', `${ window.location.origin }${ window.location.pathname }?${ stringified }` );
+
     setRes( null );
   }
 
@@ -41,7 +46,10 @@ const Component: React.FC = () => {
   }, [queries]);
 
   useEffect( () => {
-    getPopularVideos().then( items => setRes( items.filter( item => item) ) );
+    if ( queries )
+      getSearch( queries ).then( items => setRes( items.filter( item => item ) ) );
+    else
+      getPopularVideos().then( items => setRes( items.filter( item => item) ) );
   }, []);
 
   const list = res ? <List items={ res.map( item => ({
@@ -52,7 +60,7 @@ const Component: React.FC = () => {
   return (
     <div>
       <SearchContainer>
-        <SearchQueries callback={handleSearch}/>
+        <SearchQueries queries={ queries } callback={handleSearch}/>
       </SearchContainer>
       <ListContainer>
         { list }

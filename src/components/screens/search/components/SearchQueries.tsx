@@ -27,16 +27,22 @@ const InputWrapper = styled.div`
   }
 `;
 
+/**
+ * @typedef Props
+ * @prop {Function} callback - calls with object of filters
+ * @prop {Object} queries - some object of queries, used on first render
+ */
 export type Props = {
   callback: Function;
+  queries: any;
 }
 
 const SearchQueries: React.FC<Props> = ( props: Props ) => {
   const intl = useIntl();
-  const [q, setQ] = useState<SearchFilters["q"] | null>( null );
-  const [order, setOrder] = useState<SearchFilters["order"]>( 'relevance' );
-  const [type, setType] = useState<SearchFilters["type"] | 'all'>( 'all' );
-  const [duration, setDuration] = useState<SearchFilters["videoDuration"] | 'any'>( 'any' );
+  const [q, setQ] = useState<SearchFilters["q"] | null>( props.queries?.q || null );
+  const [order, setOrder] = useState<SearchFilters["order"]>( props.queries?.order || 'relevance' );
+  const [type, setType] = useState<SearchFilters["type"] | 'all'>( props.queries?.type || 'all' );
+  const [duration, setDuration] = useState<SearchFilters["videoDuration"] | 'any'>( props.queries?.videoDuration || 'any' );
 
   const handleSearch = () => {
     const filters: SearchFilters = {
