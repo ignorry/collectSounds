@@ -15,7 +15,7 @@ Object {
             class="sc-bczRLJ bygNPW"
           >
             <use
-              href="icons.svg#logo"
+              href="http://localhost/icons.svg#logo"
             />
           </svg>
           <p
@@ -45,7 +45,7 @@ Object {
           class="sc-bczRLJ bygNPW"
         >
           <use
-            href="icons.svg#logo"
+            href="http://localhost/icons.svg#logo"
           />
         </svg>
         <p

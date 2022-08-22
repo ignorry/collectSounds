@@ -27,7 +27,7 @@ Object {
               class="sc-gsnTZi gSmFuM"
             >
               <use
-                href="icons.svg#playlistThumbnail"
+                href="http://localhost/icons.svg#playlistThumbnail"
               />
             </svg>
           </span>
@@ -80,7 +80,7 @@ Object {
             class="sc-gsnTZi gSmFuM"
           >
             <use
-              href="icons.svg#playlistThumbnail"
+              href="http://localhost/icons.svg#playlistThumbnail"
             />
           </svg>
         </span>

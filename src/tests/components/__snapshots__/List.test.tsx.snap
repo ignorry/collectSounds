@@ -88,7 +88,7 @@ Object {
                 class="sc-jqUVSM gEzVvj"
               >
                 <use
-                  href="icons.svg#playlistThumbnail"
+                  href="http://localhost/icons.svg#playlistThumbnail"
                 />
               </svg>
             </span>
@@ -228,7 +228,7 @@ Object {
               class="sc-jqUVSM gEzVvj"
             >
               <use
-                href="icons.svg#playlistThumbnail"
+                href="http://localhost/icons.svg#playlistThumbnail"
               />
             </svg>
           </span>

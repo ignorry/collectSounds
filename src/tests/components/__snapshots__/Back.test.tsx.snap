@@ -12,7 +12,7 @@ Object {
           class="sc-bczRLJ bygNPW"
         >
           <use
-            href="icons.svg#back"
+            href="http://localhost/icons.svg#back"
           />
         </svg>
       </button>
@@ -26,7 +26,7 @@ Object {
         class="sc-bczRLJ bygNPW"
       >
         <use
-          href="icons.svg#back"
+          href="http://localhost/icons.svg#back"
         />
       </svg>
     </button>

@@ -24,7 +24,7 @@ Object {
                   class="sc-eCYdqJ LTkuR"
                 >
                   <use
-                    href="icons.svg#search"
+                    href="http://localhost/icons.svg#search"
                   />
                 </svg>
               </button>
@@ -35,7 +35,7 @@ Object {
                   class="sc-eCYdqJ jTkpp"
                 >
                   <use
-                    href="icons.svg#favorite"
+                    href="http://localhost/icons.svg#favorite"
                   />
                 </svg>
               </button>
@@ -46,7 +46,7 @@ Object {
                   class="sc-eCYdqJ jTkpp"
                 >
                   <use
-                    href="icons.svg#queue"
+                    href="http://localhost/icons.svg#queue"
                   />
                 </svg>
               </button>
@@ -57,7 +57,7 @@ Object {
                   class="sc-eCYdqJ jTkpp"
                 >
                   <use
-                    href="icons.svg#settings"
+                    href="http://localhost/icons.svg#settings"
                   />
                 </svg>
               </button>
@@ -88,7 +88,7 @@ Object {
                         class="sc-eCYdqJ LTkuR"
                       >
                         <use
-                          href="icons.svg#search"
+                          href="http://localhost/icons.svg#search"
                         />
                       </svg>
                     </button>
@@ -103,7 +103,7 @@ Object {
                         class="sc-eCYdqJ jTkpp"
                       >
                         <use
-                          href="icons.svg#filters"
+                          href="http://localhost/icons.svg#filters"
                         />
                       </svg>
                       <p
@@ -343,7 +343,7 @@ Object {
                 class="sc-eCYdqJ LTkuR"
               >
                 <use
-                  href="icons.svg#search"
+                  href="http://localhost/icons.svg#search"
                 />
               </svg>
             </button>
@@ -354,7 +354,7 @@ Object {
                 class="sc-eCYdqJ jTkpp"
               >
                 <use
-                  href="icons.svg#favorite"
+                  href="http://localhost/icons.svg#favorite"
                 />
               </svg>
             </button>
@@ -365,7 +365,7 @@ Object {
                 class="sc-eCYdqJ jTkpp"
               >
                 <use
-                  href="icons.svg#queue"
+                  href="http://localhost/icons.svg#queue"
                 />
               </svg>
             </button>
@@ -376,7 +376,7 @@ Object {
                 class="sc-eCYdqJ jTkpp"
               >
                 <use
-                  href="icons.svg#settings"
+                  href="http://localhost/icons.svg#settings"
                 />
               </svg>
             </button>
@@ -407,7 +407,7 @@ Object {
                       class="sc-eCYdqJ LTkuR"
                     >
                       <use
-                        href="icons.svg#search"
+                        href="http://localhost/icons.svg#search"
                       />
                     </svg>
                   </button>
@@ -422,7 +422,7 @@ Object {
                       class="sc-eCYdqJ jTkpp"
                     >
                       <use
-                        href="icons.svg#filters"
+                        href="http://localhost/icons.svg#filters"
                       />
                     </svg>
                     <p

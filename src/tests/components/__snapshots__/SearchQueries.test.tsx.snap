@@ -23,7 +23,7 @@ Object {
               class="sc-gsnTZi dRHeag"
             >
               <use
-                href="icons.svg#search"
+                href="http://localhost/icons.svg#search"
               />
             </svg>
           </button>
@@ -38,7 +38,7 @@ Object {
               class="sc-gsnTZi gSmFuM"
             >
               <use
-                href="icons.svg#filters"
+                href="http://localhost/icons.svg#filters"
               />
             </svg>
             <p
@@ -246,7 +246,7 @@ Object {
             class="sc-gsnTZi dRHeag"
           >
             <use
-              href="icons.svg#search"
+              href="http://localhost/icons.svg#search"
             />
           </svg>
         </button>
@@ -261,7 +261,7 @@ Object {
             class="sc-gsnTZi gSmFuM"
           >
             <use
-              href="icons.svg#filters"
+              href="http://localhost/icons.svg#filters"
             />
           </svg>
           <p

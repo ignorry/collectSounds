@@ -12,7 +12,7 @@ Object {
           class="sc-bczRLJ bygNPW"
         >
           <use
-            href="icons.svg#icon"
+            href="http://localhost/icons.svg#icon"
           />
         </svg>
         <p
@@ -31,7 +31,7 @@ Object {
         class="sc-bczRLJ bygNPW"
       >
         <use
-          href="icons.svg#icon"
+          href="http://localhost/icons.svg#icon"
         />
       </svg>
       <p
