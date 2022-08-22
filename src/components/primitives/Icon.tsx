@@ -20,7 +20,7 @@ export type Props = {
 
 const Icon: React.FC<Props> = ( props: Props ) =>
   <Svg active={ props.active }>
-    <use href={ `icons.svg#${ props.name }` }/>
+    <use href={ `${ window.location.origin }/icons.svg#${ props.name }` }/>
   </Svg>;
 
 export default Icon;
