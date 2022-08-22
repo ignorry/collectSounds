@@ -6,10 +6,29 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-hKMtZM eYrunZ"
+        class="sc-hKMtZM fGVoVJ"
       >
         <div
-          class="sc-eCYdqJ dqRlgr"
+          class="sc-jSMfEi gOnElc"
+        >
+          <button
+            class="sc-dkzDqf fcjXBB"
+          >
+            <svg
+              class="sc-bczRLJ bygNPW"
+            >
+              <use
+                href="http://localhost/icons.svg#back"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="sc-eCYdqJ jCVaEc"
+      >
+        <div
+          class="sc-jSMfEi gOnElc"
         >
           <button
             class="sc-dkzDqf fcjXBB"
@@ -28,10 +47,29 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-hKMtZM eYrunZ"
+      class="sc-hKMtZM fGVoVJ"
     >
       <div
-        class="sc-eCYdqJ dqRlgr"
+        class="sc-jSMfEi gOnElc"
+      >
+        <button
+          class="sc-dkzDqf fcjXBB"
+        >
+          <svg
+            class="sc-bczRLJ bygNPW"
+          >
+            <use
+              href="http://localhost/icons.svg#back"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      class="sc-eCYdqJ jCVaEc"
+    >
+      <div
+        class="sc-jSMfEi gOnElc"
       >
         <button
           class="sc-dkzDqf fcjXBB"
