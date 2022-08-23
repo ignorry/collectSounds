@@ -16,7 +16,7 @@ const Container = styled.div`
   }
 
   @media ${ ({ theme }) => theme.media.small } {
-    height: ${ ({ theme }) => `calc(100% - ${ theme.gaps.big*2 + theme.iconSize }rem)` };
+    height: ${ ({ theme }) => `calc(100% - ${ theme.gaps.small*2 + theme.iconSize }rem)` };
   }
 `;
 

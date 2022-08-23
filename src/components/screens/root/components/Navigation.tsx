@@ -10,7 +10,7 @@ export const Nav = styled.div`
   justify-content: flex-start;
   font-weight: bold;
   gap: ${ ({ theme }) => `${ theme.gaps.big }rem` };
-  padding: ${ ({ theme }) => `${ theme.gaps.big }rem` };
+  padding: ${ ({ theme }) => `${ theme.gaps.small }rem` };
   background: ${ ({ theme }) => theme.colors.bgSecondary };
 
   @media ${ ({ theme }) => theme.media.small } {
