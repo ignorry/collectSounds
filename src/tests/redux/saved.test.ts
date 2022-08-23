@@ -25,28 +25,21 @@ describe( 'test saved slice', () => {
 
     const data = store.getState().saved.data;
 
-    const expected = new Map();
-    expected.set( 'id', { type: 'video', id: 'id' } );
-
-    expect( data ).toStrictEqual( expected );
+    expect( data ).toStrictEqual( [{ id: 'id', item: { type: 'video', id: 'id' } } ] );
   });
 
   it( 'deleteItem', () => {
-    const videos = new Map();
-    videos.set( 'toDel', { type: 'video', id: 'toDel' } );
-    const playlists = new Map();
-    playlists.set( 'playlist', { id: 'playlist', type: 'playlist', videos: videos} as Playlist );
+    const videos = [{ id: 'toDel', item: { type: 'video', id: 'toDel' } }];
+    const playlists = [{ id: 'playlist', item: { id: 'playlist', type: 'playlist', videos: videos } as Playlist }];
     
     store.dispatch( addItem([ { type: 'channel', id: 'ch', playlists: playlists } as Channel ]) );
     store.dispatch( deleteItem([ 'id', 'toDel' ]) );
 
     const data = store.getState().saved.data;
-    const deleted = Array.from( store.getState().saved.deleted, item => item[0] );
+    const deleted = store.getState().saved.deleted.map( item => item.id );
 
-    const expected = new Map();
-    const newPlaylists = new Map();
-    newPlaylists.set( 'playlist', { id: 'playlist', type: 'playlist', videos: new Map()} as Playlist );
-    expected.set( 'ch', { id: 'ch', type: 'channel', playlists: newPlaylists } );
+    const newPlaylists = [{ id: 'playlist', item: { id: 'playlist', type: 'playlist', videos: []} as Playlist }];
+    const expected = [{ id: 'ch', item: { id: 'ch', type: 'channel', playlists: newPlaylists } }];
 
     expect( data ).toStrictEqual( expected );
     expect( deleted ).toStrictEqual( [ 'id', 'toDel' ] );
@@ -60,12 +53,11 @@ describe( 'test saved slice', () => {
 
     const data = store.getState().saved.data;
 
-    const expected = new Map();
-    const videos = new Map();
-    videos.set( 'vid', { id: 'vid', type: 'video' } as Video );
-    const playlists = new Map();
-    playlists.set( 'playlist', { id: 'playlist', type: 'playlist', videos: new Map() } as Playlist );
-    expected.set( 'ch', { id: 'ch', type: 'channel', playlists: playlists, videos: videos } );
+    const expected = [{ id: 'ch', item: { id: 'ch', type: 'channel', playlists: [{
+      id: 'playlist', item: { id: 'playlist', type: 'playlist', videos: [] } as Playlist
+    }], videos: [{
+      id: 'vid', item: { id: 'vid', type: 'video' } as Video
+    }] } }];
 
     expect( data ).toStrictEqual( expected );
   });
@@ -80,12 +72,11 @@ describe( 'test saved slice', () => {
 
     const data = store.getState().saved.data;
 
-    const expected = new Map();
-    const videos = new Map();
-    videos.set( 'vid', { id: 'vid', type: 'video' } as Video );
-    const playlists = new Map();
-    playlists.set( 'playlist', { id: 'playlist', type: 'playlist', videos: videos} as Playlist );
-    expected.set( 'ch', { id: 'ch', type: 'channel', playlists: playlists, videos: new Map() } );
+    const expected = [{ id: 'ch', item: { id: 'ch', type: 'channel', playlists: [{
+      id: 'playlist', item: { id: 'playlist', type: 'playlist', videos: [{
+        id: 'vid', item: { id: 'vid', type: 'video' } as Video
+      }]} as Playlist
+    }], videos: [] as Array<any> } }];
 
     expect( data ).toStrictEqual( expected );
   });
@@ -100,10 +91,9 @@ describe( 'test saved slice', () => {
 
     const data = store.getState().saved.data;
 
-    const expected = new Map();
-    const playlists = new Map();
-    playlists.set( 'pl', { id: 'pl', type: 'playlist' } );
-    expected.set( 'ch', { id: 'ch', type: 'channel', playlists: playlists, videos: new Map() });
+    const expected = [{ id: 'ch', item: { id: 'ch', type: 'channel', playlists: [{
+      id: 'pl', item: { id: 'pl', type: 'playlist' }
+    }], videos: [] as Array<any> }}];
 
     expect( data ).toStrictEqual( expected );
   });
@@ -115,12 +105,11 @@ describe( 'test saved slice', () => {
 
     const data = store.getState().saved.data;
 
-    const expected = new Map();
-    const videos = new Map();
-    videos.set( 'vid', { id: 'vid', type: 'video', audioUrl: 'audio', lastModified: 1434319925275 } );
-    const playlists = new Map();
-    playlists.set( 'pl', { id: 'pl', type: 'playlist', videos: videos } );
-    expected.set( 'ch', { id: 'ch', type: 'channel', playlists: playlists, videos: new Map() });
+    const expected = [{ id: 'ch', item: { id: 'ch', type: 'channel', playlists: [{
+      id: 'pl', item: { id: 'pl', type: 'playlist', videos: [{
+        id: 'vid', item: { id: 'vid', type: 'video', audioUrl: 'audio', lastModified: 1434319925275 }
+      }] }
+    }], videos: [] as Array<any> }}];
 
     expect( data ).toStrictEqual( expected );
   });
@@ -133,10 +122,9 @@ describe( 'test saved slice', () => {
 
     const data = store.getState().saved.data;
 
-    const expected = new Map();
-    const videos = new Map();
-    videos.set( 'vid', { id: 'vid', type: 'video', audioUrl: 'audio', lastModified: 1434319925275 } );
-    expected.set( 'ch', { id: 'ch', type: 'channel', playlists: new Map(), videos: videos });
+    const expected = [{ id: 'ch', item: { id: 'ch', type: 'channel', playlists: [] as Array<any>, videos: [{
+      id: 'vid', item: { id: 'vid', type: 'video', audioUrl: 'audio', lastModified: 1434319925275 }
+    }] }}];
 
     expect( data ).toStrictEqual( expected );
   });
@@ -150,8 +138,7 @@ describe( 'test saved slice', () => {
 
     const data = store.getState().saved.data;
 
-    const expected = new Map();
-    expected.set( 'vid', { id: 'vid', type: 'video', audioUrl: 'audio', lastModified: 1434319925275 } );
+    const expected = [{ id: 'vid', item: { id: 'vid', type: 'video', audioUrl: 'audio', lastModified: 1434319925275 } }];
 
     expect( data ).toStrictEqual( expected );
   });
@@ -165,8 +152,7 @@ describe( 'test saved slice', () => {
 
     const data = store.getState().saved.data;
 
-    const expected = new Map();
-    expected.set( 'pl', { id: 'pl', type: 'playlist', tags: ['tag'], lastModified: 1434319925275 } );
+    const expected = [{ id: 'pl', item: { id: 'pl', type: 'playlist', tags: ['tag'], lastModified: 1434319925275 } }];
 
     expect( data ).toStrictEqual( expected );
   });
@@ -181,10 +167,9 @@ describe( 'test saved slice', () => {
 
     const data = store.getState().saved.data;
 
-    const expected = new Map();
-    const playlists = new Map();
-    playlists.set( 'pl', { id: 'pl', type: 'playlist', tags: ['tag'], lastModified: 1434319925275 } );
-    expected.set( 'ch', { id: 'ch', type: 'channel', playlists: playlists } );
+    const expected = [{ id: 'ch', item: { id: 'ch', type: 'channel', playlists: [{
+      id: 'pl', item: { id: 'pl', type: 'playlist', tags: ['tag'], lastModified: 1434319925275 }
+    }]}}];
 
     expect( data ).toStrictEqual( expected );
   });
@@ -198,8 +183,7 @@ describe( 'test saved slice', () => {
 
     const data = store.getState().saved.data;
 
-    const expected = new Map();
-    expected.set( 'ch', { id: 'ch', type: 'channel', tags: ['tag'], lastModified: 1434319925275 } );
+    const expected = [{ id: 'ch', item: { id: 'ch', type: 'channel', tags: ['tag'], lastModified: 1434319925275 }}];
 
     expect( data ).toStrictEqual( expected );
 
@@ -209,13 +193,10 @@ describe( 'test saved slice', () => {
 
 describe( 'getVideo', () => {
   beforeAll( () => {
-    const middle = new Map();
-    middle.set( 'middle', { id: 'middle', type: 'video' } );
+    const middle = [{ id: 'middle', item: { id: 'middle', type: 'video' } }];
 
-    const deep = new Map();
-    middle.set( 'deep', { id: 'deep', type: 'video' } );
-    const playlists = new Map();
-    playlists.set( 'playlist', { id: 'playlist', type: 'playlist', videos: deep } );
+    const deep = [{ id: 'deep', item: { id: 'deep', type: 'video' } }];
+    const playlists = [{ id: 'playlist', item: { id: 'playlist', type: 'playlist', videos: deep } }];
 
     store.dispatch( addItem([
       { id: 'top', type: 'video' } as Video,
@@ -255,8 +236,7 @@ describe( 'getVideo', () => {
 
 describe( 'getPlaylist', () => {
   beforeAll( () => {
-    const deep = new Map();
-    deep.set( 'deep', { id: 'deep', type: 'playlist' } );
+    const deep = [{ id: 'deep', item: { id: 'deep', type: 'playlist' } }];
 
     store.dispatch( addItem([
       { id: 'top', type: 'playlist' } as Playlist,

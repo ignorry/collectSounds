@@ -5,16 +5,16 @@ import { AppThunk } from "../../redux";
  * @returns {Array<Content>}
  */
 export const getAll = (): AppThunk => ( dispatch, getState: Function ) => {
-  const data = Array.from( getState().saved.data ).map( ( item: any ) => item[1] );
+  const data = getState().saved.data.map( ( item: any ) => item.item );
 
-  data.forEach( item => {
-    if ( item.videos && item.videos.size > 0 )
-      Array.from( item.videos ).forEach( ( vid: any ) => data.push( vid[1] ) );
-    if ( item.playlists && item.playlists.size > 0 )
-      Array.from( item.playlists ).forEach( ( pl: any ) => {
-        data.push( pl[1] );
-        if ( pl[1].videos && pl[1].videos.size > 0 )
-          Array.from( pl[1].videos ).forEach( ( vid: any ) => data.push( vid[1] ) );
+  data.forEach( ( item: any ) => {
+    if ( item.videos && item.videos.length > 0 )
+      item.videos.forEach( ( vid: any ) => data.push( vid.item ) );
+    if ( item.playlists && item.playlists.length > 0 )
+      item.playlists.forEach( ( pl: any ) => {
+        data.push( pl.item );
+        if ( pl.item.videos && pl.item.videos.length > 0 )
+          pl.item.videos.forEach( ( vid: any ) => data.push( vid.item ) );
       });
   });
 

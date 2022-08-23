@@ -5,20 +5,21 @@ import {
   UpdateVideoPayload, UpdatePlaylistPayload, UpdateChannelPayload,
   updateVideo as updateVideoUtil, updatePlaylist as updatePlaylistUtil, updateChannel as updateChannelUtil
 } from "../../lib/redux/savedUtils";
+import { getVal, setVal, deleteVal } from "../../lib/redux/arrayUtils";
 
 /**
  * @typedef SavedState
- * @prop {Map<string, Content>} data - collection of all saved content
- * @prop {Map<string, number>} deleted - collections of all deleted items (key: id, value: timestamp of removal) 
+ * @prop {Array<{ id: string, item: Content }>} data - collection of all saved content
+ * @prop {Array<{ id: string, item: number }>} deleted - collections of all deleted items (key: id, value: timestamp of removal) 
  */
 export type SavedState = {
-  data: Map<string, Content>,
-  deleted: Map<string, number>
+  data: Array<{ id: string, item: any }>,
+  deleted: Array<{ id: string, item: any }>
 }
 
 const initialState: SavedState = {
-  data: new Map(),
-  deleted: new Map()
+  data: [],
+  deleted: []
 };
 
 /**
@@ -35,7 +36,7 @@ const saved = createSlice({
      */
     addItem: ( state, action: PayloadAction<Array<Content>> ) =>
       action.payload.forEach( item => {
-        state.data.set( item.id, item );
+        setVal( state.data, item.id, item );
       }),
     /**
      * delete item by id ( anywhere in data map )
@@ -44,19 +45,19 @@ const saved = createSlice({
      */
     deleteItem: ( state, action: PayloadAction<Array<string>> ) =>
       action.payload.forEach( id => {
-        state.deleted.set( id, new Date().getTime() );
+        setVal( state.deleted, id, new Date().getTime() );
 
-        state.data.delete( id );
+        deleteVal( state.data, id );
 
-        state.data.forEach( content => {
+        state.data.forEach( item => { const content = item.item;
           if ( content.type === 'playlist' || content.type === 'channel' ) {
-            content.videos?.delete( id );
+            content.videos && deleteVal( content.videos, id );
 
             if ( content.type === 'channel' ) {
-              content.playlists?.delete( id );
+              content.playlists && deleteVal( content.playlists, id );
 
-              content.playlists?.forEach( playlist => {
-                playlist.videos?.delete( id );
+              content.playlists?.forEach( ( item: any ) => { const playlist = item.item;
+                playlist.videos && deleteVal( playlist.videos, id );
               })
             }
           }
@@ -68,21 +69,21 @@ const saved = createSlice({
      * @param {PayloadAction<AddVideoPayload>} action  
      */
     addVideoToParent: ( state, action: PayloadAction<AddVideoPayload> ) => {
-      const found: Content | undefined = state.data.get( action.payload.id );
+      const found: Content | undefined = getVal( state.data, action.payload.id );
 
       if ( found && ( found.type === 'playlist' || found.type === 'channel' ) ) {
-        if ( ! found.videos ) found.videos = new Map();
-        found.videos.set( action.payload.video.id, action.payload.video );
+        if ( ! found.videos ) found.videos = [];
+        setVal( found.videos, action.payload.video.id, action.payload.video );
         return;
       }
 
-      state.data.forEach( content => {
+      state.data.forEach( item => { const content = item.item;
         if ( content.type === 'channel' ) {
-          const found: Playlist | undefined = content.playlists.get( action.payload.id );
+          const found: Playlist | undefined = getVal( content.playlists, action.payload.id );
 
           if ( found ) {
-            if ( ! found.videos ) found.videos = new Map();
-            found.videos.set( action.payload.video.id, action.payload.video );
+            if ( ! found.videos ) found.videos = [];
+            setVal( found.videos, action.payload.video.id, action.payload.video );
             return;
           }
         }
@@ -94,11 +95,11 @@ const saved = createSlice({
      * @param {PayloadAction<AddPlaylistPayload>} action  
      */
     addPlaylistToParent: ( state, action: PayloadAction<AddPlaylistPayload> ) => {
-      const found: Content | undefined = state.data.get( action.payload.id );
+      const found: Content | undefined = getVal( state.data, action.payload.id );
 
       if ( found && found.type === 'channel' ) {
-        if ( ! found.playlists ) found.playlists = new Map();
-        found.playlists.set( action.payload.playlist.id, action.payload.playlist );
+        if ( ! found.playlists ) found.playlists = [];
+        setVal( found.playlists, action.payload.playlist.id, action.payload.playlist );
         return;
       }
     },
@@ -108,26 +109,26 @@ const saved = createSlice({
      * @param {PayloadAction<UpdateVideoPayload>} action - update video object
      */
     updateVideo: ( state, action: PayloadAction<UpdateVideoPayload> ) => {
-      const found: Content | undefined = state.data.get( action.payload.id );
+      const found: Content | undefined = getVal( state.data, action.payload.id );
 
       if ( found && found.type === 'video' ) {
-        state.data.set( action.payload.id, updateVideoUtil( found, action.payload ) );
+        setVal( state.data, action.payload.id, updateVideoUtil( found, action.payload ) );
         return;
       }
 
-      state.data.forEach( ( content ) => {
+      state.data.forEach( item => { const content = item.item;
         if ( content.type === 'playlist' || content.type === 'channel' ) {
-          const found: Video | undefined = content.videos.get( action.payload.id );
+          const found: Video | undefined = getVal( content.videos, action.payload.id );
 
           if ( found )
-            content.videos.set( action.payload.id, updateVideoUtil( found, action.payload ) );
+            setVal( content.videos, action.payload.id, updateVideoUtil( found, action.payload ) );
 
           if ( content.type === 'channel' )
-            content.playlists.forEach( ( playlist ) => {
-              const found: Video | undefined = playlist.videos.get( action.payload.id );
+            content.playlists.forEach( ( item: any ) => { const playlist = item.item;
+              const found: Video | undefined = getVal( playlist.videos, action.payload.id );
 
               if ( found )
-                playlist.videos.set( action.payload.id, updateVideoUtil( found, action.payload ) );
+                setVal( playlist.videos, action.payload.id, updateVideoUtil( found, action.payload ) );
             });
         }
       });
@@ -138,19 +139,19 @@ const saved = createSlice({
      * @param {PayloadAction<UpdatePlaylistPayload>} action - update playlist object
      */
     updatePlaylist: ( state, action: PayloadAction<UpdatePlaylistPayload> ) => {
-      const found: Content | undefined = state.data.get( action.payload.id );
+      const found: Content | undefined = getVal( state.data, action.payload.id );
 
       if ( found && found.type === 'playlist' ) {
-        state.data.set( action.payload.id, updatePlaylistUtil( found, action.payload ) );
+        setVal( state.data, action.payload.id, updatePlaylistUtil( found, action.payload ) );
         return;
       }
 
-      state.data.forEach( ( content ) => {
+      state.data.forEach( item => { const content = item.item;
         if ( content.type === 'channel' ) {
-          const found: Playlist | undefined = content.playlists.get( action.payload.id );
+          const found: Playlist | undefined = getVal( content.playlists, action.payload.id );
 
           if ( found )
-            content.playlists.set( action.payload.id, updatePlaylistUtil( found, action.payload ) );
+            setVal( content.playlists, action.payload.id, updatePlaylistUtil( found, action.payload ) );
         }
       });
     },
@@ -160,10 +161,10 @@ const saved = createSlice({
      * @param {PayloadAction<UpdateChannelPayload>} action - update channel object
      */
     updateChannel: ( state, action: PayloadAction<UpdateChannelPayload> ) => {
-      const found: Content | undefined = state.data.get( action.payload.id );
+      const found: Content | undefined = getVal( state.data, action.payload.id );
 
       if ( found && found.type === 'channel' ) {
-        state.data.set( action.payload.id, updateChannelUtil( found, action.payload ) );
+        setVal( state.data, action.payload.id, updateChannelUtil( found, action.payload ) );
         return;
       }
     },
@@ -187,17 +188,25 @@ export const {
  * @returns {Video}
  */
 export const getVideo = ( state: SavedState, id: string ): Video => {
-  let res: Content | undefined = state.data.get( id );
+  let res: Content | undefined = getVal( state.data, id );
 
   if ( res && res.type === 'video' )
     return res;
 
-  state.data.forEach( ( content ) => {
+  state.data.forEach( item => { const content = item.item;
     if ( content.type === 'playlist' || content.type === 'channel' ) {
-      const found: Video | undefined = content.videos?.get( id );
+      const found: Video | undefined = content.videos && getVal( content.videos, id );
+
+      if ( ! found && content.type === 'channel' && content.playlists )
+        content.playlists.forEach( ( item: any ) => { const playlist = item.item;
+          const found: Video | undefined = playlist.videos && getVal( playlist.videos, id );
+
+          if ( found )
+            res = found;
+        });
 
       if ( found )
-        res = found
+        res = found;
     }
   });
 
@@ -214,14 +223,14 @@ export const getVideo = ( state: SavedState, id: string ): Video => {
  * @returns {Playlist}
  */
 export const getPlaylist = ( state: SavedState, id: string ): Playlist => {
-  let res: Content | undefined = state.data.get( id );
+  let res: Content | undefined = getVal( state.data, id );
 
   if ( res && res.type === 'playlist' )
     return res;
 
-  state.data.forEach( ( content ) => {
+  state.data.forEach( item => { const content = item.item;
     if ( content.type === 'channel' ) {
-      const found: Playlist | undefined = content.playlists.get( id );
+      const found: Playlist | undefined = getVal( content.playlists, id );
 
       if ( found )
         res = found;
@@ -241,7 +250,7 @@ export const getPlaylist = ( state: SavedState, id: string ): Playlist => {
  * @returns {Channel}
  */
 export const getChannel = ( state: SavedState, id: string ): Channel => {
-  let res: Content | undefined = state.data.get( id );
+  let res: Content | undefined = getVal( state.data, id );
 
   if ( res && res.type === 'channel' )
     return res;

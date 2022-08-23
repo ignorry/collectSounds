@@ -11,7 +11,7 @@ import { addItem, deleteItem } from "../slices/saved";
  */
 export const getMaxLastModifiedInMap = ( data: Array<Content> ): AppThunk => ( dispatch, getState: Function ) => Math.max( 
   ...data.map( item => item.lastModified ),
-  ...Array.from( getState().saved.deleted as Map<string, number> ).map( item => item[1] )
+  ...getState().saved.deleted.map( ( item: any ) => item.item )
 );
 
 /**

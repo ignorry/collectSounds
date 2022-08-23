@@ -48,7 +48,7 @@ export type Video = {
 export type Playlist = {
   type: "playlist";
   id: string;
-  videos?: Map<string, Video>;
+  videos?: Array<{ id: string, item: Video }>;
   title: string;
   description: string;
   lang: string;
@@ -74,8 +74,8 @@ export type Playlist = {
 export type Channel = {
   type: "channel";
   id: string;
-  videos?: Map<string, Video>;
-  playlists?: Map<string, Playlist>;
+  videos?: Array<{ id: string, item: Video }>;
+  playlists?: Array<{ id: string, item: Playlist }>;
   title: string;
   description: string;
   customUrl: string;

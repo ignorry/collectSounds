@@ -37,26 +37,26 @@ export type UpdateVideoPayload = {
 /**
  * @typedef UpdatePlaylistPayload
  * @prop {string} id - id of playlist
- * @prop {Map<string, Video>} [videos] - playlist videos
+ * @prop {Array<Array<string|Video>>} [videos] - playlist videos
  * @prop {Array<string>} [tags]
  */
 export type UpdatePlaylistPayload = {
   id: string;
-  videos?: Map<string, Video>;
+  videos?: Array<{ id: string, item: Video }>;
   tags?: Array<string>;
 }
 
 /**
  * @typedef UpdateChannelPayload
  * @prop {string} id - id of channel
- * @prop {Map<string, Video>} [videos] - channel videos
- * @prop {Map<string, Playlist>} [playlists] - channel playlists
+ * @prop {Array<Array<string|Video>>} [videos] - channel videos
+ * @prop {Array<Array<string|Playlist>>} [playlists] - channel playlists
  * @prop {Array<string>} [tags]
  */
 export type UpdateChannelPayload = {
   id: string;
-  videos?: Map<string, Video>;
-  playlists?: Map<string, Playlist>;
+  videos?: Array<{ id: string, item: Video }>;
+  playlists?: Array<{ id: string, item: Playlist}>;
   tags?: Array<string>;
 }
 

@@ -12,13 +12,13 @@ import {
 import { SearchResponse } from "../../models/api/search";
 import { PlaylistItemsResponse, VideoIdResponse } from "../../models/api/video";
 import { PlaylistIdResponse } from "../../models/api/playlist";
+import { getVal } from "../../lib/redux/arrayUtils";
 
 describe( 'test getPlaylistsAndChannels', () => {
-  const playlists = new Map();
-    playlists.set( 'plInChannel', {
+  const playlists = [{ id: 'plInChannel', item: {
       type: 'playlist',
       id: 'plInChannel',
-    })
+    }}];
 
   beforeAll(() => {
     MockDate.set(1434319925275);
@@ -103,11 +103,11 @@ describe( 'test updateContents', () => {
 
     await new Promise(resolve => setTimeout(resolve, 500));
 
-    const playlist = store.getState().saved.data.get( 'playlistId' );
+    const playlist = getVal( store.getState().saved.data, 'playlistId' );
 
     if ( playlist.type !== 'playlist' ) throw new Error( 'type of item is wrong' );
     
-    expect( playlist.videos.get( 'newVideo' ).type ).toBe( 'video' );
+    expect( getVal( playlist.videos, 'newVideo' ).type ).toBe( 'video' );
   });
 
   it( 'updates channel videos and playlists', async () => {
@@ -163,12 +163,12 @@ describe( 'test updateContents', () => {
 
     await new Promise(resolve => setTimeout(resolve, 500));
 
-    const channel = store.getState().saved.data.get( 'channelId' );
+    const channel = getVal( store.getState().saved.data, 'channelId' );
 
     if ( channel.type !== 'channel' ) throw new Error( 'type of item is wrong' );
     
-    expect( channel.videos.get( 'newVideo' ).type ).toBe( 'video' );
-    expect( channel.playlists.get( 'newPlaylist' ).type ).toBe( 'playlist' );
+    expect( getVal( channel.videos, 'newVideo' ).type ).toBe( 'video' );
+    expect( getVal( channel.playlists, 'newPlaylist' ).type ).toBe( 'playlist' );
   });
 
   it( 'run without videos', async () => {
@@ -207,7 +207,7 @@ describe( 'test updateContents', () => {
 
     await new Promise(resolve => setTimeout(resolve, 500));
 
-    const playlist = store.getState().saved.data.get( 'playlistId' );
+    const playlist = getVal( store.getState().saved.data, 'playlistId' );
 
     if ( playlist.type !== 'playlist' ) throw new Error( 'type of item is wrong' );
     
@@ -264,11 +264,11 @@ describe( 'test updateContents', () => {
 
     await new Promise(resolve => setTimeout(resolve, 500));
 
-    const channel = store.getState().saved.data.get( 'channelId' );
+    const channel = getVal( store.getState().saved.data, 'channelId' );
 
     if ( channel.type !== 'channel' ) throw new Error( 'type of item is wrong' );
     
-    expect( channel.videos.get( 'newVideo' ).type ).toBe( 'video' );
+    expect( getVal( channel.videos, 'newVideo' ).type ).toBe( 'video' );
     expect( channel.playlists ).toBe( undefined );
   });
 })
