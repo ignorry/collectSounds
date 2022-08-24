@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const P = styled.p<{ secondary: boolean }>`
   font-size: ${ props => props.secondary ? ({ theme }) => `${ theme.font.secondary.size }rem` : ({ theme }) => `${ theme.font.primary.size}rem` };
   opacity: ${ props => props.secondary ? ({ theme }) => theme.font.secondary.opacity : ({ theme }) => theme.font.primary.opacity };
+  white-space: pre-line;
 `;
 
 /**
