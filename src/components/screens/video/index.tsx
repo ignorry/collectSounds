@@ -6,7 +6,7 @@ import Spinner from "../../primitives/Spinner";
 
 const Component = lazy( () => import( "./Component" ) );
 
-const Search = () => {
+const Video = () => {
   const params = useParams();
 
   return (
@@ -16,4 +16,4 @@ const Search = () => {
   );
 }
 
-export default Search;
+export default Video;
