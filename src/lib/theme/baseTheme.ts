@@ -37,6 +37,10 @@ export const baseTheme: Theme = {
     small: '(max-width: 1400px)',
   },
 
+  player: {
+    iconSize: 2.5,
+  },
+
   font: {
     primary: {
       size: 1,

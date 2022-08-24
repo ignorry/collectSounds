@@ -38,6 +38,9 @@ export type Theme = {
   media: {
     small: string,
   },
+  player: {
+    iconSize: number,
+  }
   font: {
     primary: {
       size: number,
