@@ -137,7 +137,7 @@ describe( 'video component', () => {
       { wrapper: AllTheProviders }
     );
 
-    await new Promise( resolve => setTimeout( resolve, 10 ) );
+    await new Promise( resolve => setTimeout( resolve, 100 ) );
 
     expect( result ).toMatchSnapshot();
   });

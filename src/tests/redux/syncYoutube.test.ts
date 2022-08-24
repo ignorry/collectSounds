@@ -80,6 +80,11 @@ describe( 'test updateContents', () => {
           json: () => Promise.resolve({
             items: [{
               id: 'newVideo',
+              snippet: {
+                resourceId: {
+                  videoId: 'newVideo',
+                }
+              }
             }]
           } as PlaylistItemsResponse ),
         });

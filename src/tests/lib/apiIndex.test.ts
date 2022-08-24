@@ -107,32 +107,40 @@ describe( 'getChannelById', () => {
 });
 
 describe( 'getPlaylistVideos', () => {
-  let called = false;
-
   beforeEach( () => {
+    let call = 0;
+
     global.fetch = jest.fn(() => {
-      if ( ! called ) {
-        called = true;
+      call++;
+
+      if ( call === 1 ) 
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve({
+            kind: '',
+            etag: '',
+            pageInfo: {},
+            items: [{
+              id: 'test',
+              snippet: {
+                resourceId: {
+                  videoId: 'test'
+                }
+              },
+            }]
+          } as PlaylistItemsResponse ),
+        });
+      if ( call === 2 ) 
         return Promise.resolve({
           ok: true,
           json: () => Promise.resolve({
             items: [{
-              id: 'getPlaylistVideos',
+              id: 'test',
+              snippet: {},
+              contentDetails: {},
             }]
-          } as PlaylistItemsResponse ),
+          } as VideoIdResponse ),
         });
-      }
-
-      return Promise.resolve({
-        ok: true,
-        json: () => Promise.resolve({
-          items: [{
-            id: 'test',
-            snippet: {},
-            contentDetails: {},
-          }]
-        } as VideoIdResponse ),
-      });
     }) as any;
   });
 

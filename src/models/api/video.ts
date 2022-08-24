@@ -77,6 +77,11 @@ export type VideoItem = {
   kind: string;
   etag: string;
   id: string;
+  snippet: {
+    resourceId: {
+      videoId: string;
+    }
+  }
 }
 
 /**

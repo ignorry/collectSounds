@@ -76,11 +76,12 @@ export const getChannelById = async ( id: string ): Promise<Array<Channel>> => {
  */
 export const getPlaylistVideos = async ( id: string ): Promise<Array<Video>> => {
   const res = await fetchPlaylistItems({
-    part: 'id',
+    part: 'snippet',
     playlistId: id,
+    maxResults: 50,
   });
 
-  const ids: Array<string> = res.items.map( item => item.id );
+  const ids: Array<string> = res.items.map( item => item.snippet.resourceId.videoId );
 
   return getVideoById( ids.join( ',' ) );
 }
@@ -92,8 +93,9 @@ export const getPlaylistVideos = async ( id: string ): Promise<Array<Video>> => 
  */
 export const getChannelVideos = async ( id: string ): Promise<Array<Video>> => {
   const res = await fetchSearch({
-    part: 'id',
+    part: 'snippet',
     channelId: id,
+    maxResults: 50,
     order: 'date',
   })
 
@@ -111,6 +113,7 @@ export const getChannelPlaylists = async ( id: string ): Promise<Array<Playlist>
   const res = await fetchPlaylist({
     part: 'snippet',
     channelId: id,
+    maxResults: 50,
   });
 
   return parsePlaylist( res )

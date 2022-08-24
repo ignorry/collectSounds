@@ -130,18 +130,40 @@ describe( 'loadChannel', () => {
 
 describe( 'loadPlaylistVideos', () => {
   beforeEach( () => {
-    global.fetch = jest.fn(() => 
-      Promise.resolve({
-        ok: true,
-        json: () => Promise.resolve({
-          items: [{
-            id: 'test',
-            snippet: {},
-            contentDetails: {},
-          }]
-        } as VideoIdResponse ),
-      }),
-    ) as any;
+    let call = 0;
+
+    global.fetch = jest.fn(() => {
+      call++;
+
+      if ( call === 1 ) 
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve({
+            kind: '',
+            etag: '',
+            pageInfo: {},
+            items: [{
+              id: 'test',
+              snippet: {
+                resourceId: {
+                  videoId: 'test'
+                }
+              },
+            }]
+          } as PlaylistItemsResponse ),
+        });
+      if ( call === 2 ) 
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve({
+            items: [{
+              id: 'test',
+              snippet: {},
+              contentDetails: {},
+            }]
+          } as VideoIdResponse ),
+        });
+    }) as any;
   });
 
   it( 'receives playlist videos', async () => {
