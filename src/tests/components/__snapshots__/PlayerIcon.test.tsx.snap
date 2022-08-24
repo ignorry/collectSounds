@@ -1,59 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Back component matches to snapshot 1`] = `
+exports[`PlayerIcon componenet matches to snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-hKMtZM fGVoVJ"
+      <svg
+        class="sc-bczRLJ eUcSDq"
       >
-        <div
-          class="sc-eCYdqJ bXHyLC"
-        >
-          <button
-            class="sc-dkzDqf fcjXBB"
-          >
-            <svg
-              class="sc-bczRLJ bygNPW"
-            >
-              <use
-                href="http://localhost/icons.svg#back"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div
-        class="sc-jSMfEi kCIUBe"
-        height="0"
-      />
+        <use
+          href="http://localhost/icons.svg#icon"
+        />
+      </svg>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="sc-hKMtZM fGVoVJ"
+    <svg
+      class="sc-bczRLJ eUcSDq"
     >
-      <div
-        class="sc-eCYdqJ bXHyLC"
-      >
-        <button
-          class="sc-dkzDqf fcjXBB"
-        >
-          <svg
-            class="sc-bczRLJ bygNPW"
-          >
-            <use
-              href="http://localhost/icons.svg#back"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div
-      class="sc-jSMfEi kCIUBe"
-      height="0"
-    />
+      <use
+        href="http://localhost/icons.svg#icon"
+      />
+    </svg>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
