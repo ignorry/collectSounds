@@ -1,3 +1,4 @@
 {
-  "pageName": "video"
+  "pageName": "video",
+  "emptyMessage": "video loading error"
 }

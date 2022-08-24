@@ -1,3 +1,4 @@
 {
-  "pageName": "видео"
+  "pageName": "видео",
+  "emptyMessage": "ошибка загрузки видео"
 }
