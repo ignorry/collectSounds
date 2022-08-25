@@ -6,65 +6,69 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-gicCDI jQWIfJ"
+        class="sc-gicCDI gSvkWw"
       >
         <div
-          class="sc-ezWOiH kWlsYu"
+          class="sc-ezWOiH eZKEIz"
         >
-          <p
-            class="sc-bczRLJ cTDXTp"
-          >
-            title
-          </p>
           <div
-            class="sc-bZkfAO eJgGrM"
+            class="sc-bZkfAO caGsOK"
           >
             <p
               class="sc-bczRLJ cTDXTp"
             >
-              channel title
+              title
             </p>
-            <button
-              class="sc-dkzDqf fcjXBB"
-            >
-              <svg
-                class="sc-gsnTZi gSmFuM"
-              >
-                <use
-                  href="http://localhost/icons.svg#playlist"
-                />
-              </svg>
-            </button>
-          </div>
-          <div
-            class="sc-eCYdqJ FxPOW"
-          >
-            <button
-              class="sc-hKMtZM fntRFW"
+            <div
+              class="sc-kLLXSd dzEEuv"
             >
               <p
                 class="sc-bczRLJ cTDXTp"
               >
-                Description
+                channel title
               </p>
-            </button>
+              <button
+                class="sc-dkzDqf fcjXBB"
+              >
+                <svg
+                  class="sc-gsnTZi gSmFuM"
+                >
+                  <use
+                    href="http://localhost/icons.svg#playlist"
+                  />
+                </svg>
+              </button>
+            </div>
             <div
-              class="sc-jSMfEi jmXqhj"
+              class="sc-eCYdqJ FxPOW"
             >
-              <div
-                class="sc-kLLXSd dOvAfu"
+              <button
+                class="sc-hKMtZM fntRFW"
               >
                 <p
                   class="sc-bczRLJ cTDXTp"
                 >
-                  description
+                  Description
                 </p>
+              </button>
+              <div
+                class="sc-jSMfEi jmXqhj"
+              >
+                <div
+                  class="sc-ikZpkk jrfMsm"
+                >
+                  <p
+                    class="sc-bczRLJ cTDXTp"
+                  >
+                    description
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="sc-ikZpkk PLDbh"
+          class="sc-jIZahH jvcRdl"
         >
           <div
             class="sc-llJcti jPVlLa"
@@ -124,65 +128,69 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-gicCDI jQWIfJ"
+      class="sc-gicCDI gSvkWw"
     >
       <div
-        class="sc-ezWOiH kWlsYu"
+        class="sc-ezWOiH eZKEIz"
       >
-        <p
-          class="sc-bczRLJ cTDXTp"
-        >
-          title
-        </p>
         <div
-          class="sc-bZkfAO eJgGrM"
+          class="sc-bZkfAO caGsOK"
         >
           <p
             class="sc-bczRLJ cTDXTp"
           >
-            channel title
+            title
           </p>
-          <button
-            class="sc-dkzDqf fcjXBB"
-          >
-            <svg
-              class="sc-gsnTZi gSmFuM"
-            >
-              <use
-                href="http://localhost/icons.svg#playlist"
-              />
-            </svg>
-          </button>
-        </div>
-        <div
-          class="sc-eCYdqJ FxPOW"
-        >
-          <button
-            class="sc-hKMtZM fntRFW"
+          <div
+            class="sc-kLLXSd dzEEuv"
           >
             <p
               class="sc-bczRLJ cTDXTp"
             >
-              Description
+              channel title
             </p>
-          </button>
+            <button
+              class="sc-dkzDqf fcjXBB"
+            >
+              <svg
+                class="sc-gsnTZi gSmFuM"
+              >
+                <use
+                  href="http://localhost/icons.svg#playlist"
+                />
+              </svg>
+            </button>
+          </div>
           <div
-            class="sc-jSMfEi jmXqhj"
+            class="sc-eCYdqJ FxPOW"
           >
-            <div
-              class="sc-kLLXSd dOvAfu"
+            <button
+              class="sc-hKMtZM fntRFW"
             >
               <p
                 class="sc-bczRLJ cTDXTp"
               >
-                description
+                Description
               </p>
+            </button>
+            <div
+              class="sc-jSMfEi jmXqhj"
+            >
+              <div
+                class="sc-ikZpkk jrfMsm"
+              >
+                <p
+                  class="sc-bczRLJ cTDXTp"
+                >
+                  description
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        class="sc-ikZpkk PLDbh"
+        class="sc-jIZahH jvcRdl"
       >
         <div
           class="sc-llJcti jPVlLa"

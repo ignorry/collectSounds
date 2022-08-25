@@ -13,8 +13,26 @@ import Button from "../../../primitives/Button";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+const Main = styled.div`
+  background: ${ ({ theme }) => theme.colors.bgSecondary };
+`;
+
+const Column = styled.div`
   margin: auto;
   max-width: ${ ({ theme }) => `${ theme.contentWidth }rem`};
+  width: 100%;
+  padding: ${ ({ theme }) => `0 ${ theme.gaps.big }rem ${ theme.gaps.big }rem` };
+  display: flex;
+  flex-direction: column;
+  gap: ${ ({ theme }) => `${ theme.gaps.big }rem` };
+`;
+
+const ThumbContainer = styled.div`
+  margin: auto;
+  max-width: ${ ({ theme }) => `${ theme.contentWidth }rem`};
+  width: 100%;
 `;
 
 const Thumbnail = styled.div<{ realWidth: number }>`
@@ -63,13 +81,11 @@ const Length = styled.span`
   border-radius: ${ ({ theme }) => `${ theme.decorative.borderRadius }px` };
 `;
 
-const Main = styled.div`
-  background: ${ ({ theme }) => theme.colors.bgSecondary };
-  padding: ${ ({ theme }) => `${ theme.gaps.big }rem` };
+const Info = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${ ({ theme }) => `${ theme.gaps.small }rem` };
-`;
+`
 
 const Line = styled.div`
   display: flex;
@@ -79,6 +95,9 @@ const Line = styled.div`
 `;
 
 const Description = styled.div`
+  margin: auto;
+  max-width: ${ ({ theme }) => `${ theme.contentWidth }rem`};
+  width: 100%;
   padding: ${ ({ theme }) => `${ theme.gaps.big }rem` };
 `;
 
@@ -103,32 +122,38 @@ const Content: React.FC<Props> = ( props: Props ) => {
 
   return (
     <Container>
-      <Thumbnail realWidth={ thumbnailRef.current ? thumbnailRef.current.getBoundingClientRect().width : 0 } ref={ thumbnailRef }>
-        <Img
-          src={ props.video.thumbnails.standard?.url || props.video.thumbnails.default?.url || '' }
-        />
-        { props.video.passed &&
-          <RangeContainer>
-            <Range value={ props.video.passed } max={ props.video.duration } />
-          </RangeContainer>
-        }
-        <Play>
-          <PlayerButton callback={() => {}} pic="play"/>
-        </Play>
-        <Length>
-          <Label text={ getDurationFromMs( props.video.duration ) } secondary/>
-        </Length>
-      </Thumbnail>
       <Main>
-        <Label text={ props.video.title }/>
-        <Label text={ props.video.channelTitle }/>
-        <Line>
-          <Label text={ props.video.publishedAt.replace( /[A-Z]/g, ' ' ) } secondary/>
-          <Button
-            callback={ props.toggleSaved } pic="playlist"
-            active={ props.saved }
-          />
-        </Line>
+        <Column>
+          <ThumbContainer>
+            <Thumbnail realWidth={ thumbnailRef.current ? thumbnailRef.current.getBoundingClientRect().width : 0 } ref={ thumbnailRef }>
+              <Img
+                src={ props.video.thumbnails.standard?.url || props.video.thumbnails.default?.url || '' }
+              />
+              { props.video.passed &&
+                <RangeContainer>
+                  <Range value={ props.video.passed } max={ props.video.duration } />
+                </RangeContainer>
+              }
+              <Play>
+                <PlayerButton callback={() => {}} pic="play"/>
+              </Play>
+              <Length>
+                <Label text={ getDurationFromMs( props.video.duration ) } secondary/>
+              </Length>
+            </Thumbnail>
+          </ThumbContainer>
+          <Info>
+            <Label text={ props.video.title }/>
+            <Label text={ props.video.channelTitle }/>
+            <Line>
+              <Label text={ props.video.publishedAt.replace( /[A-Z]/g, ' ' ) } secondary/>
+              <Button
+                callback={ props.toggleSaved } pic="playlist"
+                active={ props.saved }
+              />
+            </Line>
+          </Info>
+        </Column>
       </Main>
       <Description>
         <Label text={ props.video.description }/>

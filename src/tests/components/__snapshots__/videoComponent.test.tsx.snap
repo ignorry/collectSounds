@@ -29,76 +29,88 @@ Object {
         height="0"
       />
       <div
-        class="sc-papXJ egBdJl"
+        class="sc-papXJ cWKQiM"
       >
         <div
-          class="sc-jqUVSM hpxvJi"
+          class="sc-jqUVSM gYpLLn"
         >
-          <img
-            class="sc-kDDrLX eoGjPH"
-            src="some url"
-          />
           <div
-            class="sc-crXcEl kBjfcQ"
+            class="sc-kDDrLX fHDHei"
           >
-            <button
-              class="sc-ftvSup ilhzCZ"
+            <div
+              class="sc-iqcoie ekKTEz"
             >
-              <svg
-                class="sc-iBkjds esIUBk"
+              <div
+                class="sc-crXcEl hbHpbT"
               >
-                <use
-                  href="http://localhost/icons.svg#play"
+                <img
+                  class="sc-evZas csYxrp"
+                  src="some url"
                 />
-              </svg>
-            </button>
-          </div>
-          <span
-            class="sc-evZas jqUdzB"
-          >
-            <p
-              class="sc-gsnTZi czQjmE"
+                <div
+                  class="sc-ksZaOG gbplMI"
+                >
+                  <button
+                    class="sc-ftvSup ilhzCZ"
+                  >
+                    <svg
+                      class="sc-iBkjds esIUBk"
+                    >
+                      <use
+                        href="http://localhost/icons.svg#play"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span
+                  class="sc-hAZoDl hHJAWW"
+                >
+                  <p
+                    class="sc-gsnTZi czQjmE"
+                  >
+                    21:3
+                  </p>
+                </span>
+              </div>
+            </div>
+            <div
+              class="sc-fnykZs dLTexD"
             >
-              21:3
-            </p>
-          </span>
+              <p
+                class="sc-gsnTZi kRxXHn"
+              >
+                title
+              </p>
+              <p
+                class="sc-gsnTZi kRxXHn"
+              >
+                channel title
+              </p>
+              <div
+                class="sc-fEOsli hYnshV"
+              >
+                <p
+                  class="sc-gsnTZi czQjmE"
+                >
+                  published at
+                </p>
+                <button
+                  class="sc-dkzDqf fcjXBB"
+                >
+                  <svg
+                    class="sc-bczRLJ bygNPW"
+                  >
+                    <use
+                      href="http://localhost/icons.svg#playlist"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <div
-          class="sc-breuTD bcEpNo"
-        >
-          <p
-            class="sc-gsnTZi kRxXHn"
-          >
-            title
-          </p>
-          <p
-            class="sc-gsnTZi kRxXHn"
-          >
-            channel title
-          </p>
-          <div
-            class="sc-ksZaOG bNSTAY"
-          >
-            <p
-              class="sc-gsnTZi czQjmE"
-            >
-              published at
-            </p>
-            <button
-              class="sc-dkzDqf fcjXBB"
-            >
-              <svg
-                class="sc-bczRLJ bygNPW"
-              >
-                <use
-                  href="http://localhost/icons.svg#playlist"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div
-          class="sc-hAZoDl giZakp"
+          class="sc-bjUoiL jKkTTe"
         >
           <p
             class="sc-gsnTZi kRxXHn"
@@ -134,76 +146,88 @@ Object {
       height="0"
     />
     <div
-      class="sc-papXJ egBdJl"
+      class="sc-papXJ cWKQiM"
     >
       <div
-        class="sc-jqUVSM hpxvJi"
+        class="sc-jqUVSM gYpLLn"
       >
-        <img
-          class="sc-kDDrLX eoGjPH"
-          src="some url"
-        />
         <div
-          class="sc-crXcEl kBjfcQ"
+          class="sc-kDDrLX fHDHei"
         >
-          <button
-            class="sc-ftvSup ilhzCZ"
+          <div
+            class="sc-iqcoie ekKTEz"
           >
-            <svg
-              class="sc-iBkjds esIUBk"
+            <div
+              class="sc-crXcEl hbHpbT"
             >
-              <use
-                href="http://localhost/icons.svg#play"
+              <img
+                class="sc-evZas csYxrp"
+                src="some url"
               />
-            </svg>
-          </button>
-        </div>
-        <span
-          class="sc-evZas jqUdzB"
-        >
-          <p
-            class="sc-gsnTZi czQjmE"
+              <div
+                class="sc-ksZaOG gbplMI"
+              >
+                <button
+                  class="sc-ftvSup ilhzCZ"
+                >
+                  <svg
+                    class="sc-iBkjds esIUBk"
+                  >
+                    <use
+                      href="http://localhost/icons.svg#play"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <span
+                class="sc-hAZoDl hHJAWW"
+              >
+                <p
+                  class="sc-gsnTZi czQjmE"
+                >
+                  21:3
+                </p>
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-fnykZs dLTexD"
           >
-            21:3
-          </p>
-        </span>
+            <p
+              class="sc-gsnTZi kRxXHn"
+            >
+              title
+            </p>
+            <p
+              class="sc-gsnTZi kRxXHn"
+            >
+              channel title
+            </p>
+            <div
+              class="sc-fEOsli hYnshV"
+            >
+              <p
+                class="sc-gsnTZi czQjmE"
+              >
+                published at
+              </p>
+              <button
+                class="sc-dkzDqf fcjXBB"
+              >
+                <svg
+                  class="sc-bczRLJ bygNPW"
+                >
+                  <use
+                    href="http://localhost/icons.svg#playlist"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <div
-        class="sc-breuTD bcEpNo"
-      >
-        <p
-          class="sc-gsnTZi kRxXHn"
-        >
-          title
-        </p>
-        <p
-          class="sc-gsnTZi kRxXHn"
-        >
-          channel title
-        </p>
-        <div
-          class="sc-ksZaOG bNSTAY"
-        >
-          <p
-            class="sc-gsnTZi czQjmE"
-          >
-            published at
-          </p>
-          <button
-            class="sc-dkzDqf fcjXBB"
-          >
-            <svg
-              class="sc-bczRLJ bygNPW"
-            >
-              <use
-                href="http://localhost/icons.svg#playlist"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div
-        class="sc-hAZoDl giZakp"
+        class="sc-bjUoiL jKkTTe"
       >
         <p
           class="sc-gsnTZi kRxXHn"

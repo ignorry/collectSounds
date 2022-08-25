@@ -17,13 +17,17 @@ import { useNavigate } from "react-router-dom";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin: auto;
-  max-width: ${ ({ theme }) => `${ theme.contentWidth }rem`};
 `;
 
 const Main = styled.div`
   background: ${ ({ theme }) => theme.colors.bgSecondary };
-  padding: ${ ({ theme }) => `${ theme.gaps.big }rem` };
+`;
+
+const Column = styled.div`
+  margin: auto;
+  max-width: ${ ({ theme }) => `${ theme.contentWidth }rem`};
+  width: 100%;
+  padding: ${ ({ theme }) => `0 ${ theme.gaps.big }rem ${ theme.gaps.big }rem` };
   display: flex;
   flex-direction: column;
   gap: ${ ({ theme }) => `${ theme.gaps.small }rem` };
@@ -41,6 +45,9 @@ const Description = styled.div`
 `;
 
 const Videos = styled.div`
+  margin: auto;
+  max-width: ${ ({ theme }) => `${ theme.contentWidth }rem`};
+  width: 100%;
   padding: ${ ({ theme }) => `${ theme.gaps.big }rem` };
 `;
 
@@ -71,21 +78,23 @@ const Content: React.FC<Props> = ( props: Props ) => {
   return (
     <Container>
       <Main>
-        <Label text={ props.playlist.title }/>
-        <Line>
-          <Label text={ props.playlist.channelTitle }/>
-          <Button
-            callback={ props.toggleSaved } pic="playlist"
-            active={ props.saved }
-          />
-        </Line>
-        { props.playlist.description && props.playlist.description.length > 0 ?
-          <Collapse label={ intl.formatMessage({ id: 'description' }) }> 
-            <Description>
-              <Label text={ props.playlist.description }/>
-            </Description>
-          </Collapse> : null
-        }
+        <Column>
+          <Label text={ props.playlist.title }/>
+          <Line>
+            <Label text={ props.playlist.channelTitle }/>
+            <Button
+              callback={ props.toggleSaved } pic="playlist"
+              active={ props.saved }
+            />
+          </Line>
+          { props.playlist.description && props.playlist.description.length > 0 ?
+            <Collapse label={ intl.formatMessage({ id: 'description' }) }> 
+              <Description>
+                <Label text={ props.playlist.description }/>
+              </Description>
+            </Collapse> : null
+          }
+        </Column>
       </Main>
       <Videos>
         { items }
