@@ -99,7 +99,7 @@ export const getChannelVideos = async ( id: string ): Promise<Array<Video>> => {
     order: 'date',
   })
 
-  const ids: Array<string> = res.items.filter( item => item.id.kind === 'video' ).map( item => item.id.videoId );
+  const ids: Array<string> = res.items.filter( item => item.id.kind === 'youtube#video' ).map( item => item.id.videoId );
 
   return getVideoById( ids.join( ',' ) );
 }
