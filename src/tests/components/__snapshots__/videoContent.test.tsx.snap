@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content matches to snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-gicCDI jQWIfJ"
+      >
+        <div
+          class="sc-ezWOiH kWlsYu"
+        >
+          <p
+            class="sc-bczRLJ cTDXTp"
+          >
+            title
+          </p>
+          <div
+            class="sc-bZkfAO eJgGrM"
+          >
+            <p
+              class="sc-bczRLJ cTDXTp"
+            >
+              channel title
+            </p>
+            <button
+              class="sc-dkzDqf fcjXBB"
+            >
+              <svg
+                class="sc-gsnTZi gSmFuM"
+              >
+                <use
+                  href="http://localhost/icons.svg#playlist"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="sc-eCYdqJ FxPOW"
+          >
+            <button
+              class="sc-hKMtZM fntRFW"
+            >
+              <p
+                class="sc-bczRLJ cTDXTp"
+              >
+                Description
+              </p>
+            </button>
+            <div
+              class="sc-jSMfEi jmXqhj"
+            >
+              <div
+                class="sc-kLLXSd CZMwp"
+              >
+                <p
+                  class="sc-bczRLJ cTDXTp"
+                >
+                  description
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-ikZpkk PLDbh"
+        >
+          <div
+            class="sc-llJcti jPVlLa"
+          >
+            <button
+              class="sc-jqUVSM jaHdRp"
+            >
+              <div
+                class="sc-kDDrLX csSXPu"
+              >
+                <img
+                  class="sc-iqcoie gSBLTW"
+                  src="some url"
+                />
+                <span
+                  class="sc-evZas jqUdzB"
+                >
+                  <p
+                    class="sc-bczRLJ cygevi"
+                  >
+                    NaN
+                  </p>
+                </span>
+              </div>
+              <div
+                class="sc-breuTD ojFJZ"
+              >
+                <div
+                  class="sc-ksZaOG dROsiD"
+                >
+                  <p
+                    class="sc-bczRLJ cTDXTp"
+                  >
+                    video title
+                  </p>
+                </div>
+                <div
+                  class="sc-hAZoDl edibgv"
+                >
+                  <p
+                    class="sc-bczRLJ cygevi"
+                  >
+                    channel title
+                  </p>
+                </div>
+                <p
+                  class="sc-bczRLJ cygevi"
+                >
+                  published at
+                </p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-gicCDI jQWIfJ"
+    >
+      <div
+        class="sc-ezWOiH kWlsYu"
+      >
+        <p
+          class="sc-bczRLJ cTDXTp"
+        >
+          title
+        </p>
+        <div
+          class="sc-bZkfAO eJgGrM"
+        >
+          <p
+            class="sc-bczRLJ cTDXTp"
+          >
+            channel title
+          </p>
+          <button
+            class="sc-dkzDqf fcjXBB"
+          >
+            <svg
+              class="sc-gsnTZi gSmFuM"
+            >
+              <use
+                href="http://localhost/icons.svg#playlist"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="sc-eCYdqJ FxPOW"
+        >
+          <button
+            class="sc-hKMtZM fntRFW"
+          >
+            <p
+              class="sc-bczRLJ cTDXTp"
+            >
+              Description
+            </p>
+          </button>
+          <div
+            class="sc-jSMfEi jmXqhj"
+          >
+            <div
+              class="sc-kLLXSd CZMwp"
+            >
+              <p
+                class="sc-bczRLJ cTDXTp"
+              >
+                description
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-ikZpkk PLDbh"
+      >
+        <div
+          class="sc-llJcti jPVlLa"
+        >
+          <button
+            class="sc-jqUVSM jaHdRp"
+          >
+            <div
+              class="sc-kDDrLX csSXPu"
+            >
+              <img
+                class="sc-iqcoie gSBLTW"
+                src="some url"
+              />
+              <span
+                class="sc-evZas jqUdzB"
+              >
+                <p
+                  class="sc-bczRLJ cygevi"
+                >
+                  NaN
+                </p>
+              </span>
+            </div>
+            <div
+              class="sc-breuTD ojFJZ"
+            >
+              <div
+                class="sc-ksZaOG dROsiD"
+              >
+                <p
+                  class="sc-bczRLJ cTDXTp"
+                >
+                  video title
+                </p>
+              </div>
+              <div
+                class="sc-hAZoDl edibgv"
+              >
+                <p
+                  class="sc-bczRLJ cygevi"
+                >
+                  channel title
+                </p>
+              </div>
+              <p
+                class="sc-bczRLJ cygevi"
+              >
+                published at
+              </p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

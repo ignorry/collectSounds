@@ -1,3 +1,6 @@
 {
-  "pageName": "playlist"
+  "pageName": "playlist",
+  "description": "Description",
+  "emptyMessage": "playlist loading error",
+  "emptyList": "there's no videos here"
 }
