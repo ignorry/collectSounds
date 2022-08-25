@@ -23,7 +23,6 @@ const Column = styled.div`
   margin: auto;
   max-width: ${ ({ theme }) => `${ theme.contentWidth }rem`};
   width: 100%;
-  padding: ${ ({ theme }) => `0 ${ theme.gaps.big }rem ${ theme.gaps.big }rem` };
   display: flex;
   flex-direction: column;
   gap: ${ ({ theme }) => `${ theme.gaps.big }rem` };
@@ -33,6 +32,11 @@ const ThumbContainer = styled.div`
   margin: auto;
   max-width: ${ ({ theme }) => `${ theme.contentWidth }rem`};
   width: 100%;
+  padding: ${ ({ theme }) => `0 ${ theme.gaps.big }rem` };
+  
+  @media ${ ({ theme }) => theme.media.small } {
+    padding: 0;
+  }
 `;
 
 const Thumbnail = styled.div<{ realWidth: number }>`
@@ -82,6 +86,7 @@ const Length = styled.span`
 `;
 
 const Info = styled.div`
+  padding: ${ ({ theme }) => `0 ${ theme.gaps.big }rem ${ theme.gaps.big }rem` };
   display: flex;
   flex-direction: column;
   gap: ${ ({ theme }) => `${ theme.gaps.small }rem` };
