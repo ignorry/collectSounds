@@ -27,16 +27,24 @@ export type Tab = {
   label: string;
 }
 
+/**
+ * @typedef Props
+ * @prop {Array<Tab>} tabs
+ * @prop {number} active
+ * @prop {Function} onChange - calls with number
+ */
 export type Props = {
   tabs: Array<Tab>;
+  active?: number,
+  onChange?: Function
 }
 
 const Tabs: React.FC<Props> = ( props: Props ) => {
-  const [choosen, setChoosen] = useState<number>( 0 );
+  const [choosen, setChoosen] = useState<number>( props.active || 0 );
 
   const buttons: Array<ReactNode> = props.tabs.map( ( tab, index ) =>
     <ToggleButton
-      callback={ () => setChoosen( index ) }
+      callback={ () =>  { setChoosen( index ); props.onChange && props.onChange( index ) } }
       active={ index === choosen }
       text={tab.label}
     />
