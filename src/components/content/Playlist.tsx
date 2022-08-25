@@ -71,7 +71,7 @@ const Playlist: React.FC<Props> = ( props: Props ) => (
         src={ props.playlist.thumbnails.standard?.url || props.playlist.thumbnails.default?.url || '' }
       />
       <Length>
-        <Label text={ props.playlist.videos && props.playlist.videos.size.toString() }/>
+        <Label text={ props.playlist.itemCount }/>
         <Icon name="playlistThumbnail"/>
       </Length>
     </Thumbnail>

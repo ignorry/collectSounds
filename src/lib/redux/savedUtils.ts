@@ -26,12 +26,14 @@ export type AddPlaylistPayload = {
  * @prop {string} [audioUrl] - audio file
  * @prop {number} [passed] - passed duration in ms
  * @prop {Array<string>} [tags]
+ * @prop {number} [itemCount]
  */
 export type UpdateVideoPayload = {
   id: string;
   audioUrl?: string;
   passed?: number;
   tags?: Array<string>;
+  itemCount?: number;
 }
 
 /**

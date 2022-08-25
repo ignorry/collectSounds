@@ -158,6 +158,9 @@ describe( 'test updateContents', () => {
               items: [{
                 id: 'newPlaylist',
                 snippet: {},
+                contentDetails: {
+                  itemCount: 0,
+                }
               }]
             } as PlaylistIdResponse ),
         });

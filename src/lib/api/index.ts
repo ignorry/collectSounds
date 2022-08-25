@@ -48,7 +48,7 @@ export const getPopularVideos = async (): Promise<Array<Video>> => {
  */
 export const getPlaylistById = async ( id: string ): Promise<Array<Playlist>> => {
   const res = await fetchPlaylist({
-    part: 'snippet',
+    part: 'snippet,contentDetails',
     id
   });
 
@@ -111,7 +111,7 @@ export const getChannelVideos = async ( id: string ): Promise<Array<Video>> => {
  */
 export const getChannelPlaylists = async ( id: string ): Promise<Array<Playlist>> => {
   const res = await fetchPlaylist({
-    part: 'snippet',
+    part: 'snippet,contentDetails',
     channelId: id,
     maxResults: 50,
   });

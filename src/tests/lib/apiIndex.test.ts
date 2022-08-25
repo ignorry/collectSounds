@@ -71,6 +71,9 @@ describe( 'getPlaylistById', () => {
           items: [{
             id: 'test',
             snippet: {},
+            contentDetails: {
+              itemCount: 0,
+            }
           }]
         } as PlaylistIdResponse ),
       }),
@@ -200,6 +203,9 @@ describe( 'getChannelPlaylists', () => {
           items: [{
             id: 'test',
             snippet: {},
+            contentDetails: {
+              itemCount: 0,
+            }
           }]
         } as PlaylistIdResponse ),
       }),
@@ -259,7 +265,10 @@ describe( 'getSearch', () => {
           json: () => Promise.resolve({
             items: [{
               id: 'playlistId',
-              snippet: {}
+              snippet: {},
+              contentDetails: {
+                itemCount: 0,
+              }
             }]
           } as PlaylistIdResponse ),
         });

@@ -59,6 +59,7 @@ export const parsePlaylistItem = ( obj: ApiPlaylist ): Playlist => {
     lang: obj.snippet.defaultLanguage,
     channelTitle: obj.snippet.channelTitle,
     thumbnails: obj.snippet.thumbnails,
+    itemCount: obj.contentDetails.itemCount,
     lastModified: new Date().getTime()
   }
 }

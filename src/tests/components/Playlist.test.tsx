@@ -13,7 +13,7 @@ describe( 'Playlist component', () => {
   const playlist = {
     type: 'playlist',
     id: 'id',
-    videos: new Map(),
+    videos: [],
     title: 'title',
     channelTitle: 'channelTitle',
     thumbnails: {
@@ -21,6 +21,7 @@ describe( 'Playlist component', () => {
         url: 'http://thumbnail.com'
       },
     },
+    itemCount: 0
   } as PlaylistType;
 
   beforeEach( () => {

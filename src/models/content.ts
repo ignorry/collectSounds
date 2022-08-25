@@ -42,6 +42,7 @@ export type Video = {
  * @prop {string} lang - language in ISO format e.g 'en'
  * @prop {string} channelTitle
  * @prop {Thumbnails} thumbnails
+ * @prop {number} itemCount
  * @prop {Array<string>} [tags] - given by user
  * @prop {number} lastModified - used for synchronization
  */
@@ -54,6 +55,7 @@ export type Playlist = {
   lang: string;
   channelTitle: string;
   thumbnails: Thumbnails;
+  itemCount: number;
   tags?: Array<string>;
   lastModified: number;
 }

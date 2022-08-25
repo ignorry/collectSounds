@@ -79,6 +79,9 @@ describe( "test parsePlaylist", () => {
           channelTitle: "",
           thumbnails: {},
         },
+        contentDetails: {
+          itemCount: 0,
+        }
       }],
     } as PlaylistIdResponse)
 
