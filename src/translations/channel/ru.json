@@ -1,3 +1,9 @@
 {
-  "pageName": "канал"
+  "pageName": "канал",
+  "emptyMessage": "ошибка загрузки канала",
+  "emptyVideos": "нет видео",
+  "emptyPlaylists": "нет плейлистов",
+  "about": "О канале",
+  "videos": "Видео",
+  "playlists": "Плейлисты"
 }

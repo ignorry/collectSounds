@@ -8,6 +8,7 @@ import Error from "./components/Error";
 import Search from "../search";
 import Video from "../video";
 import Playlist from "../playlist";
+import Channel from "../channel";
 
 export const Content = styled.div`
   display: flex;
@@ -46,6 +47,7 @@ const Component: React.FC = () => (
       <Route path='/' element={ <Search/> }/>
       <Route path='search/video/:id' element={ <Video/> }/>
       <Route path='search/playlist/:id' element={ <Playlist/> }/>
+      <Route path='search/channel/:id' element={ <Channel/> }/>
       <Route path='search' element={ <Search/> }/>
     </Routes>
     <Error />

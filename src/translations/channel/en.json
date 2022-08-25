@@ -1,3 +1,9 @@
 {
-  "pageName": "channel"
+  "pageName": "channel",
+  "emptyMessage": "channel loading error",
+  "emptyVideos": "there's no videos here",
+  "emptyPlaylists": "there's no playlists here",
+  "about": "About",
+  "videos": "Videos",
+  "playlists": "Playlists"
 }
