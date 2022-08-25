@@ -1,49 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`playlist component matches to snapshot 1`] = `
+exports[`Content matches to snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-hKMtZM fGVoVJ"
+        class="sc-gicCDI jQWIfJ"
       >
         <div
-          class="sc-eCYdqJ bXHyLC"
-        >
-          <button
-            class="sc-dkzDqf fcjXBB"
-          >
-            <svg
-              class="sc-bczRLJ bygNPW"
-            >
-              <use
-                href="http://localhost/icons.svg#back"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div
-        class="sc-jSMfEi kCIUBe"
-        height="0"
-      />
-      <div
-        class="sc-kLLXSd cKxbhe"
-      >
-        <div
-          class="sc-ikZpkk iLWoQk"
+          class="sc-ezWOiH kWlsYu"
         >
           <p
-            class="sc-gsnTZi kRxXHn"
+            class="sc-bczRLJ cTDXTp"
           >
             title
           </p>
           <div
-            class="sc-jIZahH fHvhBn"
+            class="sc-bZkfAO eJgGrM"
           >
             <p
-              class="sc-gsnTZi kRxXHn"
+              class="sc-bczRLJ cTDXTp"
             >
               channel title
             </p>
@@ -51,7 +28,7 @@ Object {
               class="sc-dkzDqf fcjXBB"
             >
               <svg
-                class="sc-bczRLJ bygNPW"
+                class="sc-gsnTZi gSmFuM"
               >
                 <use
                   href="http://localhost/icons.svg#playlist"
@@ -60,25 +37,25 @@ Object {
             </button>
           </div>
           <div
-            class="sc-iBkjds heHVZX"
+            class="sc-eCYdqJ FxPOW"
           >
             <button
-              class="sc-gKXOVf feeGsc"
+              class="sc-hKMtZM fntRFW"
             >
               <p
-                class="sc-gsnTZi kRxXHn"
+                class="sc-bczRLJ cTDXTp"
               >
                 Description
               </p>
             </button>
             <div
-              class="sc-ftvSup czTgrf"
+              class="sc-jSMfEi jmXqhj"
             >
               <div
-                class="sc-himrzO dgpaeN"
+                class="sc-kLLXSd dOvAfu"
               >
                 <p
-                  class="sc-gsnTZi kRxXHn"
+                  class="sc-bczRLJ cTDXTp"
                 >
                   description
                 </p>
@@ -87,54 +64,54 @@ Object {
           </div>
         </div>
         <div
-          class="sc-gXmSlM jicgWJ"
+          class="sc-ikZpkk PLDbh"
         >
           <div
-            class="sc-ezWOiH dMFoVA"
+            class="sc-llJcti jPVlLa"
           >
             <button
-              class="sc-crXcEl bPhrOo"
+              class="sc-jqUVSM jaHdRp"
             >
               <div
-                class="sc-evZas lfEdtc"
+                class="sc-kDDrLX csSXPu"
               >
                 <img
-                  class="sc-breuTD bQTZzO"
+                  class="sc-iqcoie gSBLTW"
                   src="some url"
                 />
                 <span
-                  class="sc-hAZoDl hHJAWW"
+                  class="sc-evZas jqUdzB"
                 >
                   <p
-                    class="sc-gsnTZi czQjmE"
+                    class="sc-bczRLJ cygevi"
                   >
-                    21:3
+                    NaN
                   </p>
                 </span>
               </div>
               <div
-                class="sc-fnykZs VVBIe"
+                class="sc-breuTD ojFJZ"
               >
                 <div
-                  class="sc-fEOsli bAvXIu"
+                  class="sc-ksZaOG dROsiD"
                 >
                   <p
-                    class="sc-gsnTZi kRxXHn"
+                    class="sc-bczRLJ cTDXTp"
                   >
-                    title
+                    video title
                   </p>
                 </div>
                 <div
-                  class="sc-bjUoiL jUnQDA"
+                  class="sc-hAZoDl edibgv"
                 >
                   <p
-                    class="sc-gsnTZi czQjmE"
+                    class="sc-bczRLJ cygevi"
                   >
                     channel title
                   </p>
                 </div>
                 <p
-                  class="sc-gsnTZi czQjmE"
+                  class="sc-bczRLJ cygevi"
                 >
                   published at
                 </p>
@@ -147,44 +124,21 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-hKMtZM fGVoVJ"
+      class="sc-gicCDI jQWIfJ"
     >
       <div
-        class="sc-eCYdqJ bXHyLC"
-      >
-        <button
-          class="sc-dkzDqf fcjXBB"
-        >
-          <svg
-            class="sc-bczRLJ bygNPW"
-          >
-            <use
-              href="http://localhost/icons.svg#back"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div
-      class="sc-jSMfEi kCIUBe"
-      height="0"
-    />
-    <div
-      class="sc-kLLXSd cKxbhe"
-    >
-      <div
-        class="sc-ikZpkk iLWoQk"
+        class="sc-ezWOiH kWlsYu"
       >
         <p
-          class="sc-gsnTZi kRxXHn"
+          class="sc-bczRLJ cTDXTp"
         >
           title
         </p>
         <div
-          class="sc-jIZahH fHvhBn"
+          class="sc-bZkfAO eJgGrM"
         >
           <p
-            class="sc-gsnTZi kRxXHn"
+            class="sc-bczRLJ cTDXTp"
           >
             channel title
           </p>
@@ -192,7 +146,7 @@ Object {
             class="sc-dkzDqf fcjXBB"
           >
             <svg
-              class="sc-bczRLJ bygNPW"
+              class="sc-gsnTZi gSmFuM"
             >
               <use
                 href="http://localhost/icons.svg#playlist"
@@ -201,25 +155,25 @@ Object {
           </button>
         </div>
         <div
-          class="sc-iBkjds heHVZX"
+          class="sc-eCYdqJ FxPOW"
         >
           <button
-            class="sc-gKXOVf feeGsc"
+            class="sc-hKMtZM fntRFW"
           >
             <p
-              class="sc-gsnTZi kRxXHn"
+              class="sc-bczRLJ cTDXTp"
             >
               Description
             </p>
           </button>
           <div
-            class="sc-ftvSup czTgrf"
+            class="sc-jSMfEi jmXqhj"
           >
             <div
-              class="sc-himrzO dgpaeN"
+              class="sc-kLLXSd dOvAfu"
             >
               <p
-                class="sc-gsnTZi kRxXHn"
+                class="sc-bczRLJ cTDXTp"
               >
                 description
               </p>
@@ -228,54 +182,54 @@ Object {
         </div>
       </div>
       <div
-        class="sc-gXmSlM jicgWJ"
+        class="sc-ikZpkk PLDbh"
       >
         <div
-          class="sc-ezWOiH dMFoVA"
+          class="sc-llJcti jPVlLa"
         >
           <button
-            class="sc-crXcEl bPhrOo"
+            class="sc-jqUVSM jaHdRp"
           >
             <div
-              class="sc-evZas lfEdtc"
+              class="sc-kDDrLX csSXPu"
             >
               <img
-                class="sc-breuTD bQTZzO"
+                class="sc-iqcoie gSBLTW"
                 src="some url"
               />
               <span
-                class="sc-hAZoDl hHJAWW"
+                class="sc-evZas jqUdzB"
               >
                 <p
-                  class="sc-gsnTZi czQjmE"
+                  class="sc-bczRLJ cygevi"
                 >
-                  21:3
+                  NaN
                 </p>
               </span>
             </div>
             <div
-              class="sc-fnykZs VVBIe"
+              class="sc-breuTD ojFJZ"
             >
               <div
-                class="sc-fEOsli bAvXIu"
+                class="sc-ksZaOG dROsiD"
               >
                 <p
-                  class="sc-gsnTZi kRxXHn"
+                  class="sc-bczRLJ cTDXTp"
                 >
-                  title
+                  video title
                 </p>
               </div>
               <div
-                class="sc-bjUoiL jUnQDA"
+                class="sc-hAZoDl edibgv"
               >
                 <p
-                  class="sc-gsnTZi czQjmE"
+                  class="sc-bczRLJ cygevi"
                 >
                   channel title
                 </p>
               </div>
               <p
-                class="sc-gsnTZi czQjmE"
+                class="sc-bczRLJ cygevi"
               >
                 published at
               </p>

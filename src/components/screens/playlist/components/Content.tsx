@@ -37,7 +37,7 @@ const Line = styled.div`
 `;
 
 const Description = styled.div`
-  padding: ${ ({ theme }) => `${ theme.gaps.big }rem` };
+  text-align: left;
 `;
 
 const Videos = styled.div`
