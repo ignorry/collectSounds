@@ -2,5 +2,6 @@
   "pageName": "playlist",
   "description": "Description",
   "emptyMessage": "playlist loading error",
-  "emptyList": "there's no videos here"
+  "emptyList": "there's no videos here",
+  "save": "save"
 }

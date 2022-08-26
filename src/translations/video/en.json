@@ -1,4 +1,5 @@
 {
   "pageName": "video",
-  "emptyMessage": "video loading error"
+  "emptyMessage": "video loading error",
+  "save": "save"
 }
