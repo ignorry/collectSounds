@@ -1,13 +1,27 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { ThemeProvider } from "styled-components";
 import { getTheme } from "../../lib/theme";
 import GlobalStyles from "../../lib/styled/global";
 import { Thumbnails } from "../../models/api/primitives";
 import { Video, Playlist, Channel } from "../../models/content";
+import { Provider } from "react-redux";
+import { LangProvider } from "../../lib/localization";
+import store from "../../redux/index";
 
 import List, { Props as ListProps } from "../../components/content/List";
+
+const AllTheProviders = ( { children }: any ) => (
+  <Provider store={store}>
+    <ThemeProvider theme={ getTheme( true ) } >
+      <LangProvider file="search">
+        { children }
+      </LangProvider>
+    <GlobalStyles/>
+    </ThemeProvider>
+  </Provider>
+);
 
 describe( 'List component', () => {
   const prop: ListProps = {
@@ -36,7 +50,7 @@ describe( 'List component', () => {
       content: {
         type: 'playlist',
         id: 'id',
-        videos: new Map(),
+        videos: [],
         title: 'title',
         channelTitle: 'channelTitle',
         thumbnails: {
@@ -61,49 +75,45 @@ describe( 'List component', () => {
     }];
   });
 
-  it( 'displays all items', () => {
+  it( 'displays all items', async () => {
     const result = render(
-      <ThemeProvider theme={ getTheme( true ) } >
-        <List
-          items={ prop.items }
-          emptyMessage={ prop.emptyMessage }
-        />
-        <GlobalStyles/>
-      </ThemeProvider>
+      <List
+        items={ prop.items }
+        emptyMessage={ prop.emptyMessage }
+      />,
+      { wrapper: AllTheProviders }
     );
+
+    await new Promise( resolve => setTimeout( resolve, 100 ) );
 
     const images = Array.from( result.container.querySelectorAll( 'img' ) ).map( item => item.src );
   
     expect( images ).toStrictEqual([ 'http://video.com/', 'http://playlist.com/', 'http://channel.com/' ]);
   });
 
-  it( 'displays error message', () => {
+  it( 'displays error message', async () => {
     prop.items = [];
 
-    const result = render(
-      <ThemeProvider theme={ getTheme( true ) } >
-        <List
-          items={ prop.items }
-          emptyMessage={ prop.emptyMessage }
-        />
-        <GlobalStyles/>
-      </ThemeProvider>
+    render(
+      <List
+        items={ prop.items }
+        emptyMessage={ prop.emptyMessage }
+      />,
+      { wrapper: AllTheProviders }
     );
-
-    const label = result.container.querySelector( 'p' );
   
-    expect( label.innerHTML ).toStrictEqual( 'empty message' );
+    await waitFor( () => {
+      expect( screen.getByText( 'empty message') ).toBeDefined();
+    });
   });
 
   it( 'matches to snapshot', () => {
     const result = render(
-      <ThemeProvider theme={ getTheme( true ) } >
-        <List
-          items={ prop.items }
-          emptyMessage={ prop.emptyMessage }
-        />
-        <GlobalStyles/>
-      </ThemeProvider>
+      <List
+        items={ prop.items }
+        emptyMessage={ prop.emptyMessage }
+      />,
+      { wrapper: AllTheProviders }
     );
 
     expect( result ).toMatchSnapshot();

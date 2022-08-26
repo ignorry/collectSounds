@@ -1,11 +1,14 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import styled from "styled-components";
 import { Content } from "../../models/content";
+import { useIntl } from "react-intl";
 
 import Label from "../primitives/Label";
 import Video from "./Video";
 import Playlist from "./Playlist";
 import Channel from "./Channel";
+import ActionWrapper from "./ActionWrapper";
 
 const Div = styled.div`
   display: flex;
@@ -19,7 +22,7 @@ const Message = styled.div`
   padding: ${ ({ theme }) => `${ theme.gaps.big }rem` };
 `;
 
-type Item = {
+export type Item = {
   content: Content;
   callback: Function;
 }
@@ -35,12 +38,17 @@ export type Props = {
 }
 
 const List: React.FC<Props> = ( props: Props ) => {
+  const intl = useIntl();
+  const save = intl.formatMessage({ id: 'save' });
+
+  const dispatch = useDispatch();
+
   const content: Array<JSX.Element> = props.items.map( item => {
     if ( item.content.type === 'video' )
-      return <Video video={ item.content } callback={ item.callback }/>
+      return <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( item.content ) }}><Video video={ item.content } callback={() => {}}/></ActionWrapper>
     if ( item.content.type === 'playlist' )
-      return <Playlist playlist={ item.content } callback={ item.callback }/>
-    return <Channel channel={ item.content } callback={ item.callback }/>
+      return <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( item.content ) }}><Playlist playlist={ item.content } callback={() => {}}/></ActionWrapper>
+    return <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( item.content ) }}><Channel channel={ item.content } callback={() => {}}/></ActionWrapper>
   });
   
   return (
