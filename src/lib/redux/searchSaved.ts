@@ -44,13 +44,8 @@ export const filterByType = ( type?: SearchQueries["type"] ): AppThunk => ( disp
  * @param {string} [q] - search query
  * @returns {Array<Video>}
  */
-export const filterByQuery = ( items: Array<Content>, q?: string ) => {
-  const res = items.filter( item => q ? item.title.toLowerCase().includes( q.toLowerCase() ) : true ) || [];
-
-  console.log( 'res ' + JSON.stringify( res ) );
-
-  return res;
-}
+export const filterByQuery = ( items: Array<Content>, q?: string ) =>
+  items.filter( item => q ? item.title.toLowerCase().includes( q.toLowerCase() ) : true ) || [];
 /**
  * filters videos by duration
  * @param {Array<Content>} items 
@@ -102,8 +97,8 @@ export const sortByOrder = ( items: Array<Content>, order?: SearchQueries["order
     })
   : items;
 
-export const searchSaved = ( queries?: SearchQueries ): AppThunk => ( dispatch ) => 
-  sortByOrder(
+export const searchSaved = ( queries?: SearchQueries ): AppThunk => ( dispatch ) => {
+  return sortByOrder(
     filterByQuery(
       filterByDuration(
         filterByTag(
@@ -118,3 +113,4 @@ export const searchSaved = ( queries?: SearchQueries ): AppThunk => ( dispatch )
     ),
     queries.order
   );
+}
