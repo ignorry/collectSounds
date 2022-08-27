@@ -9,6 +9,7 @@ import Video from "./Video";
 import Playlist from "./Playlist";
 import Channel from "./Channel";
 import ActionWrapper from "./ActionWrapper";
+import { addItem } from "../../redux/slices/saved";
 
 const Div = styled.div`
   display: flex;
@@ -45,10 +46,10 @@ const List: React.FC<Props> = ( props: Props ) => {
 
   const content: Array<JSX.Element> = props.items.map( item => {
     if ( item.content.type === 'video' )
-      return <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( item.content ) }}><Video video={ item.content } callback={() => {}}/></ActionWrapper>
+      return <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( addItem([ item.content ]) ) }}><Video video={ item.content } callback={() => {}}/></ActionWrapper>
     if ( item.content.type === 'playlist' )
-      return <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( item.content ) }}><Playlist playlist={ item.content } callback={() => {}}/></ActionWrapper>
-    return <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( item.content ) }}><Channel channel={ item.content } callback={() => {}}/></ActionWrapper>
+      return <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( addItem([ item.content ]) ) }}><Playlist playlist={ item.content } callback={() => {}}/></ActionWrapper>
+    return <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( addItem([ item.content ]) ) }}><Channel channel={ item.content } callback={() => {}}/></ActionWrapper>
   });
   
   return (
