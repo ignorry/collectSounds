@@ -1,5 +1,7 @@
 {
   "pageName": "video",
   "emptyMessage": "video loading error",
-  "save": "save"
+  "save": "save",
+  "addToQueue": "Add to queue",
+  "delete": "Delete"
 }

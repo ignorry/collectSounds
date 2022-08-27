@@ -118,4 +118,28 @@ describe( 'List component', () => {
 
     expect( result ).toMatchSnapshot();
   });
+
+  it( 'displays all items on /search path', async () => {
+    global.window = Object.create( window );
+    const url = "/search";
+    Object.defineProperty( window, 'location', {
+      value: {
+        pathname: url
+      }
+    });
+
+    const result = render(
+      <List
+        items={ prop.items }
+        emptyMessage={ prop.emptyMessage }
+      />,
+      { wrapper: AllTheProviders }
+    );
+
+    await new Promise( resolve => setTimeout( resolve, 100 ) );
+
+    const images = Array.from( result.container.querySelectorAll( 'img' ) ).map( item => item.src );
+
+    expect( images ).toStrictEqual([ 'http://video.com/', 'http://playlist.com/', 'http://channel.com/' ]);
+  });
 });

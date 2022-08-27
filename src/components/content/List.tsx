@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import styled from "styled-components";
 import { Content } from "../../models/content";
@@ -9,7 +9,8 @@ import Video from "./Video";
 import Playlist from "./Playlist";
 import Channel from "./Channel";
 import ActionWrapper from "./ActionWrapper";
-import { addItem } from "../../redux/slices/saved";
+import { addItem, deleteItem } from "../../redux/slices/saved";
+import { addItem as addItemToQueue } from "../../redux/slices/queue";
 
 const Div = styled.div`
   display: flex;
@@ -40,17 +41,38 @@ export type Props = {
 
 const List: React.FC<Props> = ( props: Props ) => {
   const intl = useIntl();
-  const save = intl.formatMessage({ id: 'save' });
+  const save = intl.formatMessage({ id: 'save' }) || '';
+  const addToQueue = intl.formatMessage({ id: 'addToQueue' }) || '';
+  const del = intl.formatMessage({ id: 'delete' }) || '';
 
   const dispatch = useDispatch();
 
-  const content: Array<JSX.Element> = props.items.map( item => {
-    if ( item.content.type === 'video' )
-      return <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( addItem([ item.content ]) ) }}><Video video={ item.content } callback={() => {}}/></ActionWrapper>
-    if ( item.content.type === 'playlist' )
-      return <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( addItem([ item.content ]) ) }}><Playlist playlist={ item.content } callback={() => {}}/></ActionWrapper>
-    return <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( addItem([ item.content ]) ) }}><Channel channel={ item.content } callback={() => {}}/></ActionWrapper>
-  });
+  const [hidden, setHidden] = useState<Array<string>>( [] );
+
+  const addHidden = ( id: string ) => setHidden( [...hidden, id] );
+
+  const content: Array<JSX.Element> =
+    props.items.map( item => hidden.includes( item.content.id ) ? undefined :
+      window.location.pathname.split( '/' )[1] === 'search' ? 
+        <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( addItem([ item.content ]) ) }}>
+          { item.content.type === 'video' ?
+            <Video video={ item.content } callback={() => {}}/>
+          : item.content.type === 'playlist' ?
+            <Playlist playlist={ item.content } callback={() => {}}/>
+          : <Channel channel={ item.content } callback={() => {}}/> }
+        </ActionWrapper>
+      :
+        <ActionWrapper callback={ item.callback } 
+          left={{ label: addToQueue, callback: () => dispatch( addItemToQueue( item.content.id ) ) }}
+          right={{ label: del, callback: () => { dispatch( deleteItem([ item.content.id ]) ); addHidden( item.content.id ) }}}
+        >
+          { item.content.type === 'video' ?
+            <Video video={ item.content } callback={() => {}}/>
+          : item.content.type === 'playlist' ?
+            <Playlist playlist={ item.content } callback={() => {}}/>
+          : <Channel channel={ item.content } callback={() => {}}/> }
+        </ActionWrapper>
+    );
   
   return (
     <Div>

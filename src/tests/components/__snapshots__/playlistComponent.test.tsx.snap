@@ -105,7 +105,7 @@ Object {
                 <p
                   class="sc-gsnTZi kRxXHn"
                 >
-                  save
+                  addToQueue
                 </p>
               </div>
               <div
@@ -159,6 +159,15 @@ Object {
                     </p>
                   </div>
                 </button>
+              </div>
+              <div
+                class="sc-kLLXSd jKwsGe"
+              >
+                <p
+                  class="sc-gsnTZi kRxXHn"
+                >
+                  delete
+                </p>
               </div>
             </div>
           </div>
@@ -267,7 +276,7 @@ Object {
               <p
                 class="sc-gsnTZi kRxXHn"
               >
-                save
+                addToQueue
               </p>
             </div>
             <div
@@ -321,6 +330,15 @@ Object {
                   </p>
                 </div>
               </button>
+            </div>
+            <div
+              class="sc-kLLXSd jKwsGe"
+            >
+              <p
+                class="sc-gsnTZi kRxXHn"
+              >
+                delete
+              </p>
             </div>
           </div>
         </div>

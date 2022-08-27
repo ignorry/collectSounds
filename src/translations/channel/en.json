@@ -6,5 +6,7 @@
   "about": "About",
   "videos": "Videos",
   "playlists": "Playlists",
-  "save": "save"
+  "save": "save",
+  "addToQueue": "Add to queue",
+  "delete": "Delete"
 }
