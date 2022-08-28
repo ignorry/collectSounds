@@ -6,26 +6,26 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-gKXOVf bLqwLA"
+        class="sc-breuTD gsmWgn"
       >
         <div
-          class="sc-iBkjds gYFLPw"
+          class="sc-ksZaOG hDOase"
         >
           <div
-            class="sc-ftvSup esednk"
+            class="sc-hAZoDl kAbpCy"
           >
             <div
-              class="sc-papXJ eRzRNi"
+              class="sc-fnykZs jdeNsS"
             >
               <div
-                class="sc-jqUVSM hpxvJi"
+                class="sc-fEOsli edKSy"
               >
                 <img
-                  class="sc-kDDrLX eoGjPH"
+                  class="sc-bjUoiL fbQKcx"
                   src="some url"
                 />
                 <div
-                  class="sc-iqcoie cBtbJf"
+                  class="sc-idiyUo hQhGZs"
                 >
                   <input
                     class="sc-bczRLJ bYYIGA"
@@ -35,7 +35,7 @@ Object {
                   />
                 </div>
                 <div
-                  class="sc-crXcEl kBjfcQ"
+                  class="sc-dIouRR bGYhCw"
                 >
                   <button
                     class="sc-hKMtZM fntRFW"
@@ -50,7 +50,7 @@ Object {
                   </button>
                 </div>
                 <span
-                  class="sc-evZas jqUdzB"
+                  class="sc-hHLeRK nsCAS"
                 >
                   <p
                     class="sc-gsnTZi czQjmE"
@@ -61,7 +61,7 @@ Object {
               </div>
             </div>
             <div
-              class="sc-breuTD cbeNWx"
+              class="sc-dmRaPn cfwbQB"
             >
               <p
                 class="sc-gsnTZi kRxXHn"
@@ -74,7 +74,7 @@ Object {
                 channel title
               </p>
               <div
-                class="sc-ksZaOG bNSTAY"
+                class="sc-kgflAQ jFxzmx"
               >
                 <p
                   class="sc-gsnTZi czQjmE"
@@ -93,11 +93,69 @@ Object {
                   </svg>
                 </button>
               </div>
+              <div
+                class="sc-papXJ fuRzGz"
+              >
+                <div
+                  class="sc-jqUVSM kuhZm"
+                >
+                  <div
+                    class="sc-kDDrLX kdwYMX"
+                  >
+                    <p
+                      class="sc-gsnTZi kRxXHn"
+                    >
+                      #
+                    </p>
+                    <div
+                      class="sc-iqcoie klbmRv"
+                    />
+                  </div>
+                  <button
+                    class="sc-ftvSup ilhzCZ"
+                  >
+                    <svg
+                      class="sc-eCYdqJ jTkpp"
+                    >
+                      <use
+                        href="http://localhost/icons.svg#add"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  class="sc-crXcEl iKofJx"
+                >
+                  <div
+                    class="sc-iqcoie klbmRv"
+                  />
+                  <div
+                    class="sc-evZas uRLpk"
+                  >
+                    <input
+                      class="sc-gKXOVf cKqVrv"
+                      placeholder="Add new"
+                      value=""
+                    />
+                    <button
+                      class="sc-jSMfEi gLbbbB"
+                    >
+                      <svg
+                        class="sc-eCYdqJ jTkpp"
+                      >
+                        <use
+                          href="http://localhost/icons.svg#add"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="sc-hAZoDl AAteB"
+          class="sc-fLlhyt gEbnUe"
         >
           <p
             class="sc-gsnTZi kRxXHn"
@@ -110,26 +168,26 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-gKXOVf bLqwLA"
+      class="sc-breuTD gsmWgn"
     >
       <div
-        class="sc-iBkjds gYFLPw"
+        class="sc-ksZaOG hDOase"
       >
         <div
-          class="sc-ftvSup esednk"
+          class="sc-hAZoDl kAbpCy"
         >
           <div
-            class="sc-papXJ eRzRNi"
+            class="sc-fnykZs jdeNsS"
           >
             <div
-              class="sc-jqUVSM hpxvJi"
+              class="sc-fEOsli edKSy"
             >
               <img
-                class="sc-kDDrLX eoGjPH"
+                class="sc-bjUoiL fbQKcx"
                 src="some url"
               />
               <div
-                class="sc-iqcoie cBtbJf"
+                class="sc-idiyUo hQhGZs"
               >
                 <input
                   class="sc-bczRLJ bYYIGA"
@@ -139,7 +197,7 @@ Object {
                 />
               </div>
               <div
-                class="sc-crXcEl kBjfcQ"
+                class="sc-dIouRR bGYhCw"
               >
                 <button
                   class="sc-hKMtZM fntRFW"
@@ -154,7 +212,7 @@ Object {
                 </button>
               </div>
               <span
-                class="sc-evZas jqUdzB"
+                class="sc-hHLeRK nsCAS"
               >
                 <p
                   class="sc-gsnTZi czQjmE"
@@ -165,7 +223,7 @@ Object {
             </div>
           </div>
           <div
-            class="sc-breuTD cbeNWx"
+            class="sc-dmRaPn cfwbQB"
           >
             <p
               class="sc-gsnTZi kRxXHn"
@@ -178,7 +236,7 @@ Object {
               channel title
             </p>
             <div
-              class="sc-ksZaOG bNSTAY"
+              class="sc-kgflAQ jFxzmx"
             >
               <p
                 class="sc-gsnTZi czQjmE"
@@ -197,11 +255,69 @@ Object {
                 </svg>
               </button>
             </div>
+            <div
+              class="sc-papXJ fuRzGz"
+            >
+              <div
+                class="sc-jqUVSM kuhZm"
+              >
+                <div
+                  class="sc-kDDrLX kdwYMX"
+                >
+                  <p
+                    class="sc-gsnTZi kRxXHn"
+                  >
+                    #
+                  </p>
+                  <div
+                    class="sc-iqcoie klbmRv"
+                  />
+                </div>
+                <button
+                  class="sc-ftvSup ilhzCZ"
+                >
+                  <svg
+                    class="sc-eCYdqJ jTkpp"
+                  >
+                    <use
+                      href="http://localhost/icons.svg#add"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="sc-crXcEl iKofJx"
+              >
+                <div
+                  class="sc-iqcoie klbmRv"
+                />
+                <div
+                  class="sc-evZas uRLpk"
+                >
+                  <input
+                    class="sc-gKXOVf cKqVrv"
+                    placeholder="Add new"
+                    value=""
+                  />
+                  <button
+                    class="sc-jSMfEi gLbbbB"
+                  >
+                    <svg
+                      class="sc-eCYdqJ jTkpp"
+                    >
+                      <use
+                        href="http://localhost/icons.svg#add"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div
-        class="sc-hAZoDl AAteB"
+        class="sc-fLlhyt gEbnUe"
       >
         <p
           class="sc-gsnTZi kRxXHn"

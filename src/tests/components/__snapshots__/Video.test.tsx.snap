@@ -6,17 +6,17 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-dkzDqf jAeszh"
+        class="sc-hKMtZM gPNWYO"
       >
         <div
-          class="sc-hKMtZM kJYxUW"
+          class="sc-eCYdqJ djuGhP"
         >
           <img
-            class="sc-eCYdqJ eoOQBa"
+            class="sc-jSMfEi esREKY"
             src="http://thumbnail.com"
           />
           <div
-            class="sc-jSMfEi grMTtl"
+            class="sc-gKXOVf jzFIUk"
           >
             <input
               class="sc-bczRLJ bYYIGA"
@@ -26,7 +26,7 @@ Object {
             />
           </div>
           <span
-            class="sc-gKXOVf gxZVoN"
+            class="sc-iBkjds zjimj"
           >
             <p
               class="sc-gsnTZi czQjmE"
@@ -36,10 +36,10 @@ Object {
           </span>
         </div>
         <div
-          class="sc-iBkjds fGvrQA"
+          class="sc-ftvSup hVlahX"
         >
           <div
-            class="sc-ftvSup gNwYiK"
+            class="sc-papXJ eeDMev"
           >
             <p
               class="sc-gsnTZi kRxXHn"
@@ -48,7 +48,7 @@ Object {
             </p>
           </div>
           <div
-            class="sc-papXJ zWNMs"
+            class="sc-jqUVSM coVizB"
           >
             <p
               class="sc-gsnTZi czQjmE"
@@ -67,17 +67,17 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-dkzDqf jAeszh"
+      class="sc-hKMtZM gPNWYO"
     >
       <div
-        class="sc-hKMtZM kJYxUW"
+        class="sc-eCYdqJ djuGhP"
       >
         <img
-          class="sc-eCYdqJ eoOQBa"
+          class="sc-jSMfEi esREKY"
           src="http://thumbnail.com"
         />
         <div
-          class="sc-jSMfEi grMTtl"
+          class="sc-gKXOVf jzFIUk"
         >
           <input
             class="sc-bczRLJ bYYIGA"
@@ -87,7 +87,7 @@ Object {
           />
         </div>
         <span
-          class="sc-gKXOVf gxZVoN"
+          class="sc-iBkjds zjimj"
         >
           <p
             class="sc-gsnTZi czQjmE"
@@ -97,10 +97,10 @@ Object {
         </span>
       </div>
       <div
-        class="sc-iBkjds fGvrQA"
+        class="sc-ftvSup hVlahX"
       >
         <div
-          class="sc-ftvSup gNwYiK"
+          class="sc-papXJ eeDMev"
         >
           <p
             class="sc-gsnTZi kRxXHn"
@@ -109,7 +109,7 @@ Object {
           </p>
         </div>
         <div
-          class="sc-papXJ zWNMs"
+          class="sc-jqUVSM coVizB"
         >
           <p
             class="sc-gsnTZi czQjmE"

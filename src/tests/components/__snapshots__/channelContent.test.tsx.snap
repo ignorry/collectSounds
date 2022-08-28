@@ -6,19 +6,315 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-ikZpkk iRfooV"
+        class="sc-iAvgwm daJpBG"
       >
         <div
-          class="sc-jIZahH kaVVND"
+          class="sc-efBctP edPByx"
         >
           <div
-            class="sc-himrzO iKxVYz"
+            class="sc-cTQhss caNHKO"
           >
             <div
-              class="sc-gXmSlM iqESdi"
+              class="sc-jOrMOR cYkGWB"
+            >
+              <div
+                class="sc-dPyBCJ eDKTuI"
+              >
+                <img
+                  class="sc-bBXxYQ cFgMxI"
+                  src="some url"
+                />
+                <p
+                  class="sc-bczRLJ cTDXTp"
+                >
+                  title
+                </p>
+              </div>
+              <button
+                class="sc-dkzDqf fcjXBB"
+              >
+                <svg
+                  class="sc-gsnTZi gSmFuM"
+                >
+                  <use
+                    href="http://localhost/icons.svg#playlist"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="sc-gXmSlM gTGlkc"
+            >
+              <div
+                class="sc-cCsOjp eRiddm"
+              >
+                <div
+                  class="sc-ciZhAO lhNMbE"
+                >
+                  <p
+                    class="sc-bczRLJ cTDXTp"
+                  >
+                    #
+                  </p>
+                  <div
+                    class="sc-jdAMXn klNkfz"
+                  />
+                </div>
+                <button
+                  class="sc-bZkfAO eeVatE"
+                >
+                  <svg
+                    class="sc-gsnTZi gSmFuM"
+                  >
+                    <use
+                      href="http://localhost/icons.svg#add"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="sc-bZnhIo gMNbPu"
+              >
+                <div
+                  class="sc-jdAMXn klNkfz"
+                />
+                <div
+                  class="sc-iTONeN hFSBBE"
+                >
+                  <input
+                    class="sc-jIZahH jGyggs"
+                    placeholder="Add new"
+                    value=""
+                  />
+                  <button
+                    class="sc-dkzDqf fcjXBB"
+                  >
+                    <svg
+                      class="sc-gsnTZi gSmFuM"
+                    >
+                      <use
+                        href="http://localhost/icons.svg#add"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-cOFTSb gnjjyM"
+        >
+          <div>
+            <div
+              class="sc-kLLXSd dJACWh"
+            >
+              <button
+                class="sc-bZkfAO htIohz"
+              >
+                <p
+                  class="sc-bczRLJ cTDXTp"
+                >
+                  About
+                </p>
+              </button>
+              <button
+                class="sc-bZkfAO eeVatE"
+              >
+                <p
+                  class="sc-bczRLJ cTDXTp"
+                >
+                  Videos
+                </p>
+              </button>
+              <button
+                class="sc-bZkfAO eeVatE"
+              >
+                <p
+                  class="sc-bczRLJ cTDXTp"
+                >
+                  Playlists
+                </p>
+              </button>
+            </div>
+            <div
+              class="sc-ikZpkk bZigCe"
+            >
+              <p
+                class="sc-bczRLJ cTDXTp"
+              >
+                description
+              </p>
+            </div>
+            <div
+              class="sc-ikZpkk jHenAF"
+            >
+              <div
+                class="sc-gicCDI krBTcR"
+              >
+                <div
+                  class="sc-ivTmOn lGvzm"
+                >
+                  <div
+                    class="sc-cxabCf iYKnVk"
+                  >
+                    <p
+                      class="sc-bczRLJ cTDXTp"
+                    >
+                      save
+                    </p>
+                  </div>
+                  <div
+                    class="sc-iIPllB jdDgTD"
+                  >
+                    <button
+                      class="sc-ftvSup fgTGsh"
+                    >
+                      <div
+                        class="sc-papXJ jzECTc"
+                      >
+                        <img
+                          class="sc-jqUVSM htJVeA"
+                          src="some url"
+                        />
+                        <span
+                          class="sc-iqcoie kWnFou"
+                        >
+                          <p
+                            class="sc-bczRLJ cygevi"
+                          >
+                            NaN
+                          </p>
+                        </span>
+                      </div>
+                      <div
+                        class="sc-crXcEl dnNpxW"
+                      >
+                        <div
+                          class="sc-evZas bbzNcv"
+                        >
+                          <p
+                            class="sc-bczRLJ cTDXTp"
+                          >
+                            video title
+                          </p>
+                        </div>
+                        <div
+                          class="sc-breuTD bppYZD"
+                        >
+                          <p
+                            class="sc-bczRLJ cygevi"
+                          >
+                            channel title
+                          </p>
+                        </div>
+                        <p
+                          class="sc-bczRLJ cygevi"
+                        >
+                          published at
+                        </p>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sc-ikZpkk jHenAF"
+            >
+              <div
+                class="sc-gicCDI krBTcR"
+              >
+                <div
+                  class="sc-ivTmOn lGvzm"
+                >
+                  <div
+                    class="sc-cxabCf iYKnVk"
+                  >
+                    <p
+                      class="sc-bczRLJ cTDXTp"
+                    >
+                      save
+                    </p>
+                  </div>
+                  <div
+                    class="sc-iIPllB jdDgTD"
+                  >
+                    <button
+                      class="sc-ksZaOG eaOmpk"
+                    >
+                      <div
+                        class="sc-hAZoDl kHPNAP"
+                      >
+                        <img
+                          class="sc-fnykZs eWLXfB"
+                          src="some url"
+                        />
+                        <span
+                          class="sc-fEOsli exrbZj"
+                        >
+                          <p
+                            class="sc-bczRLJ cTDXTp"
+                          />
+                          <svg
+                            class="sc-gsnTZi gSmFuM"
+                          >
+                            <use
+                              href="http://localhost/icons.svg#playlistThumbnail"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <div
+                        class="sc-bjUoiL djMEHe"
+                      >
+                        <div
+                          class="sc-idiyUo bUPSPD"
+                        >
+                          <p
+                            class="sc-bczRLJ cTDXTp"
+                          >
+                            playlist title
+                          </p>
+                        </div>
+                        <div
+                          class="sc-dIouRR gSWUXk"
+                        >
+                          <p
+                            class="sc-bczRLJ cygevi"
+                          >
+                            channel title
+                          </p>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-iAvgwm daJpBG"
+    >
+      <div
+        class="sc-efBctP edPByx"
+      >
+        <div
+          class="sc-cTQhss caNHKO"
+        >
+          <div
+            class="sc-jOrMOR cYkGWB"
+          >
+            <div
+              class="sc-dPyBCJ eDKTuI"
             >
               <img
-                class="sc-cCsOjp ecHwOa"
+                class="sc-bBXxYQ cFgMxI"
                 src="some url"
               />
               <p
@@ -39,293 +335,103 @@ Object {
               </svg>
             </button>
           </div>
-        </div>
-        <div
-          class="sc-ciZhAO ftltHR"
-        >
-          <div>
-            <div
-              class="sc-bZkfAO iDbrUq"
-            >
-              <button
-                class="sc-ezWOiH jjlOiy"
-              >
-                <p
-                  class="sc-bczRLJ cTDXTp"
-                >
-                  about
-                </p>
-              </button>
-              <button
-                class="sc-ezWOiH chawiN"
-              >
-                <p
-                  class="sc-bczRLJ cTDXTp"
-                >
-                  videos
-                </p>
-              </button>
-              <button
-                class="sc-ezWOiH chawiN"
-              >
-                <p
-                  class="sc-bczRLJ cTDXTp"
-                >
-                  playlists
-                </p>
-              </button>
-            </div>
-            <div
-              class="sc-kLLXSd fTPtm"
-            >
-              <p
-                class="sc-bczRLJ cTDXTp"
-              >
-                description
-              </p>
-            </div>
-            <div
-              class="sc-kLLXSd jtUCel"
-            >
-              <div
-                class="sc-iIPllB eBMqHE"
-              >
-                <div
-                  class="sc-bBrHrO eMLoO"
-                >
-                  <div
-                    class="sc-ivTmOn fdczWS"
-                  >
-                    <p
-                      class="sc-bczRLJ cTDXTp"
-                    >
-                      Add to queue
-                    </p>
-                  </div>
-                  <div
-                    class="sc-llJcti hpiMTd"
-                  >
-                    <button
-                      class="sc-iBkjds hsvJsO"
-                    >
-                      <div
-                        class="sc-ftvSup knozFR"
-                      >
-                        <img
-                          class="sc-papXJ dA-DFkx"
-                          src="some url"
-                        />
-                        <span
-                          class="sc-kDDrLX hSWjUb"
-                        >
-                          <p
-                            class="sc-bczRLJ cygevi"
-                          >
-                            NaN
-                          </p>
-                        </span>
-                      </div>
-                      <div
-                        class="sc-iqcoie jepXKx"
-                      >
-                        <div
-                          class="sc-crXcEl fVQQRz"
-                        >
-                          <p
-                            class="sc-bczRLJ cTDXTp"
-                          >
-                            video title
-                          </p>
-                        </div>
-                        <div
-                          class="sc-evZas NEmCI"
-                        >
-                          <p
-                            class="sc-bczRLJ cygevi"
-                          >
-                            channel title
-                          </p>
-                        </div>
-                        <p
-                          class="sc-bczRLJ cygevi"
-                        >
-                          published at
-                        </p>
-                      </div>
-                    </button>
-                  </div>
-                  <div
-                    class="sc-cxabCf iJcFyn"
-                  >
-                    <p
-                      class="sc-bczRLJ cTDXTp"
-                    >
-                      Delete
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="sc-kLLXSd jtUCel"
-            >
-              <div
-                class="sc-iIPllB eBMqHE"
-              >
-                <div
-                  class="sc-bBrHrO eMLoO"
-                >
-                  <div
-                    class="sc-ivTmOn fdczWS"
-                  >
-                    <p
-                      class="sc-bczRLJ cTDXTp"
-                    >
-                      Add to queue
-                    </p>
-                  </div>
-                  <div
-                    class="sc-llJcti hpiMTd"
-                  >
-                    <button
-                      class="sc-breuTD cnGqfj"
-                    >
-                      <div
-                        class="sc-ksZaOG kMvGBc"
-                      >
-                        <img
-                          class="sc-hAZoDl bqqqGO"
-                          src="some url"
-                        />
-                        <span
-                          class="sc-fnykZs iGoAKm"
-                        >
-                          <p
-                            class="sc-bczRLJ cTDXTp"
-                          />
-                          <svg
-                            class="sc-gsnTZi gSmFuM"
-                          >
-                            <use
-                              href="http://localhost/icons.svg#playlistThumbnail"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div
-                        class="sc-fEOsli cEMLqL"
-                      >
-                        <div
-                          class="sc-bjUoiL cKagUP"
-                        >
-                          <p
-                            class="sc-bczRLJ cTDXTp"
-                          >
-                            playlist title
-                          </p>
-                        </div>
-                        <div
-                          class="sc-idiyUo bMmqgw"
-                        >
-                          <p
-                            class="sc-bczRLJ cygevi"
-                          >
-                            channel title
-                          </p>
-                        </div>
-                      </div>
-                    </button>
-                  </div>
-                  <div
-                    class="sc-cxabCf iJcFyn"
-                  >
-                    <p
-                      class="sc-bczRLJ cTDXTp"
-                    >
-                      Delete
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-ikZpkk iRfooV"
-    >
-      <div
-        class="sc-jIZahH kaVVND"
-      >
-        <div
-          class="sc-himrzO iKxVYz"
-        >
           <div
-            class="sc-gXmSlM iqESdi"
+            class="sc-gXmSlM gTGlkc"
           >
-            <img
-              class="sc-cCsOjp ecHwOa"
-              src="some url"
-            />
-            <p
-              class="sc-bczRLJ cTDXTp"
+            <div
+              class="sc-cCsOjp eRiddm"
             >
-              title
-            </p>
-          </div>
-          <button
-            class="sc-dkzDqf fcjXBB"
-          >
-            <svg
-              class="sc-gsnTZi gSmFuM"
+              <div
+                class="sc-ciZhAO lhNMbE"
+              >
+                <p
+                  class="sc-bczRLJ cTDXTp"
+                >
+                  #
+                </p>
+                <div
+                  class="sc-jdAMXn klNkfz"
+                />
+              </div>
+              <button
+                class="sc-bZkfAO eeVatE"
+              >
+                <svg
+                  class="sc-gsnTZi gSmFuM"
+                >
+                  <use
+                    href="http://localhost/icons.svg#add"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="sc-bZnhIo gMNbPu"
             >
-              <use
-                href="http://localhost/icons.svg#playlist"
+              <div
+                class="sc-jdAMXn klNkfz"
               />
-            </svg>
-          </button>
+              <div
+                class="sc-iTONeN hFSBBE"
+              >
+                <input
+                  class="sc-jIZahH jGyggs"
+                  placeholder="Add new"
+                  value=""
+                />
+                <button
+                  class="sc-dkzDqf fcjXBB"
+                >
+                  <svg
+                    class="sc-gsnTZi gSmFuM"
+                  >
+                    <use
+                      href="http://localhost/icons.svg#add"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
-        class="sc-ciZhAO ftltHR"
+        class="sc-cOFTSb gnjjyM"
       >
         <div>
           <div
-            class="sc-bZkfAO iDbrUq"
+            class="sc-kLLXSd dJACWh"
           >
             <button
-              class="sc-ezWOiH jjlOiy"
+              class="sc-bZkfAO htIohz"
             >
               <p
                 class="sc-bczRLJ cTDXTp"
               >
-                about
+                About
               </p>
             </button>
             <button
-              class="sc-ezWOiH chawiN"
+              class="sc-bZkfAO eeVatE"
             >
               <p
                 class="sc-bczRLJ cTDXTp"
               >
-                videos
+                Videos
               </p>
             </button>
             <button
-              class="sc-ezWOiH chawiN"
+              class="sc-bZkfAO eeVatE"
             >
               <p
                 class="sc-bczRLJ cTDXTp"
               >
-                playlists
+                Playlists
               </p>
             </button>
           </div>
           <div
-            class="sc-kLLXSd fTPtm"
+            class="sc-ikZpkk bZigCe"
           >
             <p
               class="sc-bczRLJ cTDXTp"
@@ -334,38 +440,38 @@ Object {
             </p>
           </div>
           <div
-            class="sc-kLLXSd jtUCel"
+            class="sc-ikZpkk jHenAF"
           >
             <div
-              class="sc-iIPllB eBMqHE"
+              class="sc-gicCDI krBTcR"
             >
               <div
-                class="sc-bBrHrO eMLoO"
+                class="sc-ivTmOn lGvzm"
               >
                 <div
-                  class="sc-ivTmOn fdczWS"
+                  class="sc-cxabCf iYKnVk"
                 >
                   <p
                     class="sc-bczRLJ cTDXTp"
                   >
-                    Add to queue
+                    save
                   </p>
                 </div>
                 <div
-                  class="sc-llJcti hpiMTd"
+                  class="sc-iIPllB jdDgTD"
                 >
                   <button
-                    class="sc-iBkjds hsvJsO"
+                    class="sc-ftvSup fgTGsh"
                   >
                     <div
-                      class="sc-ftvSup knozFR"
+                      class="sc-papXJ jzECTc"
                     >
                       <img
-                        class="sc-papXJ dA-DFkx"
+                        class="sc-jqUVSM htJVeA"
                         src="some url"
                       />
                       <span
-                        class="sc-kDDrLX hSWjUb"
+                        class="sc-iqcoie kWnFou"
                       >
                         <p
                           class="sc-bczRLJ cygevi"
@@ -375,10 +481,10 @@ Object {
                       </span>
                     </div>
                     <div
-                      class="sc-iqcoie jepXKx"
+                      class="sc-crXcEl dnNpxW"
                     >
                       <div
-                        class="sc-crXcEl fVQQRz"
+                        class="sc-evZas bbzNcv"
                       >
                         <p
                           class="sc-bczRLJ cTDXTp"
@@ -387,7 +493,7 @@ Object {
                         </p>
                       </div>
                       <div
-                        class="sc-evZas NEmCI"
+                        class="sc-breuTD bppYZD"
                       >
                         <p
                           class="sc-bczRLJ cygevi"
@@ -403,51 +509,42 @@ Object {
                     </div>
                   </button>
                 </div>
-                <div
-                  class="sc-cxabCf iJcFyn"
-                >
-                  <p
-                    class="sc-bczRLJ cTDXTp"
-                  >
-                    Delete
-                  </p>
-                </div>
               </div>
             </div>
           </div>
           <div
-            class="sc-kLLXSd jtUCel"
+            class="sc-ikZpkk jHenAF"
           >
             <div
-              class="sc-iIPllB eBMqHE"
+              class="sc-gicCDI krBTcR"
             >
               <div
-                class="sc-bBrHrO eMLoO"
+                class="sc-ivTmOn lGvzm"
               >
                 <div
-                  class="sc-ivTmOn fdczWS"
+                  class="sc-cxabCf iYKnVk"
                 >
                   <p
                     class="sc-bczRLJ cTDXTp"
                   >
-                    Add to queue
+                    save
                   </p>
                 </div>
                 <div
-                  class="sc-llJcti hpiMTd"
+                  class="sc-iIPllB jdDgTD"
                 >
                   <button
-                    class="sc-breuTD cnGqfj"
+                    class="sc-ksZaOG eaOmpk"
                   >
                     <div
-                      class="sc-ksZaOG kMvGBc"
+                      class="sc-hAZoDl kHPNAP"
                     >
                       <img
-                        class="sc-hAZoDl bqqqGO"
+                        class="sc-fnykZs eWLXfB"
                         src="some url"
                       />
                       <span
-                        class="sc-fnykZs iGoAKm"
+                        class="sc-fEOsli exrbZj"
                       >
                         <p
                           class="sc-bczRLJ cTDXTp"
@@ -462,10 +559,10 @@ Object {
                       </span>
                     </div>
                     <div
-                      class="sc-fEOsli cEMLqL"
+                      class="sc-bjUoiL djMEHe"
                     >
                       <div
-                        class="sc-bjUoiL cKagUP"
+                        class="sc-idiyUo bUPSPD"
                       >
                         <p
                           class="sc-bczRLJ cTDXTp"
@@ -474,7 +571,7 @@ Object {
                         </p>
                       </div>
                       <div
-                        class="sc-idiyUo bMmqgw"
+                        class="sc-dIouRR gSWUXk"
                       >
                         <p
                           class="sc-bczRLJ cygevi"
@@ -484,15 +581,6 @@ Object {
                       </div>
                     </div>
                   </button>
-                </div>
-                <div
-                  class="sc-cxabCf iJcFyn"
-                >
-                  <p
-                    class="sc-bczRLJ cTDXTp"
-                  >
-                    Delete
-                  </p>
                 </div>
               </div>
             </div>

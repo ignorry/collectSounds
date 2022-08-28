@@ -29,49 +29,111 @@ Object {
         height="0"
       />
       <div
-        class="sc-gXmSlM jXHa-Dl"
+        class="sc-jOrMOR fUKKNC"
       >
         <div
-          class="sc-cCsOjp kRrlvt"
+          class="sc-dPyBCJ ekEvxl"
         >
           <div
-            class="sc-ciZhAO hLwNta"
+            class="sc-bBXxYQ kAUFCU"
           >
             <div
-              class="sc-jdAMXn itTLHm"
+              class="sc-cOFTSb deSPGJ"
             >
-              <img
-                class="sc-bZnhIo fvGjQ"
-                src="some url"
-              />
-              <p
-                class="sc-gsnTZi kRxXHn"
+              <div
+                class="sc-BeQoi djqjfG"
               >
-                title
-              </p>
-            </div>
-            <button
-              class="sc-dkzDqf fcjXBB"
-            >
-              <svg
-                class="sc-bczRLJ bygNPW"
-              >
-                <use
-                  href="http://localhost/icons.svg#playlist"
+                <img
+                  class="sc-kgUAyh kpTBIx"
+                  src="some url"
                 />
-              </svg>
-            </button>
+                <p
+                  class="sc-gsnTZi kRxXHn"
+                >
+                  title
+                </p>
+              </div>
+              <button
+                class="sc-dkzDqf fcjXBB"
+              >
+                <svg
+                  class="sc-bczRLJ bygNPW"
+                >
+                  <use
+                    href="http://localhost/icons.svg#playlist"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="sc-jdAMXn gymDoM"
+            >
+              <div
+                class="sc-bZnhIo ipLqyg"
+              >
+                <div
+                  class="sc-iTONeN kbQQSd"
+                >
+                  <p
+                    class="sc-gsnTZi kRxXHn"
+                  >
+                    #
+                  </p>
+                  <div
+                    class="sc-iAvgwm eoCEAc"
+                  />
+                </div>
+                <button
+                  class="sc-jIZahH einbSz"
+                >
+                  <svg
+                    class="sc-bczRLJ bygNPW"
+                  >
+                    <use
+                      href="http://localhost/icons.svg#add"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="sc-efBctP da-dRzI"
+              >
+                <div
+                  class="sc-iAvgwm eoCEAc"
+                />
+                <div
+                  class="sc-cTQhss yTWxh"
+                >
+                  <input
+                    class="sc-cCsOjp jwOVXW"
+                    placeholder="Add new"
+                    value=""
+                  />
+                  <button
+                    class="sc-dkzDqf fcjXBB"
+                  >
+                    <svg
+                      class="sc-bczRLJ bygNPW"
+                    >
+                      <use
+                        href="http://localhost/icons.svg#add"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div
-          class="sc-iTONeN eTRGJs"
+          class="sc-hTtwUo jAtbTi"
         >
           <div>
             <div
-              class="sc-jIZahH dNwqPN"
+              class="sc-himrzO dFKkRS"
             >
               <button
-                class="sc-ikZpkk gjRdDc"
+                class="sc-jIZahH gdrejY"
               >
                 <p
                   class="sc-gsnTZi kRxXHn"
@@ -80,7 +142,7 @@ Object {
                 </p>
               </button>
               <button
-                class="sc-ikZpkk inYSCz"
+                class="sc-jIZahH einbSz"
               >
                 <p
                   class="sc-gsnTZi kRxXHn"
@@ -89,7 +151,7 @@ Object {
                 </p>
               </button>
               <button
-                class="sc-ikZpkk inYSCz"
+                class="sc-jIZahH einbSz"
               >
                 <p
                   class="sc-gsnTZi kRxXHn"
@@ -99,7 +161,7 @@ Object {
               </button>
             </div>
             <div
-              class="sc-himrzO etbAsp"
+              class="sc-gXmSlM kqbCfy"
             >
               <p
                 class="sc-gsnTZi kRxXHn"
@@ -108,38 +170,38 @@ Object {
               </p>
             </div>
             <div
-              class="sc-himrzO ciBPRi"
+              class="sc-gXmSlM kEFoSV"
             >
               <div
-                class="sc-bZkfAO kpMFyR"
+                class="sc-kLLXSd bYTOPW"
               >
                 <div
-                  class="sc-llJcti ilhxNN"
+                  class="sc-iIPllB eemhuL"
                 >
                   <div
-                    class="sc-iIPllB dGjDQr"
+                    class="sc-gicCDI ftOffe"
                   >
                     <p
                       class="sc-gsnTZi kRxXHn"
                     >
-                      Add to queue
+                      save
                     </p>
                   </div>
                   <div
-                    class="sc-ezWOiH lmvrif"
+                    class="sc-bZkfAO dYtKOi"
                   >
                     <button
-                      class="sc-jqUVSM jaHdRp"
+                      class="sc-kDDrLX rAkeG"
                     >
                       <div
-                        class="sc-kDDrLX csSXPu"
+                        class="sc-iqcoie AKIOT"
                       >
                         <img
-                          class="sc-iqcoie gSBLTW"
+                          class="sc-crXcEl khVjvR"
                           src="some url"
                         />
                         <span
-                          class="sc-evZas jqUdzB"
+                          class="sc-breuTD bXgTyK"
                         >
                           <p
                             class="sc-gsnTZi czQjmE"
@@ -149,10 +211,10 @@ Object {
                         </span>
                       </div>
                       <div
-                        class="sc-breuTD ojFJZ"
+                        class="sc-ksZaOG hIgMoS"
                       >
                         <div
-                          class="sc-ksZaOG dROsiD"
+                          class="sc-hAZoDl gmTvtw"
                         >
                           <p
                             class="sc-gsnTZi kRxXHn"
@@ -161,7 +223,7 @@ Object {
                           </p>
                         </div>
                         <div
-                          class="sc-hAZoDl edibgv"
+                          class="sc-fnykZs jtFhFE"
                         >
                           <p
                             class="sc-gsnTZi czQjmE"
@@ -177,51 +239,42 @@ Object {
                       </div>
                     </button>
                   </div>
-                  <div
-                    class="sc-gicCDI eqVRGZ"
-                  >
-                    <p
-                      class="sc-gsnTZi kRxXHn"
-                    >
-                      Delete
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
             <div
-              class="sc-himrzO ciBPRi"
+              class="sc-gXmSlM kEFoSV"
             >
               <div
-                class="sc-bZkfAO kpMFyR"
+                class="sc-kLLXSd bYTOPW"
               >
                 <div
-                  class="sc-llJcti ilhxNN"
+                  class="sc-iIPllB eemhuL"
                 >
                   <div
-                    class="sc-iIPllB dGjDQr"
+                    class="sc-gicCDI ftOffe"
                   >
                     <p
                       class="sc-gsnTZi kRxXHn"
                     >
-                      Add to queue
+                      save
                     </p>
                   </div>
                   <div
-                    class="sc-ezWOiH lmvrif"
+                    class="sc-bZkfAO dYtKOi"
                   >
                     <button
-                      class="sc-fnykZs ENFNs"
+                      class="sc-fEOsli gyjmqh"
                     >
                       <div
-                        class="sc-fEOsli figcqp"
+                        class="sc-bjUoiL cVuRIQ"
                       >
                         <img
-                          class="sc-bjUoiL jDiLHN"
+                          class="sc-idiyUo jvFVNF"
                           src="some url"
                         />
                         <span
-                          class="sc-idiyUo gagwqi"
+                          class="sc-dIouRR jKOyOy"
                         >
                           <p
                             class="sc-gsnTZi kRxXHn"
@@ -238,10 +291,10 @@ Object {
                         </span>
                       </div>
                       <div
-                        class="sc-dIouRR kACqXK"
+                        class="sc-hHLeRK hMNrwx"
                       >
                         <div
-                          class="sc-hHLeRK dPmFco"
+                          class="sc-dmRaPn bQlMCI"
                         >
                           <p
                             class="sc-gsnTZi kRxXHn"
@@ -250,7 +303,7 @@ Object {
                           </p>
                         </div>
                         <div
-                          class="sc-dmRaPn kZsSEv"
+                          class="sc-kgflAQ bxpamp"
                         >
                           <p
                             class="sc-gsnTZi czQjmE"
@@ -260,15 +313,6 @@ Object {
                         </div>
                       </div>
                     </button>
-                  </div>
-                  <div
-                    class="sc-gicCDI eqVRGZ"
-                  >
-                    <p
-                      class="sc-gsnTZi kRxXHn"
-                    >
-                      Delete
-                    </p>
                   </div>
                 </div>
               </div>
@@ -303,49 +347,111 @@ Object {
       height="0"
     />
     <div
-      class="sc-gXmSlM jXHa-Dl"
+      class="sc-jOrMOR fUKKNC"
     >
       <div
-        class="sc-cCsOjp kRrlvt"
+        class="sc-dPyBCJ ekEvxl"
       >
         <div
-          class="sc-ciZhAO hLwNta"
+          class="sc-bBXxYQ kAUFCU"
         >
           <div
-            class="sc-jdAMXn itTLHm"
+            class="sc-cOFTSb deSPGJ"
           >
-            <img
-              class="sc-bZnhIo fvGjQ"
-              src="some url"
-            />
-            <p
-              class="sc-gsnTZi kRxXHn"
+            <div
+              class="sc-BeQoi djqjfG"
             >
-              title
-            </p>
-          </div>
-          <button
-            class="sc-dkzDqf fcjXBB"
-          >
-            <svg
-              class="sc-bczRLJ bygNPW"
-            >
-              <use
-                href="http://localhost/icons.svg#playlist"
+              <img
+                class="sc-kgUAyh kpTBIx"
+                src="some url"
               />
-            </svg>
-          </button>
+              <p
+                class="sc-gsnTZi kRxXHn"
+              >
+                title
+              </p>
+            </div>
+            <button
+              class="sc-dkzDqf fcjXBB"
+            >
+              <svg
+                class="sc-bczRLJ bygNPW"
+              >
+                <use
+                  href="http://localhost/icons.svg#playlist"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="sc-jdAMXn gymDoM"
+          >
+            <div
+              class="sc-bZnhIo ipLqyg"
+            >
+              <div
+                class="sc-iTONeN kbQQSd"
+              >
+                <p
+                  class="sc-gsnTZi kRxXHn"
+                >
+                  #
+                </p>
+                <div
+                  class="sc-iAvgwm eoCEAc"
+                />
+              </div>
+              <button
+                class="sc-jIZahH einbSz"
+              >
+                <svg
+                  class="sc-bczRLJ bygNPW"
+                >
+                  <use
+                    href="http://localhost/icons.svg#add"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="sc-efBctP da-dRzI"
+            >
+              <div
+                class="sc-iAvgwm eoCEAc"
+              />
+              <div
+                class="sc-cTQhss yTWxh"
+              >
+                <input
+                  class="sc-cCsOjp jwOVXW"
+                  placeholder="Add new"
+                  value=""
+                />
+                <button
+                  class="sc-dkzDqf fcjXBB"
+                >
+                  <svg
+                    class="sc-bczRLJ bygNPW"
+                  >
+                    <use
+                      href="http://localhost/icons.svg#add"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
-        class="sc-iTONeN eTRGJs"
+        class="sc-hTtwUo jAtbTi"
       >
         <div>
           <div
-            class="sc-jIZahH dNwqPN"
+            class="sc-himrzO dFKkRS"
           >
             <button
-              class="sc-ikZpkk gjRdDc"
+              class="sc-jIZahH gdrejY"
             >
               <p
                 class="sc-gsnTZi kRxXHn"
@@ -354,7 +460,7 @@ Object {
               </p>
             </button>
             <button
-              class="sc-ikZpkk inYSCz"
+              class="sc-jIZahH einbSz"
             >
               <p
                 class="sc-gsnTZi kRxXHn"
@@ -363,7 +469,7 @@ Object {
               </p>
             </button>
             <button
-              class="sc-ikZpkk inYSCz"
+              class="sc-jIZahH einbSz"
             >
               <p
                 class="sc-gsnTZi kRxXHn"
@@ -373,7 +479,7 @@ Object {
             </button>
           </div>
           <div
-            class="sc-himrzO etbAsp"
+            class="sc-gXmSlM kqbCfy"
           >
             <p
               class="sc-gsnTZi kRxXHn"
@@ -382,38 +488,38 @@ Object {
             </p>
           </div>
           <div
-            class="sc-himrzO ciBPRi"
+            class="sc-gXmSlM kEFoSV"
           >
             <div
-              class="sc-bZkfAO kpMFyR"
+              class="sc-kLLXSd bYTOPW"
             >
               <div
-                class="sc-llJcti ilhxNN"
+                class="sc-iIPllB eemhuL"
               >
                 <div
-                  class="sc-iIPllB dGjDQr"
+                  class="sc-gicCDI ftOffe"
                 >
                   <p
                     class="sc-gsnTZi kRxXHn"
                   >
-                    Add to queue
+                    save
                   </p>
                 </div>
                 <div
-                  class="sc-ezWOiH lmvrif"
+                  class="sc-bZkfAO dYtKOi"
                 >
                   <button
-                    class="sc-jqUVSM jaHdRp"
+                    class="sc-kDDrLX rAkeG"
                   >
                     <div
-                      class="sc-kDDrLX csSXPu"
+                      class="sc-iqcoie AKIOT"
                     >
                       <img
-                        class="sc-iqcoie gSBLTW"
+                        class="sc-crXcEl khVjvR"
                         src="some url"
                       />
                       <span
-                        class="sc-evZas jqUdzB"
+                        class="sc-breuTD bXgTyK"
                       >
                         <p
                           class="sc-gsnTZi czQjmE"
@@ -423,10 +529,10 @@ Object {
                       </span>
                     </div>
                     <div
-                      class="sc-breuTD ojFJZ"
+                      class="sc-ksZaOG hIgMoS"
                     >
                       <div
-                        class="sc-ksZaOG dROsiD"
+                        class="sc-hAZoDl gmTvtw"
                       >
                         <p
                           class="sc-gsnTZi kRxXHn"
@@ -435,7 +541,7 @@ Object {
                         </p>
                       </div>
                       <div
-                        class="sc-hAZoDl edibgv"
+                        class="sc-fnykZs jtFhFE"
                       >
                         <p
                           class="sc-gsnTZi czQjmE"
@@ -451,51 +557,42 @@ Object {
                     </div>
                   </button>
                 </div>
-                <div
-                  class="sc-gicCDI eqVRGZ"
-                >
-                  <p
-                    class="sc-gsnTZi kRxXHn"
-                  >
-                    Delete
-                  </p>
-                </div>
               </div>
             </div>
           </div>
           <div
-            class="sc-himrzO ciBPRi"
+            class="sc-gXmSlM kEFoSV"
           >
             <div
-              class="sc-bZkfAO kpMFyR"
+              class="sc-kLLXSd bYTOPW"
             >
               <div
-                class="sc-llJcti ilhxNN"
+                class="sc-iIPllB eemhuL"
               >
                 <div
-                  class="sc-iIPllB dGjDQr"
+                  class="sc-gicCDI ftOffe"
                 >
                   <p
                     class="sc-gsnTZi kRxXHn"
                   >
-                    Add to queue
+                    save
                   </p>
                 </div>
                 <div
-                  class="sc-ezWOiH lmvrif"
+                  class="sc-bZkfAO dYtKOi"
                 >
                   <button
-                    class="sc-fnykZs ENFNs"
+                    class="sc-fEOsli gyjmqh"
                   >
                     <div
-                      class="sc-fEOsli figcqp"
+                      class="sc-bjUoiL cVuRIQ"
                     >
                       <img
-                        class="sc-bjUoiL jDiLHN"
+                        class="sc-idiyUo jvFVNF"
                         src="some url"
                       />
                       <span
-                        class="sc-idiyUo gagwqi"
+                        class="sc-dIouRR jKOyOy"
                       >
                         <p
                           class="sc-gsnTZi kRxXHn"
@@ -512,10 +609,10 @@ Object {
                       </span>
                     </div>
                     <div
-                      class="sc-dIouRR kACqXK"
+                      class="sc-hHLeRK hMNrwx"
                     >
                       <div
-                        class="sc-hHLeRK dPmFco"
+                        class="sc-dmRaPn bQlMCI"
                       >
                         <p
                           class="sc-gsnTZi kRxXHn"
@@ -524,7 +621,7 @@ Object {
                         </p>
                       </div>
                       <div
-                        class="sc-dmRaPn kZsSEv"
+                        class="sc-kgflAQ bxpamp"
                       >
                         <p
                           class="sc-gsnTZi czQjmE"
@@ -534,15 +631,6 @@ Object {
                       </div>
                     </div>
                   </button>
-                </div>
-                <div
-                  class="sc-gicCDI eqVRGZ"
-                >
-                  <p
-                    class="sc-gsnTZi kRxXHn"
-                  >
-                    Delete
-                  </p>
                 </div>
               </div>
             </div>
