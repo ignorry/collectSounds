@@ -9,6 +9,7 @@ import Search from "../search";
 import Video from "../video";
 import Playlist from "../playlist";
 import Channel from "../channel";
+import Saved from "../saved";
 
 export const Content = styled.div`
   display: flex;
@@ -49,6 +50,10 @@ const Component: React.FC = () => (
       <Route path='search/playlist/:id' element={ <Playlist/> }/>
       <Route path='search/channel/:id' element={ <Channel/> }/>
       <Route path='search' element={ <Search/> }/>
+      <Route path='saved/video/:id' element={ <Video/> }/>
+      <Route path='saved/playlist/:id' element={ <Playlist/> }/>
+      <Route path='saved/channel/:id' element={ <Channel/> }/>
+      <Route path='saved' element={ <Saved/> }/>
     </Routes>
     <Error />
   </Content>

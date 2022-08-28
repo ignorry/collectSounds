@@ -1,3 +1,20 @@
 {
-  "pageName": "saved"
+  "pageName": "saved",
+  "input": "search or paste a link",
+  "emptyRes": "there's nothing",
+  "filters": "Filters",
+  "addition": "Addition",
+  "date": "Date",
+  "title": "Title",
+  "all": "All",
+  "video": "Video",
+  "playlist": "Playlist",
+  "channel": "Channel",
+  "any": "Any",
+  "long": "Long",
+  "medium": "Medium",
+  "short": "Short",
+  "addToQueue": "Add to queue",
+  "delete": "Delete",
+  "videos": "Videos"
 }
