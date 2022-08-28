@@ -5,6 +5,7 @@ import { getDurationFromMs } from "../../lib/getDuration";
 
 import Label from "../primitives/Label";
 import Icon from "../primitives/Icon";
+import TagsList from "../primitives/TagsList";
 
 const Container = styled.button`
   color: ${ ({ theme }) => theme.colors.font };
@@ -83,6 +84,7 @@ const Playlist: React.FC<Props> = ( props: Props ) => (
       <ChannelTitleContainer>
         <Label text={ props.playlist.channelTitle } secondary/>
       </ChannelTitleContainer>
+      <TagsList tags={ props.playlist.tags }/>
     </Info>
   </Container>
 );

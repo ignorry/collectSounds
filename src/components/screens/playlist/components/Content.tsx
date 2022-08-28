@@ -13,6 +13,7 @@ import Collapse from "../../../primitives/Collapse";
 import Spinner from "../../../primitives/Spinner";
 import List from "../../../content/List";
 import { useNavigate } from "react-router-dom";
+import AddTag from "../../../primitives/AddTag";
 
 const Container = styled.div`
   display: flex;
@@ -87,6 +88,7 @@ const Content: React.FC<Props> = ( props: Props ) => {
               active={ props.saved }
             />
           </Line>
+          <AddTag item={ props.playlist }/>
           { props.playlist.description && props.playlist.description.length > 0 ?
             <Collapse label={ intl.formatMessage({ id: 'description' }) }> 
               <Description>

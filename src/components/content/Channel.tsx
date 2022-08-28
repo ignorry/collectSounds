@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Channel as ChannelType } from "../../models/content";
 
 import Label from "../primitives/Label";
+import TagsList from "../primitives/TagsList";
 
 const Container = styled.button`
   color: ${ ({ theme }) => theme.colors.font };
@@ -58,6 +59,8 @@ const Video: React.FC<Props> = ( props: Props ) => (
       <TitleContainer>
         <Label text={ props.channel.title } />
       </TitleContainer>
+
+      <TagsList tags={ props.channel.tags }/>
     </Info>
   </Container>
 );

@@ -9,6 +9,7 @@ import Range from "../../../primitives/Range";
 import Label from "../../../primitives/Label";
 import PlayerButton from "../../../primitives/PlayerButton";
 import Button from "../../../primitives/Button";
+import AddTag from "../../../primitives/AddTag";
 
 const Container = styled.div`
   display: flex;
@@ -157,6 +158,7 @@ const Content: React.FC<Props> = ( props: Props ) => {
                 active={ props.saved }
               />
             </Line>
+            <AddTag item={ props.video }/>
           </Info>
         </Column>
       </Main>

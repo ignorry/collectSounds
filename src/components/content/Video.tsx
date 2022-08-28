@@ -5,6 +5,7 @@ import { getDurationFromMs } from "../../lib/getDuration";
 
 import Range from "../primitives/Range";
 import Label from "../primitives/Label";
+import TagsList from "../primitives/TagsList";
 
 const Container = styled.button`
   color: ${ ({ theme }) => theme.colors.font };
@@ -94,6 +95,7 @@ const Video: React.FC<Props> = ( props: Props ) => (
         <Label text={ props.video.channelTitle } secondary/>
       </ChannelTitleContainer>
       <Label text={ props.video.publishedAt.split( 'T' )[0] } secondary/>
+      <TagsList tags={ props.video.tags }/>
     </Info>
   </Container>
 );
