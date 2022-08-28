@@ -8,5 +8,6 @@
   "playlists": "Playlists",
   "save": "save",
   "addToQueue": "Add to queue",
-  "delete": "Delete"
+  "delete": "Delete",
+  "newTag": "Add new"
 }

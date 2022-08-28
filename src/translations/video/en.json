@@ -3,5 +3,6 @@
   "emptyMessage": "video loading error",
   "save": "save",
   "addToQueue": "Add to queue",
-  "delete": "Delete"
+  "delete": "Delete",
+  "newTag": "Add new"
 }
