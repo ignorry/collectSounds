@@ -118,8 +118,6 @@ const ActionWrapper: React.FC<Props> = ( props: Props ) => {
       const start = +component.current.getAttribute( 'x' );
       const startY = +component.current.getAttribute( 'y' );
 
-      console.log( 'onEnd', [clientY-startY, clientX-start] );
-
       if ( Math.abs( clientY-startY ) < 2 && Math.abs( clientX-start ) < 2 ) props.callback();
       else if ( Math.abs( clientY-startY ) < Math.abs( clientX-start ) && clientX-start >= 100 ) props.left.callback();
       else if ( Math.abs( clientY-startY ) < Math.abs( clientX-start ) && clientX-start <= -100 ) props.right.callback();
