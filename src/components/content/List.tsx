@@ -53,8 +53,11 @@ const List: React.FC<Props> = ( props: Props ) => {
 
   const content: Array<JSX.Element> =
     props.items.map( item => hidden.includes( item.content.id ) ? undefined :
-      window.location.pathname.split( '/' )[1] === 'search' ? 
-        <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( addItem([ item.content ]) ) }}>
+      window.location.pathname.split( '/' )[1] === 'saved' ? 
+        <ActionWrapper callback={ item.callback } 
+          left={{ label: addToQueue, callback: () => dispatch( addItemToQueue( item.content.id ) ) }}
+          right={{ label: del, callback: () => { dispatch( deleteItem([ item.content.id ]) ); addHidden( item.content.id ) }}}
+        >
           { item.content.type === 'video' ?
             <Video video={ item.content } callback={() => {}}/>
           : item.content.type === 'playlist' ?
@@ -62,10 +65,7 @@ const List: React.FC<Props> = ( props: Props ) => {
           : <Channel channel={ item.content } callback={() => {}}/> }
         </ActionWrapper>
       :
-        <ActionWrapper callback={ item.callback } 
-          left={{ label: addToQueue, callback: () => dispatch( addItemToQueue( item.content.id ) ) }}
-          right={{ label: del, callback: () => { dispatch( deleteItem([ item.content.id ]) ); addHidden( item.content.id ) }}}
-        >
+        <ActionWrapper callback={ item.callback } left={{ label: save, callback: () => dispatch( addItem([ item.content ]) ) }}>
           { item.content.type === 'video' ?
             <Video video={ item.content } callback={() => {}}/>
           : item.content.type === 'playlist' ?

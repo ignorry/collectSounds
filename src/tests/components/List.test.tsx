@@ -119,9 +119,9 @@ describe( 'List component', () => {
     expect( result ).toMatchSnapshot();
   });
 
-  it( 'displays all items on /search path', async () => {
+  it( 'displays all items on /saved path', async () => {
     global.window = Object.create( window );
-    const url = "/search";
+    const url = "/saved";
     Object.defineProperty( window, 'location', {
       value: {
         pathname: url
