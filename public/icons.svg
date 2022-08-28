@@ -17,7 +17,6 @@
   <symbol id="add" width="inherit" height="inherit" viewBox="0 0 14 14">
     <line x1="7" y1="4" x2="7" y2="10" fill="none" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"></line>
     <line x1="4" y1="7" x2="10" y2="7" fill="none" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"></line>
-    <rect x="0.5" y="0.5" width="13" height="13" rx="3" fill="none" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"></rect>
   </symbol>
   <symbol id="play" width="inherit" height="inherit" viewBox="0 0 14 14">
     <path d="M1.5,12.35a1.14,1.14,0,0,0,.63,1,1.24,1.24,0,0,0,1.22,0L12,8A1.11,1.11,0,0,0,12,6L3.35.69a1.24,1.24,0,0,0-1.22,0,1.14,1.14,0,0,0-.63,1Z" fill="inherit" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"></path>
