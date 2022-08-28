@@ -105,7 +105,7 @@ Object {
                 <p
                   class="sc-gsnTZi kRxXHn"
                 >
-                  addToQueue
+                  Add to queue
                 </p>
               </div>
               <div
@@ -166,7 +166,7 @@ Object {
                 <p
                   class="sc-gsnTZi kRxXHn"
                 >
-                  delete
+                  Delete
                 </p>
               </div>
             </div>
@@ -276,7 +276,7 @@ Object {
               <p
                 class="sc-gsnTZi kRxXHn"
               >
-                addToQueue
+                Add to queue
               </p>
             </div>
             <div
@@ -337,7 +337,7 @@ Object {
               <p
                 class="sc-gsnTZi kRxXHn"
               >
-                delete
+                Delete
               </p>
             </div>
           </div>
