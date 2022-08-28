@@ -16,7 +16,7 @@ const AllTheProviders = ( { children }: any ) => (
   <Provider store={store}>
     <ThemeProvider theme={ getTheme( true ) } >
       <BrowserRouter>
-        <LangProvider file="playlist">
+        <LangProvider file="channel">
           { children }
         </LangProvider>
       </BrowserRouter>
