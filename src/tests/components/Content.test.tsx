@@ -15,7 +15,9 @@ const AllTheProviders = ( { children }: any ) => (
   <Provider store={store}>
     <ThemeProvider theme={ getTheme( true ) } >
       <BrowserRouter>
-        { children }
+        <LangProvider file="video">
+          { children }
+        </LangProvider>
       </BrowserRouter>
       <GlobalStyles/>
     </ThemeProvider>
@@ -70,6 +72,8 @@ describe( 'Content', () => {
       <Content video={ video } toggleSaved={ callback } saved={ false }/>,
       { wrapper: AllTheProviders }
     );
+
+    await new Promise( resolve => setTimeout( resolve, 100 ) );
 
     result.container.querySelectorAll( 'button' )[1].click();
 
