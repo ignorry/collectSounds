@@ -68,7 +68,7 @@ export const filterByDuration = ( items: Array<Content>, duration?: SearchQuerie
  * @returns {Array<Video>}
  */
 export const filterByTag = ( items: Array<Content>, tag?: string ) => 
-  items.filter( item => tag ? item.tags.includes( tag ) : true ) || [];
+  items.filter( item => tag ? item.tags && item.tags.includes( tag ) : true ) || [];
 
 /**
  * sorts by order
