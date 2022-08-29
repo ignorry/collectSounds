@@ -15,7 +15,7 @@ export const getVal = ( data: Array<{ id: string, item: any }>, id: string ): an
  */
 export const setVal = ( data: Array<{ id: string, item: any }>, id: string, item: any ) =>
   data && data.filter( item => item.id === id ).length === 0 ?
-    data.push({ id, item }) : data.filter( found => found.item = item );
+    data.push({ id, item }) : data.filter( found => found.id === item.id ).forEach( found => found.item = item );
 
 /**
  * delete value from an array
