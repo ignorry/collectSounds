@@ -13,6 +13,7 @@ import Saved from "../saved";
 import Queue from "../queue";
 
 export const Content = styled.div`
+  overflow: hidden;
   display: flex;
   position: absolute;
   top: 0;
