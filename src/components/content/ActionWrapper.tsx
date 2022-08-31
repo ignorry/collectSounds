@@ -9,25 +9,25 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const Left = styled.div`
+const Left = styled.div<{ active: boolean }>`
   display: flex;
   align-items: center;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  color: ${ ({ theme }) => theme.colors.main };
+  color: ${ props => props.active ? ({ theme }) => theme.colors.main : ({ theme }) => theme.colors.font };
   opacity: 0;
 `;
 
-const Right = styled.div`
+const Right = styled.div<{ active: boolean }>`
   display: flex;
   align-items: center;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  color: ${ ({ theme }) => theme.colors.main };
+  color: ${ props => props.active ? ({ theme }) => theme.colors.main : ({ theme }) => theme.colors.font };
   opacity: 0;
 `;
 
@@ -66,6 +66,9 @@ const ActionWrapper: React.FC<Props> = ( props: Props ) => {
   const right: React.MutableRefObject<undefined | HTMLDivElement> = useRef();
   const component: React.MutableRefObject<undefined | HTMLDivElement> = useRef();
 
+  const [ activeLeft, setActiveLeft ] = useState<boolean>( false );
+  const [ activeRight, setActiveRight ] = useState<boolean>( false );
+
   useEffect(() => {
     const reset = () => {
       component.current.setAttribute( 'x', '0' );
@@ -89,23 +92,28 @@ const ActionWrapper: React.FC<Props> = ( props: Props ) => {
       if ( Math.abs( clientY-startY ) > Math.abs( clientX-start ) ) return;
 
       if ( ! start ) return;
-      if ( clientX - start > 100 && props.left )
+      if ( clientX - start > 100 && props.left ) {
         component.current.style.left = `${ 100+Math.log( clientX - start - 100 )*5 }px`;
-      else if ( clientX - start < -100 && props.right )
+        setActiveLeft( true );
+      } else if ( clientX - start < -100 && props.right ) {
         component.current.style.left = `${ -Math.log( -( clientX - start ) - 100 )*5-100 }px`;
-      else if ( ( clientX - start > 0 && props.left ) || ( clientX - start < 0 && props.right ) )
+        setActiveRight( true );
+      } else if ( ( clientX - start > 0 && props.left ) || ( clientX - start < 0 && props.right ) ) {
         component.current.style.left = `${ clientX - start }px` ;
+        setActiveLeft( false );
+        setActiveRight( false );
+      }
 
-      if ( clientX - start > 60 ) {
+      if ( clientX - start > 40 ) {
         if ( right && right.current )
           right.current.style.opacity = '0';
         if ( left && left.current )
-          left.current.style.opacity = `${ ( ( clientX - start ) - 60 )/100 }`;
-      } else if ( clientX - start < -60 ) {
+          left.current.style.opacity = `${ ( ( clientX - start ) - 40 )/100 }`;
+      } else if ( clientX - start < -40 ) {
         if ( left && left.current )
           left.current.style.opacity = '0';
         if ( right && right.current )
-          right.current.style.opacity = `${ -( ( clientX - start ) +60 )/100 }`;
+          right.current.style.opacity = `${ -( ( clientX - start ) + 40 )/100 }`;
       } else {
         if ( right && right.current )
           right.current.style.opacity = '0';
@@ -140,9 +148,9 @@ const ActionWrapper: React.FC<Props> = ( props: Props ) => {
 
   return (
     <Wrapper>
-      { props.left ? <Left ref={ left }><Label text={ props.left.label }/></Left> : null }
+      { props.left ? <Left ref={ left } active={ activeLeft }><Label text={ props.left.label }/></Left> : null }
       <Component ref={ component }>{ props.children }</Component>
-      { props.right ? <Right ref={ right }><Label text={ props.right.label }/></Right> : null }
+      { props.right ? <Right ref={ right } active={ activeRight }><Label text={ props.right.label }/></Right> : null }
     </Wrapper>
   )
 };
