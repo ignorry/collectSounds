@@ -18,6 +18,10 @@ const Background = styled.div`
   z-index: 100;
 `;
 
+const Text = styled.div`
+  width: 100%;
+`;
+
 const Message = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,7 +57,9 @@ const Error: React.FC<Props> = ( props: Props ) => {
   return props.message ?
   <Background onClick={() => dispatch( setMessage( '' ) )}>
     <Message>
-      <Label text={ props.message } />
+      <Text>
+        <Label text={ props.message } />
+      </Text>
       <ButtonWrapper>
         <FormattedMessage id="OK"/>
       </ButtonWrapper>

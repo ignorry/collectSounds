@@ -9,15 +9,19 @@ Object {
         class="sc-gsnTZi eclZOX"
       >
         <div
-          class="sc-dkzDqf bntjIp"
+          class="sc-hKMtZM zzEmC"
         >
-          <p
-            class="sc-bczRLJ cTDXTp"
-          >
-            test message
-          </p>
           <div
-            class="sc-hKMtZM beDbtL"
+            class="sc-dkzDqf gQxYYg"
+          >
+            <p
+              class="sc-bczRLJ cTDXTp"
+            >
+              test message
+            </p>
+          </div>
+          <div
+            class="sc-eCYdqJ hLsnxG"
           >
             OK
           </div>
@@ -30,15 +34,19 @@ Object {
       class="sc-gsnTZi eclZOX"
     >
       <div
-        class="sc-dkzDqf bntjIp"
+        class="sc-hKMtZM zzEmC"
       >
-        <p
-          class="sc-bczRLJ cTDXTp"
-        >
-          test message
-        </p>
         <div
-          class="sc-hKMtZM beDbtL"
+          class="sc-dkzDqf gQxYYg"
+        >
+          <p
+            class="sc-bczRLJ cTDXTp"
+          >
+            test message
+          </p>
+        </div>
+        <div
+          class="sc-eCYdqJ hLsnxG"
         >
           OK
         </div>
