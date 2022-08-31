@@ -1,3 +1,6 @@
 {
-  "pageName": "очередь"
+  "pageName": "очередь",
+  "emptyList": "Очередь пуста",
+  "length": "Длительность",
+  "clearQueue": "Отчистить"
 }

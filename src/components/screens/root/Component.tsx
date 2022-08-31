@@ -10,6 +10,7 @@ import Video from "../video";
 import Playlist from "../playlist";
 import Channel from "../channel";
 import Saved from "../saved";
+import Queue from "../queue";
 
 export const Content = styled.div`
   display: flex;
@@ -54,6 +55,7 @@ const Component: React.FC = () => (
       <Route path='saved/playlist/:id' element={ <Playlist/> }/>
       <Route path='saved/channel/:id' element={ <Channel/> }/>
       <Route path='saved' element={ <Saved/> }/>
+      <Route path='queue' element={ <Queue/> }/>
     </Routes>
     <Error />
   </Content>

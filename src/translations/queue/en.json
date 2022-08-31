@@ -1,3 +1,6 @@
 {
-  "pageName": "queue"
+  "pageName": "queue",
+  "emptyList": "Queue is empty",
+  "length": "Length",
+  "clearQueue": "Сlear"
 }
