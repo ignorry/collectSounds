@@ -2,7 +2,8 @@ import store from "../../redux/index";
 import {
   addItem,
   deleteItem,
-  moveItem
+  setAll,
+  cleanQueue,
 } from "../../redux/slices/queue";
 
 describe( 'test queue slice', () => {
@@ -39,58 +40,24 @@ describe( 'test queue slice', () => {
   });
 });
 
-describe( 'test moveItem', () => {
-  beforeEach( () => {
-    store.dispatch( deleteItem( 'first' ) );
-    store.dispatch( deleteItem( 'second' ) );
-    store.dispatch( deleteItem( 'third' ) );
-    store.dispatch( deleteItem( 'fourth' ) );
-    store.dispatch( deleteItem( 'fifth' ) );
-
-    store.dispatch( addItem( 'first' ) );
-    store.dispatch( addItem( 'second' ) );
-    store.dispatch( addItem( 'third' ) );
-    store.dispatch( addItem( 'fourth' ) );
-    store.dispatch( addItem( 'fifth' ) );
-  });
-
+describe( 'test setAll', () => {
   it( 'moveItem with wrong param', () => {
-    store.dispatch( moveItem({ id: 'doesnt exist', shift: 1 }));
+    store.dispatch( setAll([ 'first', 'second', 'third' ]) );
 
     const queue = store.getState().queue.data;
 
-    expect( queue ).toStrictEqual(['first', 'second', 'third', 'fourth', 'fifth']);
+    expect( queue ).toStrictEqual( [ 'first', 'second', 'third' ] );
   });
+});
 
-  it( 'moveItem moves further', () => {
-    store.dispatch( moveItem({ id: 'second', shift: 2 }));
+describe( 'test cleanQueue', () => {
+  it( 'moveItem with wrong param', () => {
+    store.dispatch( setAll([ 'first', 'second', 'third' ]) );
 
-    const queue = store.getState().queue.data;
-
-    expect( queue ).toStrictEqual(['first', 'third', 'fourth', 'second', 'fifth']);
-  });
-
-  it( 'moveItem moves back', () => {
-    store.dispatch( moveItem({ id: 'fourth', shift: -2 }));
+    store.dispatch( cleanQueue() );
 
     const queue = store.getState().queue.data;
 
-    expect( queue ).toStrictEqual(['first', 'fourth', 'second', 'third', 'fifth']);
-  });
-
-  it( 'moveItem moves further than length of array', () => {
-    store.dispatch( moveItem({ id: 'third', shift: 3 }));
-
-    const queue = store.getState().queue.data;
-
-    expect( queue ).toStrictEqual(['first', 'second', 'fourth', 'fifth', 'third']);
-  });
-
-  it( 'moveItem moves back than 0', () => {
-    store.dispatch( moveItem({ id: 'third', shift: -3 }));
-
-    const queue = store.getState().queue.data;
-
-    expect( queue ).toStrictEqual(['third', 'first', 'second', 'fourth', 'fifth']);
+    expect( queue ).toStrictEqual( [] );
   });
 });
