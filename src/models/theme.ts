@@ -31,6 +31,12 @@ export type Theme = {
     infoColor: string,
     infoWidth: 4,
   },
+  miniThumbnail: {
+    width: number,
+    height: number,
+    scale: number,
+    opacity: number
+  },
   error: {
     backgroundColor: string,
     width: number,

@@ -28,6 +28,13 @@ export const baseTheme: Theme = {
     infoWidth: 4,
   },
 
+  miniThumbnail: {
+    width: 4.5,
+    height: 2.5,
+    scale: 0.7,
+    opacity: 0.5
+  },
+
   error: {
     backgroundColor: 'rgba(0,0,0,0.7)',
     width: 30,
