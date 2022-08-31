@@ -3,6 +3,8 @@ import { AppThunk } from "..";
 import { Content } from "../../models/content";
 import { getAll } from "../../lib/redux/getAll";
 import { addItem, deleteItem } from "../slices/saved";
+import { getRandomPeerId } from "../../lib/getRandomPeerId";
+import { setPeer } from "../slices/options";
 
 /**
  * search for max lastModified value in collection of Content
@@ -36,6 +38,9 @@ type syncResponse = {
  * @returns {void}
  */
 export const syncPeers = (): AppThunk => ( dispatch, getState: Function ) => {
+  if ( ! getState().options.peer )
+    dispatch( setPeer( getRandomPeerId() ) );
+    
   const peer = new Peerjs( getState().options.peer );
 
   peer.on('connection', (conn) => {
