@@ -55,7 +55,7 @@ const List: React.FC<Props> = ( props: Props ) => {
     props.items.map( item => hidden.includes( item.content.id ) ? undefined :
       window.location.pathname.split( '/' )[1] === 'saved' ? 
         <ActionWrapper callback={ item.callback } 
-          left={{ label: addToQueue, callback: () => dispatch( addItemToQueue( item.content.id ) ) }}
+          left={{ label: addToQueue, callback: () => item.content.type !== 'video' ? item.content.videos && item.content.videos.length && item.content.videos.forEach( item => dispatch( addItemToQueue( item.id ) ) ) : dispatch( addItemToQueue( item.content.id ) ) }}
           right={{ label: del, callback: () => { dispatch( deleteItem([ item.content.id ]) ); addHidden( item.content.id ) }}}
         >
           { item.content.type === 'video' ?
