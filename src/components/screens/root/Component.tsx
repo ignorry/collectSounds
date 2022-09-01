@@ -11,6 +11,7 @@ import Playlist from "../playlist";
 import Channel from "../channel";
 import Saved from "../saved";
 import Queue from "../queue";
+import Settings from "../settings";
 
 export const Content = styled.div`
   overflow: hidden;
@@ -57,6 +58,7 @@ const Component: React.FC = () => (
       <Route path='saved/channel/:id' element={ <Channel/> }/>
       <Route path='saved' element={ <Saved/> }/>
       <Route path='queue' element={ <Queue/> }/>
+      <Route path='settings' element={ <Settings/> }/>
     </Routes>
     <Error />
   </Content>

@@ -1,3 +1,8 @@
 {
-  "pageName": "settings"
+  "pageName": "settings",
+  "theme": "Theme",
+  "scanQR": "Connect device",
+  "showQR": "My QR code",
+  "connected": "Connected devices:",
+  "scanError": "Scanner error. Check your camera, please."
 }
