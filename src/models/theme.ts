@@ -9,6 +9,7 @@ export type Theme = {
   rangeSize: number,
   spinnerSize: number,
   contentWidth: number,
+  codeWidth: number,
   colors: {
     main: string,
     bg?: string,

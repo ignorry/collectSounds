@@ -5,6 +5,7 @@ export const baseTheme: Theme = {
   rangeSize: 0.2,
   spinnerSize: 1.5,
   contentWidth: 60,
+  codeWidth: 30,
 
   colors: {
     main: '#00fa9a',
