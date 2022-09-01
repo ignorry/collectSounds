@@ -10,7 +10,7 @@ export const lightTheme: DefaultTheme = {
     ...baseTheme.colors,
     main: '#00bb88',
     bg: '#ffffff',
-    bgSecondary: '#f1f1f1',
+    bgSecondary: '#d8d8d8',
     font: '#000000',
     darkBg: '#d9d9d9'
   },
