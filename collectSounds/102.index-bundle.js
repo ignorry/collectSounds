@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcollectsounds=self.webpackChunkcollectsounds||[]).push([[102],{6102:e=>{e.exports=JSON.parse('{"pageName":"видео","emptyMessage":"ошибка загрузки видео","save":"сохранить","addToQueue":"Добавить в очередь","delete":"Удалить","newTag":"Добавить новый"}')}}]);

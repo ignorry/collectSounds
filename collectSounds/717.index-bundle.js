@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcollectsounds=self.webpackChunkcollectsounds||[]).push([[717],{7717:e=>{e.exports=JSON.parse('{"pageName":"очередь","emptyList":"Очередь пуста","length":"Длительность","clearQueue":"Отчистить"}')}}]);

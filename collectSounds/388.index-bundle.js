@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcollectsounds=self.webpackChunkcollectsounds||[]).push([[388],{8388:e=>{e.exports=JSON.parse('{"pageName":"настройки","theme":"Тема","scanQR":"Подключить устройство","showQR":"Мой QR код","connected":"Подключенные устройства:","scanError":"Ошибка сканнера. Пожалуйста, проверьте свою камеру."}')}}]);

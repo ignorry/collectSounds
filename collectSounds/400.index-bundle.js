@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcollectsounds=self.webpackChunkcollectsounds||[]).push([[400],{1400:e=>{e.exports=JSON.parse('{"pageName":"главная","OK":"ОК"}')}}]);
