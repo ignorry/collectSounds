@@ -10,6 +10,8 @@ import SearchQueries from "./components/SearchQueries";
 import List, { Props as ListProps } from "../../content/List";
 import Spinner from "../../primitives/Spinner";
 
+const BASE_URL = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? "" : "/collectSounds/";
+
 const SearchContainer = styled.div`
   background: ${ ({ theme }) => theme.colors.bgSecondary };
 `;
@@ -35,9 +37,9 @@ const Component: React.FC = () => {
     setQueries( queries );
 
     if ( /^https:\/\/www.youtube.com\/watch\?v=/.test( queries.q ) )
-      navigate( `/search/video/${ queries.q.split( '=' )[1].split( '&' )[0] }` );
+      navigate( `${ BASE_URL || '/' }search/video/${ queries.q.split( '=' )[1].split( '&' )[0] }` );
     if ( /^https:\/\/www.youtube.com\/playlist\?list=/.test( queries.q ) )
-      navigate( `/search/playlist/${ queries.q.split( '=' )[1].split( '&' )[0] }` );
+      navigate( `${ BASE_URL || '/' }search/playlist/${ queries.q.split( '=' )[1].split( '&' )[0] }` );
 
     const stringified = queryString.stringify( queries );
     window.history.pushState('', '', `${ window.location.origin }${ window.location.pathname }?${ stringified }` );
@@ -59,7 +61,7 @@ const Component: React.FC = () => {
 
   const list = res ? <List items={ res.map( item => ({
     content: item,
-    callback: () => navigate( `/search/${item.type}/${item.id}` )
+    callback: () => navigate( `${ BASE_URL || '/' }search/${item.type}/${item.id}` )
   })) } emptyMessage={ intl.formatMessage({ id: 'emptyRes' })}/> : <SpinnerContainer><Spinner/></SpinnerContainer>;
 
   return (

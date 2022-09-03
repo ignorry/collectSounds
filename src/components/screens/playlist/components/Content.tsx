@@ -15,6 +15,9 @@ import List from "../../../content/List";
 import { useNavigate } from "react-router-dom";
 import AddTag from "../../../primitives/AddTag";
 
+const NODE_ROUTE = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? 1: 2;
+const BASE_URL = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? "" : "/collectSounds/";
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -73,7 +76,7 @@ const Content: React.FC<Props> = ( props: Props ) => {
 
   const items = props.playlist.videos ? <List items={ props.playlist.videos.map( item => ({
     content: item.item,
-    callback: () => navigate( `/${ window.location.pathname.split( '/' )[1] }/video/${ item.id }` )
+    callback: () => navigate( `${ BASE_URL || '/' }${ window.location.pathname.split( '/' )[NODE_ROUTE] }/video/${ item.id }` )
   })) } emptyMessage={ intl.formatMessage({ id: 'emptyList' }) }/> : <SpinnerContainer><Spinner/></SpinnerContainer>;
 
   return (

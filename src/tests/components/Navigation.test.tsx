@@ -48,25 +48,25 @@ describe( 'Navigation component', () => {
     result.container.querySelectorAll( 'button' )[0].click();
 
     await waitFor( () => {
-      expect( window.location.pathname.split( '/' )[1] ).toBe( 'search' );
+      expect( window.location.pathname.split( '/' )[2] ).toBe( 'search' );
     });
 
     result.container.querySelectorAll( 'button' )[1].click();
     
     await waitFor( () => {
-      expect( window.location.pathname.split( '/' )[1] ).toBe( 'saved' );
+      expect( window.location.pathname.split( '/' )[2] ).toBe( 'saved' );
     });
     
     result.container.querySelectorAll( 'button' )[2].click();
     
     await waitFor( () => {
-      expect( window.location.pathname.split( '/' )[1] ).toBe( 'queue' );
+      expect( window.location.pathname.split( '/' )[2] ).toBe( 'queue' );
     });
     
     result.container.querySelectorAll( 'button' )[3].click();
     
     await waitFor( () => {
-      expect( window.location.pathname.split( '/' )[1] ).toBe( 'settings' );
+      expect( window.location.pathname.split( '/' )[2] ).toBe( 'settings' );
     });
   });
 

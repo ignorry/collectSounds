@@ -34,7 +34,7 @@ Object {
                     class="sc-jSMfEi gjhtMD"
                   >
                     <use
-                      href="http://localhost/icons.svg#filters"
+                      href="http://localhost/collectSounds/icons.svg#filters"
                     />
                   </svg>
                   <p
@@ -306,7 +306,7 @@ Object {
                   class="sc-jSMfEi gjhtMD"
                 >
                   <use
-                    href="http://localhost/icons.svg#filters"
+                    href="http://localhost/collectSounds/icons.svg#filters"
                   />
                 </svg>
                 <p

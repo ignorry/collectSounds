@@ -37,7 +37,7 @@ Object {
                   class="sc-gsnTZi gSmFuM"
                 >
                   <use
-                    href="http://localhost/icons.svg#playlist"
+                    href="http://localhost/collectSounds/icons.svg#playlist"
                   />
                 </svg>
               </button>
@@ -67,7 +67,7 @@ Object {
                     class="sc-gsnTZi gSmFuM"
                   >
                     <use
-                      href="http://localhost/icons.svg#add"
+                      href="http://localhost/collectSounds/icons.svg#add"
                     />
                   </svg>
                 </button>
@@ -93,7 +93,7 @@ Object {
                       class="sc-gsnTZi gSmFuM"
                     >
                       <use
-                        href="http://localhost/icons.svg#add"
+                        href="http://localhost/collectSounds/icons.svg#add"
                       />
                     </svg>
                   </button>
@@ -260,7 +260,7 @@ Object {
                             class="sc-gsnTZi gSmFuM"
                           >
                             <use
-                              href="http://localhost/icons.svg#playlistThumbnail"
+                              href="http://localhost/collectSounds/icons.svg#playlistThumbnail"
                             />
                           </svg>
                         </span>
@@ -330,7 +330,7 @@ Object {
                 class="sc-gsnTZi gSmFuM"
               >
                 <use
-                  href="http://localhost/icons.svg#playlist"
+                  href="http://localhost/collectSounds/icons.svg#playlist"
                 />
               </svg>
             </button>
@@ -360,7 +360,7 @@ Object {
                   class="sc-gsnTZi gSmFuM"
                 >
                   <use
-                    href="http://localhost/icons.svg#add"
+                    href="http://localhost/collectSounds/icons.svg#add"
                   />
                 </svg>
               </button>
@@ -386,7 +386,7 @@ Object {
                     class="sc-gsnTZi gSmFuM"
                   >
                     <use
-                      href="http://localhost/icons.svg#add"
+                      href="http://localhost/collectSounds/icons.svg#add"
                     />
                   </svg>
                 </button>
@@ -553,7 +553,7 @@ Object {
                           class="sc-gsnTZi gSmFuM"
                         >
                           <use
-                            href="http://localhost/icons.svg#playlistThumbnail"
+                            href="http://localhost/collectSounds/icons.svg#playlistThumbnail"
                           />
                         </svg>
                       </span>

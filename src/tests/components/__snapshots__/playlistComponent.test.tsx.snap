@@ -18,7 +18,7 @@ Object {
               class="sc-bczRLJ bygNPW"
             >
               <use
-                href="http://localhost/icons.svg#back"
+                href="http://localhost/collectSounds/icons.svg#back"
               />
             </svg>
           </button>
@@ -57,7 +57,7 @@ Object {
                   class="sc-bczRLJ bygNPW"
                 >
                   <use
-                    href="http://localhost/icons.svg#playlist"
+                    href="http://localhost/collectSounds/icons.svg#playlist"
                   />
                 </svg>
               </button>
@@ -87,7 +87,7 @@ Object {
                     class="sc-bczRLJ bygNPW"
                   >
                     <use
-                      href="http://localhost/icons.svg#add"
+                      href="http://localhost/collectSounds/icons.svg#add"
                     />
                   </svg>
                 </button>
@@ -113,7 +113,7 @@ Object {
                       class="sc-bczRLJ bygNPW"
                     >
                       <use
-                        href="http://localhost/icons.svg#add"
+                        href="http://localhost/collectSounds/icons.svg#add"
                       />
                     </svg>
                   </button>
@@ -238,7 +238,7 @@ Object {
             class="sc-bczRLJ bygNPW"
           >
             <use
-              href="http://localhost/icons.svg#back"
+              href="http://localhost/collectSounds/icons.svg#back"
             />
           </svg>
         </button>
@@ -277,7 +277,7 @@ Object {
                 class="sc-bczRLJ bygNPW"
               >
                 <use
-                  href="http://localhost/icons.svg#playlist"
+                  href="http://localhost/collectSounds/icons.svg#playlist"
                 />
               </svg>
             </button>
@@ -307,7 +307,7 @@ Object {
                   class="sc-bczRLJ bygNPW"
                 >
                   <use
-                    href="http://localhost/icons.svg#add"
+                    href="http://localhost/collectSounds/icons.svg#add"
                   />
                 </svg>
               </button>
@@ -333,7 +333,7 @@ Object {
                     class="sc-bczRLJ bygNPW"
                   >
                     <use
-                      href="http://localhost/icons.svg#add"
+                      href="http://localhost/collectSounds/icons.svg#add"
                     />
                   </svg>
                 </button>

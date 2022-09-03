@@ -17,7 +17,7 @@ describe( 'Icon componenet', () => {
 
     const elem = result.container.querySelector('use');
 
-    expect( elem.getAttribute( 'href' ) ).toBe( `${ window.location.origin }/icons.svg#icon` );
+    expect( elem.getAttribute( 'href' ) ).toBe( `${ window.location.origin }/collectSounds/icons.svg#icon` );
   });
 
   it( 'renders icon with active param', () => {
@@ -30,7 +30,7 @@ describe( 'Icon componenet', () => {
 
     const elem = result.container.querySelector('use');
 
-    expect( elem.getAttribute( 'href' ) ).toBe( `${ window.location.origin }/icons.svg#icon` );
+    expect( elem.getAttribute( 'href' ) ).toBe( `${ window.location.origin }/collectSounds/icons.svg#icon` );
   });
 
   it( 'matches to snapshot', () => {

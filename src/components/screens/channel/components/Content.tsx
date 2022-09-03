@@ -12,6 +12,9 @@ import List from "../../../content/List";
 import Tabs from "../../../primitives/Tabs";
 import AddTag from "../../../primitives/AddTag";
 
+const NODE_ROUTE = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? 1: 2;
+const BASE_URL = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? "" : "/collectSounds/";
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -85,12 +88,12 @@ const Content: React.FC<Props> = ( props: Props ) => {
 
   const videos = props.channel.videos ? <List items={ props.channel.videos.map( item => ({
     content: item.item,
-    callback: () => navigate( `/${ window.location.pathname.split( '/' )[1] }/video/${ item.id }` )
+    callback: () => navigate( `${ BASE_URL || '/' }${ window.location.pathname.split( '/' )[NODE_ROUTE] }/video/${ item.id }` )
   })) } emptyMessage={ intl.formatMessage({ id: 'emptyVideos' }) }/> : <SpinnerContainer><Spinner/></SpinnerContainer>;
 
   const playlists = props.channel.playlists ? <List items={ props.channel.playlists.map( item => ({
     content: item.item,
-    callback: () => navigate( `/${ window.location.pathname.split( '/' )[1] }/playlist/${ item.id }` )
+    callback: () => navigate( `${ BASE_URL || '/' }${ window.location.pathname.split( '/' )[NODE_ROUTE] }/playlist/${ item.id }` )
   })) } emptyMessage={ intl.formatMessage({ id: 'emptyPlaylists' }) }/> : <SpinnerContainer><Spinner/></SpinnerContainer>;
 
   const tabs = [

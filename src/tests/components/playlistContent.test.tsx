@@ -103,7 +103,7 @@ describe( 'Content', () => {
 
     await user.click( screen.getByText( 'video title' ) );
 
-    expect( window.location.pathname ).toBe( '/' );
+    expect( window.location.pathname ).toBe( '/collectSounds/undefined/video/video' );
   });
 
   it( 'matches to snapshot', async () => {

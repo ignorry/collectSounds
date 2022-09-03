@@ -13,6 +13,8 @@ import Saved from "../saved";
 import Queue from "../queue";
 import Settings from "../settings";
 
+const BASE_URL = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? "" : "/collectSounds/";
+
 export const Content = styled.div`
   overflow: hidden;
   display: flex;
@@ -48,17 +50,17 @@ const Component: React.FC = () => (
       <Navigation/>
     </Nav>
     <Routes>
-      <Route path='/' element={ <Search/> }/>
-      <Route path='search/video/:id' element={ <Video/> }/>
-      <Route path='search/playlist/:id' element={ <Playlist/> }/>
-      <Route path='search/channel/:id' element={ <Channel/> }/>
-      <Route path='search' element={ <Search/> }/>
-      <Route path='saved/video/:id' element={ <Video/> }/>
-      <Route path='saved/playlist/:id' element={ <Playlist/> }/>
-      <Route path='saved/channel/:id' element={ <Channel/> }/>
-      <Route path='saved' element={ <Saved/> }/>
-      <Route path='queue' element={ <Queue/> }/>
-      <Route path='settings' element={ <Settings/> }/>
+      <Route path={`${ BASE_URL || '/' }`} element={ <Search/> }/>
+      <Route path={`${ BASE_URL }search/video/:id`} element={ <Video/> }/>
+      <Route path={`${ BASE_URL }search/playlist/:id`} element={ <Playlist/> }/>
+      <Route path={`${ BASE_URL }search/channel/:id`} element={ <Channel/> }/>
+      <Route path={`${ BASE_URL }search`} element={ <Search/> }/>
+      <Route path={`${ BASE_URL }saved/video/:id`} element={ <Video/> }/>
+      <Route path={`${ BASE_URL }saved/playlist/:id`} element={ <Playlist/> }/>
+      <Route path={`${ BASE_URL }saved/channel/:id`} element={ <Channel/> }/>
+      <Route path={`${ BASE_URL }saved`} element={ <Saved/> }/>
+      <Route path={`${ BASE_URL }queue`} element={ <Queue/> }/>
+      <Route path={`${ BASE_URL }settings`} element={ <Settings/> }/>
     </Routes>
     <Error />
   </Content>

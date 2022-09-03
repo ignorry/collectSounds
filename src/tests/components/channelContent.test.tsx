@@ -125,7 +125,7 @@ describe( 'Content', () => {
 
     await user.click( screen.getByText( 'video title' ) );
 
-    expect( window.location.pathname ).toBe( '/' );
+    expect( window.location.pathname ).toBe( '/collectSounds/undefined/video/video' );
   });
 
   it( 'handles click on playlist', async () => {
@@ -140,7 +140,7 @@ describe( 'Content', () => {
 
     await user.click( screen.getByText( 'playlist title' ) );
 
-    expect( window.location.pathname ).toBe( '/' );
+    expect( window.location.pathname ).toBe( '/collectSounds/undefined/playlist/playlistid' );
   });
 
   it( 'matches to snapshot', async () => {

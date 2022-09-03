@@ -12,6 +12,9 @@ import Spinner from "../../primitives/Spinner";
 import Tabs from "../../primitives/Tabs";
 import { useDispatch } from "react-redux";
 
+const NODE_ROUTE = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? 1: 2;
+const BASE_URL = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? "" : "/collectSounds/";
+
 const SearchContainer = styled.div`
   background: ${ ({ theme }) => theme.colors.bgSecondary };
   padding-bottom: ${ ({ theme }) => `${ theme.font.primary.size*1.1 + theme.gaps.small*2 }rem`};
@@ -43,9 +46,9 @@ const Component: React.FC = () => {
     setQueries( queries );
 
     if ( /^https:\/\/www.youtube.com\/watch\?v=/.test( queries.q ) )
-      navigate( `/saved/video/${ queries.q.split( '=' )[1].split( '&' )[0] }` );
+      navigate( `${ BASE_URL || '/' }saved/video/${ queries.q.split( '=' )[NODE_ROUTE].split( '&' )[0] }` );
     if ( /^https:\/\/www.youtube.com\/playlist\?list=/.test( queries.q ) )
-      navigate( `/saved/playlist/${ queries.q.split( '=' )[1].split( '&' )[0] }` );
+      navigate( `${ BASE_URL || '/' }saved/playlist/${ queries.q.split( '=' )[NODE_ROUTE].split( '&' )[0] }` );
 
     const stringified = queryString.stringify( { ...queries, isVideos } );
     window.history.pushState('', '', `${ window.location.origin }${ window.location.pathname }?${ stringified }` );
@@ -68,7 +71,7 @@ const Component: React.FC = () => {
 
   const list = res ? <List items={ res.map( item => ({
     content: item,
-    callback: () => navigate( `/saved/${item.type}/${item.id}` )
+    callback: () => navigate( `${ BASE_URL || '/' }saved/${item.type}/${item.id}` )
   })) } emptyMessage={ intl.formatMessage({ id: 'emptyRes' })}/> : <SpinnerContainer><Spinner/></SpinnerContainer>;
 
   const tabs = [

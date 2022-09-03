@@ -58,7 +58,7 @@ Object {
               class="sc-dkzDqf cHucqD"
             >
               <use
-                href="http://localhost/icons.svg#trash"
+                href="http://localhost/collectSounds/icons.svg#trash"
               />
             </svg>
           </button>
@@ -120,7 +120,7 @@ Object {
             class="sc-dkzDqf cHucqD"
           >
             <use
-              href="http://localhost/icons.svg#trash"
+              href="http://localhost/collectSounds/icons.svg#trash"
             />
           </svg>
         </button>

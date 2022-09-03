@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 
 import ToggleButton from "../../../primitives/ToggleButton";
 
+const NODE_DEV = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
+const BASE_URL = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? "" : "/collectSounds/";
+
 export const Nav = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,28 +27,31 @@ const Navigation: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect( () => {
-    setRoute( window.location.pathname.split( '/' )[1] );
+    if ( NODE_DEV )
+      setRoute( window.location.pathname.split( '/' )[1] );
+    else
+      setRoute( window.location.pathname.split( '/' )[2] );
   }, [window.location.pathname]);
 
   return (
     <Nav>
       <ToggleButton
-        callback={ () => navigate( '/search' ) }
+        callback={ () => navigate( `${ BASE_URL || '/' }search` ) }
         active={ route === '' || route === 'search' }
         pic="search"
       />
       <ToggleButton
-        callback={ () => navigate( '/saved' ) }
+        callback={ () => navigate( `${ BASE_URL || '/' }saved` ) }
         active={ route === 'saved' }
         pic="favorite"
       />
       <ToggleButton
-        callback={ () => navigate( '/queue' ) }
+        callback={ () => navigate( `${ BASE_URL || '/' }queue` ) }
         active={ route === 'queue' }
         pic="queue"
       />
       <ToggleButton
-        callback={ () => navigate( '/settings' ) }
+        callback={ () => navigate( `${ BASE_URL || '/' }settings` ) }
         active={ route === 'settings' }
         pic="settings"
       />

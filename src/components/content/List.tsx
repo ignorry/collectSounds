@@ -12,6 +12,8 @@ import ActionWrapper from "./ActionWrapper";
 import { addItem, deleteItem } from "../../redux/slices/saved";
 import { addItem as addItemToQueue } from "../../redux/slices/queue";
 
+const NODE_ROUTE = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? 1: 2;
+
 const Div = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,7 +55,7 @@ const List: React.FC<Props> = ( props: Props ) => {
 
   const content: Array<JSX.Element> =
     props.items.map( item => hidden.includes( item.content.id ) ? undefined :
-      window.location.pathname.split( '/' )[1] === 'saved' ? 
+      window.location.pathname.split( '/' )[NODE_ROUTE] === 'saved' ? 
         <ActionWrapper callback={ item.callback } 
           left={{ label: addToQueue, callback: () => item.content.type !== 'video' ? item.content.videos && item.content.videos.length && item.content.videos.forEach( item => dispatch( addItemToQueue( item.id ) ) ) : dispatch( addItemToQueue( item.content.id ) ) }}
           right={{ label: del, callback: () => { dispatch( deleteItem([ item.content.id ]) ); addHidden( item.content.id ) }}}

@@ -27,7 +27,7 @@ Object {
                   class="sc-gsnTZi dRHeag"
                 >
                   <use
-                    href="http://localhost/icons.svg#search"
+                    href="http://localhost/collectSounds/icons.svg#search"
                   />
                 </svg>
               </button>
@@ -42,7 +42,7 @@ Object {
                   class="sc-gsnTZi gSmFuM"
                 >
                   <use
-                    href="http://localhost/icons.svg#filters"
+                    href="http://localhost/collectSounds/icons.svg#filters"
                   />
                 </svg>
                 <p
@@ -282,7 +282,7 @@ Object {
                 class="sc-gsnTZi dRHeag"
               >
                 <use
-                  href="http://localhost/icons.svg#search"
+                  href="http://localhost/collectSounds/icons.svg#search"
                 />
               </svg>
             </button>
@@ -297,7 +297,7 @@ Object {
                 class="sc-gsnTZi gSmFuM"
               >
                 <use
-                  href="http://localhost/icons.svg#filters"
+                  href="http://localhost/collectSounds/icons.svg#filters"
                 />
               </svg>
               <p

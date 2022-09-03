@@ -9,22 +9,22 @@ Object {
         class="sc-bczRLJ bncUol"
       >
         <div
-          class="sc-kDDrLX fXYRsc"
+          class="sc-iqcoie djUaTo"
         >
           <div
-            class="sc-iqcoie dBQSAP"
+            class="sc-crXcEl kkohPM"
           >
             <div
               class="sc-iBkjds iOHLqN"
             >
               <button
-                class="sc-gKXOVf kLVYD"
+                class="sc-gKXOVf feeGsc"
               >
                 <svg
-                  class="sc-eCYdqJ LTkuR"
+                  class="sc-eCYdqJ jTkpp"
                 >
                   <use
-                    href="http://localhost/icons.svg#search"
+                    href="http://localhost/collectSounds/icons.svg#search"
                   />
                 </svg>
               </button>
@@ -35,7 +35,7 @@ Object {
                   class="sc-eCYdqJ jTkpp"
                 >
                   <use
-                    href="http://localhost/icons.svg#favorite"
+                    href="http://localhost/collectSounds/icons.svg#favorite"
                   />
                 </svg>
               </button>
@@ -46,7 +46,7 @@ Object {
                   class="sc-eCYdqJ jTkpp"
                 >
                   <use
-                    href="http://localhost/icons.svg#queue"
+                    href="http://localhost/collectSounds/icons.svg#queue"
                   />
                 </svg>
               </button>
@@ -57,266 +57,10 @@ Object {
                   class="sc-eCYdqJ jTkpp"
                 >
                   <use
-                    href="http://localhost/icons.svg#settings"
+                    href="http://localhost/collectSounds/icons.svg#settings"
                   />
                 </svg>
               </button>
-            </div>
-          </div>
-          <div
-            class="sc-bczRLJ bncUol"
-          >
-            <div>
-              <div
-                class="sc-dPyBCJ hbmzRv"
-              >
-                <div
-                  class="sc-fEOsli fUKqPt"
-                >
-                  <div
-                    class="sc-bjUoiL lcLwsU"
-                  >
-                    <input
-                      class="sc-crXcEl gVIepf"
-                      placeholder="search or paste a link"
-                      value=""
-                    />
-                    <button
-                      class="sc-ksZaOG cPmqPw"
-                    >
-                      <svg
-                        class="sc-eCYdqJ LTkuR"
-                      >
-                        <use
-                          href="http://localhost/icons.svg#search"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <div
-                    class="sc-evZas gOZISl"
-                  >
-                    <button
-                      class="sc-gKXOVf feeGsc"
-                    >
-                      <svg
-                        class="sc-eCYdqJ jTkpp"
-                      >
-                        <use
-                          href="http://localhost/icons.svg#filters"
-                        />
-                      </svg>
-                      <p
-                        class="sc-jSMfEi jdqtPo"
-                      >
-                        Filters
-                      </p>
-                    </button>
-                    <div
-                      class="sc-breuTD gpTQFp"
-                    >
-                      <div
-                        class="sc-hAZoDl krNNqJ"
-                      >
-                        <button
-                          class="sc-ksZaOG cPmqPw"
-                        >
-                          <p
-                            class="sc-jSMfEi fGvXMv"
-                          >
-                            Relevance
-                          </p>
-                        </button>
-                        <ul
-                          class="sc-fnykZs bZAmJB"
-                        >
-                          <li>
-                            <button
-                              class="sc-ksZaOG cPmqPw"
-                            >
-                              <p
-                                class="sc-jSMfEi fGvXMv"
-                              >
-                                Date
-                              </p>
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              class="sc-ksZaOG cPmqPw"
-                            >
-                              <p
-                                class="sc-jSMfEi fGvXMv"
-                              >
-                                Rating
-                              </p>
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              class="sc-ksZaOG cPmqPw"
-                            >
-                              <p
-                                class="sc-jSMfEi fGvXMv"
-                              >
-                                Title
-                              </p>
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              class="sc-ksZaOG cPmqPw"
-                            >
-                              <p
-                                class="sc-jSMfEi fGvXMv"
-                              >
-                                Video count
-                              </p>
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              class="sc-ksZaOG cPmqPw"
-                            >
-                              <p
-                                class="sc-jSMfEi fGvXMv"
-                              >
-                                View count
-                              </p>
-                            </button>
-                          </li>
-                        </ul>
-                      </div>
-                      <div
-                        class="sc-hAZoDl krNNqJ"
-                      >
-                        <button
-                          class="sc-ksZaOG cPmqPw"
-                        >
-                          <p
-                            class="sc-jSMfEi fGvXMv"
-                          >
-                            All
-                          </p>
-                        </button>
-                        <ul
-                          class="sc-fnykZs bZAmJB"
-                        >
-                          <li>
-                            <button
-                              class="sc-ksZaOG cPmqPw"
-                            >
-                              <p
-                                class="sc-jSMfEi fGvXMv"
-                              >
-                                Video
-                              </p>
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              class="sc-ksZaOG cPmqPw"
-                            >
-                              <p
-                                class="sc-jSMfEi fGvXMv"
-                              >
-                                Playlist
-                              </p>
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              class="sc-ksZaOG cPmqPw"
-                            >
-                              <p
-                                class="sc-jSMfEi fGvXMv"
-                              >
-                                Channel
-                              </p>
-                            </button>
-                          </li>
-                        </ul>
-                      </div>
-                      <div
-                        class="sc-hAZoDl krNNqJ"
-                      >
-                        <button
-                          class="sc-ksZaOG cPmqPw"
-                        >
-                          <p
-                            class="sc-jSMfEi fGvXMv"
-                          >
-                            Any
-                          </p>
-                        </button>
-                        <ul
-                          class="sc-fnykZs bZAmJB"
-                        >
-                          <li>
-                            <button
-                              class="sc-ksZaOG cPmqPw"
-                            >
-                              <p
-                                class="sc-jSMfEi fGvXMv"
-                              >
-                                Long
-                              </p>
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              class="sc-ksZaOG cPmqPw"
-                            >
-                              <p
-                                class="sc-jSMfEi fGvXMv"
-                              >
-                                Medium
-                              </p>
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              class="sc-ksZaOG cPmqPw"
-                            >
-                              <p
-                                class="sc-jSMfEi fGvXMv"
-                              >
-                                Short
-                              </p>
-                            </button>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="sc-bBXxYQ bjyGCo"
-              >
-                <div
-                  class="sc-cOFTSb fuaMtq"
-                >
-                  <div
-                    class="sc-gsnTZi hpCOUh"
-                  >
-                    <svg
-                      class="sc-dkzDqf kmidNr"
-                      viewBox="25 25 50 50"
-                    >
-                      <circle
-                        class="sc-hKMtZM ijPyFt"
-                        cx="50"
-                        cy="50"
-                        fill="none"
-                        r="20"
-                        stroke-miterlimit="10"
-                        stroke-width="5"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -328,22 +72,22 @@ Object {
       class="sc-bczRLJ bncUol"
     >
       <div
-        class="sc-kDDrLX fXYRsc"
+        class="sc-iqcoie djUaTo"
       >
         <div
-          class="sc-iqcoie dBQSAP"
+          class="sc-crXcEl kkohPM"
         >
           <div
             class="sc-iBkjds iOHLqN"
           >
             <button
-              class="sc-gKXOVf kLVYD"
+              class="sc-gKXOVf feeGsc"
             >
               <svg
-                class="sc-eCYdqJ LTkuR"
+                class="sc-eCYdqJ jTkpp"
               >
                 <use
-                  href="http://localhost/icons.svg#search"
+                  href="http://localhost/collectSounds/icons.svg#search"
                 />
               </svg>
             </button>
@@ -354,7 +98,7 @@ Object {
                 class="sc-eCYdqJ jTkpp"
               >
                 <use
-                  href="http://localhost/icons.svg#favorite"
+                  href="http://localhost/collectSounds/icons.svg#favorite"
                 />
               </svg>
             </button>
@@ -365,7 +109,7 @@ Object {
                 class="sc-eCYdqJ jTkpp"
               >
                 <use
-                  href="http://localhost/icons.svg#queue"
+                  href="http://localhost/collectSounds/icons.svg#queue"
                 />
               </svg>
             </button>
@@ -376,266 +120,10 @@ Object {
                 class="sc-eCYdqJ jTkpp"
               >
                 <use
-                  href="http://localhost/icons.svg#settings"
+                  href="http://localhost/collectSounds/icons.svg#settings"
                 />
               </svg>
             </button>
-          </div>
-        </div>
-        <div
-          class="sc-bczRLJ bncUol"
-        >
-          <div>
-            <div
-              class="sc-dPyBCJ hbmzRv"
-            >
-              <div
-                class="sc-fEOsli fUKqPt"
-              >
-                <div
-                  class="sc-bjUoiL lcLwsU"
-                >
-                  <input
-                    class="sc-crXcEl gVIepf"
-                    placeholder="search or paste a link"
-                    value=""
-                  />
-                  <button
-                    class="sc-ksZaOG cPmqPw"
-                  >
-                    <svg
-                      class="sc-eCYdqJ LTkuR"
-                    >
-                      <use
-                        href="http://localhost/icons.svg#search"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div
-                  class="sc-evZas gOZISl"
-                >
-                  <button
-                    class="sc-gKXOVf feeGsc"
-                  >
-                    <svg
-                      class="sc-eCYdqJ jTkpp"
-                    >
-                      <use
-                        href="http://localhost/icons.svg#filters"
-                      />
-                    </svg>
-                    <p
-                      class="sc-jSMfEi jdqtPo"
-                    >
-                      Filters
-                    </p>
-                  </button>
-                  <div
-                    class="sc-breuTD gpTQFp"
-                  >
-                    <div
-                      class="sc-hAZoDl krNNqJ"
-                    >
-                      <button
-                        class="sc-ksZaOG cPmqPw"
-                      >
-                        <p
-                          class="sc-jSMfEi fGvXMv"
-                        >
-                          Relevance
-                        </p>
-                      </button>
-                      <ul
-                        class="sc-fnykZs bZAmJB"
-                      >
-                        <li>
-                          <button
-                            class="sc-ksZaOG cPmqPw"
-                          >
-                            <p
-                              class="sc-jSMfEi fGvXMv"
-                            >
-                              Date
-                            </p>
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            class="sc-ksZaOG cPmqPw"
-                          >
-                            <p
-                              class="sc-jSMfEi fGvXMv"
-                            >
-                              Rating
-                            </p>
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            class="sc-ksZaOG cPmqPw"
-                          >
-                            <p
-                              class="sc-jSMfEi fGvXMv"
-                            >
-                              Title
-                            </p>
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            class="sc-ksZaOG cPmqPw"
-                          >
-                            <p
-                              class="sc-jSMfEi fGvXMv"
-                            >
-                              Video count
-                            </p>
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            class="sc-ksZaOG cPmqPw"
-                          >
-                            <p
-                              class="sc-jSMfEi fGvXMv"
-                            >
-                              View count
-                            </p>
-                          </button>
-                        </li>
-                      </ul>
-                    </div>
-                    <div
-                      class="sc-hAZoDl krNNqJ"
-                    >
-                      <button
-                        class="sc-ksZaOG cPmqPw"
-                      >
-                        <p
-                          class="sc-jSMfEi fGvXMv"
-                        >
-                          All
-                        </p>
-                      </button>
-                      <ul
-                        class="sc-fnykZs bZAmJB"
-                      >
-                        <li>
-                          <button
-                            class="sc-ksZaOG cPmqPw"
-                          >
-                            <p
-                              class="sc-jSMfEi fGvXMv"
-                            >
-                              Video
-                            </p>
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            class="sc-ksZaOG cPmqPw"
-                          >
-                            <p
-                              class="sc-jSMfEi fGvXMv"
-                            >
-                              Playlist
-                            </p>
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            class="sc-ksZaOG cPmqPw"
-                          >
-                            <p
-                              class="sc-jSMfEi fGvXMv"
-                            >
-                              Channel
-                            </p>
-                          </button>
-                        </li>
-                      </ul>
-                    </div>
-                    <div
-                      class="sc-hAZoDl krNNqJ"
-                    >
-                      <button
-                        class="sc-ksZaOG cPmqPw"
-                      >
-                        <p
-                          class="sc-jSMfEi fGvXMv"
-                        >
-                          Any
-                        </p>
-                      </button>
-                      <ul
-                        class="sc-fnykZs bZAmJB"
-                      >
-                        <li>
-                          <button
-                            class="sc-ksZaOG cPmqPw"
-                          >
-                            <p
-                              class="sc-jSMfEi fGvXMv"
-                            >
-                              Long
-                            </p>
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            class="sc-ksZaOG cPmqPw"
-                          >
-                            <p
-                              class="sc-jSMfEi fGvXMv"
-                            >
-                              Medium
-                            </p>
-                          </button>
-                        </li>
-                        <li>
-                          <button
-                            class="sc-ksZaOG cPmqPw"
-                          >
-                            <p
-                              class="sc-jSMfEi fGvXMv"
-                            >
-                              Short
-                            </p>
-                          </button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="sc-bBXxYQ bjyGCo"
-            >
-              <div
-                class="sc-cOFTSb fuaMtq"
-              >
-                <div
-                  class="sc-gsnTZi hpCOUh"
-                >
-                  <svg
-                    class="sc-dkzDqf kmidNr"
-                    viewBox="25 25 50 50"
-                  >
-                    <circle
-                      class="sc-hKMtZM ijPyFt"
-                      cx="50"
-                      cy="50"
-                      fill="none"
-                      r="20"
-                      stroke-miterlimit="10"
-                      stroke-width="5"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
