@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcollectsounds=self.webpackChunkcollectsounds||[]).push([[594],{9594:e=>{e.exports=JSON.parse('{"pageName":"плейлист","description":"Описание","emptyMessage":"ошибка загрузки плейлиста","emptyList":"нет видео","save":"сохранить","addToQueue":"Добавить в очередь","delete":"Удалить","newTag":"Добавить новый"}')}}]);
