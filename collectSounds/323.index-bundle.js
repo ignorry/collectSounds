@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcollectsounds=self.webpackChunkcollectsounds||[]).push([[323],{6323:e=>{e.exports=JSON.parse('{"pageName":"queue","emptyList":"Queue is empty","length":"Length","clearQueue":"Сlear"}')}}]);

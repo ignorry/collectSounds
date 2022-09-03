@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcollectsounds=self.webpackChunkcollectsounds||[]).push([[202],{3202:e=>{e.exports=JSON.parse('{"pageName":"video","emptyMessage":"video loading error","save":"save","addToQueue":"Add to queue","delete":"Delete","newTag":"Add new"}')}}]);
