@@ -2,12 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { useIntl } from "react-intl";
 import BarcodeScannerComponent from "react-qr-barcode-scanner";
-
-import Collapse from "../../../primitives/Collapse";
-import Label from "../../../primitives/Label";
 import { useDispatch } from "react-redux";
 import { setMessage } from "../../../../redux/slices/errorMessage";
 import { addConnectedPeer } from "../../../../redux/slices/options";
+import { synchronize } from "../../../../redux/middleware/synchronize";
+
+import Collapse from "../../../primitives/Collapse";
+import Label from "../../../primitives/Label";
 
 const Container = styled.div`
   & > div {
@@ -79,6 +80,7 @@ const ScanQR: React.FC = () => {
       dispatch( setMessage( intl.formatMessage({ id: 'syncronized' }) ) );
       dispatch( addConnectedPeer( data.text ) );
       setResult( data.text );
+      dispatch( synchronize() as any );
     }
   }
 
