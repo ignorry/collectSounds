@@ -4,5 +4,7 @@
   "scanQR": "Connect device",
   "showQR": "My QR code",
   "connected": "Connected devices:",
-  "scanError": "Scanner error. Check your camera, please."
+  "scanError": "Scanner error. Check your camera, please.",
+  "synchronized": "Synchronized successfuly",
+  "scanQrCode": "Scan QR Code"
 }
