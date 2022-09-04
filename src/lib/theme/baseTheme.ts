@@ -49,6 +49,13 @@ export const baseTheme: Theme = {
     iconSize: 2.5,
   },
 
+  qrfade: { //percents
+    fadeColor: 'black',
+    hiddenSize: 15,
+    fadeWidth: 10,
+    opacity: 0.7,
+  },
+
   font: {
     primary: {
       size: 1,

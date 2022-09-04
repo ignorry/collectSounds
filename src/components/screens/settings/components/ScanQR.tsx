@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { useIntl } from "react-intl";
-import QrReader from "react-qr-scanner";
+import BarcodeScannerComponent from "react-qr-barcode-scanner";
 
 import Collapse from "../../../primitives/Collapse";
 import Label from "../../../primitives/Label";
@@ -15,17 +15,51 @@ const Container = styled.div`
   }
 `;
 
-const Code = styled.div`
+const CollapseContent = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: ${ ({ theme }) => `${ theme.gaps.big }rem` };
+  padding: ${ ({ theme }) => `0 ${ theme.gaps.big }rem` };
+  max-width: ${ ({ theme }) => `${ theme.codeWidth }rem` };
+  color: ${ ({ theme }) => theme.colors.font };
+  text-align: center;
+  word-break: break-all;
+`;
+
+const Code = styled.div<{ width: number}>`
+  position: relative;
+  overflow: hidden;
+  height: ${ props => `${ props.width }px` };
   background-color: ${ ({ theme }) => theme.colors.bgSecondary };
   max-width: ${ ({ theme }) => `${ theme.codeWidth }rem` };
   border-radius: ${ ({ theme }) => `${ theme.decorative.borderRadius }px` };
 `;
 
-type Props = {
-  peer: string
-};
+const ScannerWrapper = styled.div`
+  position: absolute;
+  top: ${ ({ theme }) => `-${ theme.qrfade.hiddenSize }%` };
+  right: ${ ({ theme }) => `-${ theme.qrfade.hiddenSize }%` };
+  bottom: ${ ({ theme }) => `-${ theme.qrfade.hiddenSize }%` };
+  left: ${ ({ theme }) => `-${ theme.qrfade.hiddenSize }%` };
+`;
 
-const ScanQR: React.FC<Props> = ( props: Props ) => {
+const Figure = styled.div`
+  position: absolute;
+  background-color: ${ ({ theme }) => theme.qrfade.fadeColor };
+  opacity: ${ ({ theme }) => theme.qrfade.opacity };
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  clip-path: ${ ({ theme }) => { const min = theme.qrfade.fadeWidth + '%'; const max = 100 - theme.qrfade.fadeWidth + '%';
+    return `
+      polygon( 0 0, 100% 0, 100% 100%, 0 100%, 0 ${min}, ${min} ${min}, ${min} ${max}, ${max} ${max}, ${max} ${min}, 0 ${min} )
+    `; 
+  }};
+`;
+
+const ScanQR: React.FC = () => {
   const dispatch = useDispatch();
   const intl = useIntl();
 
@@ -37,32 +71,33 @@ const ScanQR: React.FC<Props> = ( props: Props ) => {
     setVideoWidth( thumbnailRef.current ? thumbnailRef.current.getBoundingClientRect().width : 0 );
   }, [thumbnailRef]);
 
-  const handleError = () => {
-    dispatch( setMessage( intl.formatMessage({ id: 'scanError' }) ) );
-  }
+  const handleError = ( err: any ) =>
+    err && dispatch( setMessage( intl.formatMessage({ id: 'scanError' }) ) );
 
-  const handleScan = ( data: string ) => {
-    if ( data.length === 64 && /^collectS[a-zA-Z0-9]*/.test( data ) ) {
-      dispatch( addConnectedPeer( data ) );
-      setResult( data );
+  const handleUpdate = ( err: any, data: any ) => {
+    if ( data && data.text && data.text.length === 64 && /^collectS[a-zA-Z0-9]*/.test( data.text ) ) {
+      dispatch( setMessage( intl.formatMessage({ id: 'syncronized' }) ) );
+      dispatch( addConnectedPeer( data.text ) );
+      setResult( data.text );
     }
   }
 
   return (
     <Container>
       <Collapse label={ intl.formatMessage({ id: 'scanQR' }) } icon="camera">
-        <Code ref={ thumbnailRef }>
-          <QrReader
-            delay={100}
-            style={{
-              height: thumbnailRef.current ? thumbnailRef.current.getBoundingClientRect().width : 0,
-              width: thumbnailRef.current ? thumbnailRef.current.getBoundingClientRect().width : 0,
-            }}
-            onError={ handleError }
-            onScan={ handleScan }
-          />
-          <Label text={ result }/>
-        </Code>
+        <CollapseContent>
+          <Code ref={ thumbnailRef } width={ videoWidth }>
+            <ScannerWrapper>
+              <BarcodeScannerComponent
+                onUpdate={ handleUpdate }
+                onError={ handleError }
+              />
+            </ScannerWrapper>
+            <Figure />
+          </Code>
+
+          <Label text={ result || intl.formatMessage({ id: 'scanQrCode'}) }/>
+        </CollapseContent>
       </Collapse>
     </Container>
   );

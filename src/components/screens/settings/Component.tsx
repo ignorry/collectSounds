@@ -38,7 +38,7 @@ const Component: React.FC<Props> = ( props: Props ) => {
     <Container>
       <Button callback={() => dispatch( setDarkTheme( ! props.options.darkTheme ))} text={ intl.formatMessage({ id: 'theme' }) } pic="theme" />
 
-      <ScanQR peer={ props.options.peer }/>
+      <ScanQR/>
       <ShowQR peer={ props.options.peer }/>
       <Conncted peers={ props.options.connectedPeers }/>
     </Container>

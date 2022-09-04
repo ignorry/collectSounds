@@ -47,6 +47,12 @@ export type Theme = {
   },
   player: {
     iconSize: number,
+  },
+  qrfade: { //percents
+    fadeColor: string,
+    hiddenSize: number,
+    fadeWidth: number,
+    opacity: number,
   }
   font: {
     primary: {
