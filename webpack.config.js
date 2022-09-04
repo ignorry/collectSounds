@@ -32,7 +32,7 @@ const config = {
         { 
           from: "public",
           globOptions: {
-            ignore: ["**/*.html"],
+            ignore: ["**/index.html"],
           },
         }
       ],
