@@ -4,10 +4,13 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const Dotenv = require('dotenv-webpack');
 
 const config = {
-  entry: "./src/index.tsx",
+  entry: {
+    index: "./src/index.tsx",
+    ['cache-worker']: "./src/serviceWorkers/cacheWorker.ts",
+  },
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "index-bundle.js",
+    filename: "[name]-bundle.js",
     publicPath: "/"
   },
   module: {
