@@ -2,7 +2,7 @@ import Peerjs from "peerjs";
 import { AppThunk } from "..";
 import { Content } from "../../models/content";
 import { getAll } from "../../lib/redux/getAll";
-import { addItem, deleteItem } from "../slices/saved";
+import { addItem, deleteItem, SavedState } from "../slices/saved";
 import { getRandomPeerId } from "../../lib/getRandomPeerId";
 import { setPeer } from "../slices/options";
 
@@ -28,10 +28,7 @@ export const getMaxLastModified = (): AppThunk => ( dispatch ) =>
  * @prop {Map<string, Content>} data - copy of saved.data map, containing only fresh content
  * @prop {Map<string, number>} deleted - list of deleted contents since putted timestamp
  */
-type syncResponse = {
-  data: Map<string, Content>
-  deleted: Map<string, number>
-}
+type syncResponse = SavedState;
 
 /**
  * fetch for changes in other peers
@@ -46,8 +43,8 @@ export const syncPeers = (): AppThunk => ( dispatch, getState: Function ) => {
   peer.on('connection', (conn) => {
     console.log( 'conntected' );
     conn.on( 'data', ( data: syncResponse ) => {
-      ( data && data.data ) && dispatch( addItem( Array.from( data.data, item => item[1] )));
-      ( data && data.deleted ) && dispatch( deleteItem( Array.from( data.deleted, item => item[0] )));
+      ( data && data.data ) && dispatch( addItem( Array.from( data.data, item => item.item )));
+      ( data && data.deleted ) && dispatch( deleteItem( Array.from( data.deleted, item => item.id )));
     });
   });
 
