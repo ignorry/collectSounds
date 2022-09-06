@@ -1,0 +1,1 @@
+(()=>{var e=function(e){return navigator.serviceWorker.register(e).then((function(e){}),(function(e){console.log("ServiceWorker registration failed: ",e)})).catch((function(e){console.log(e)}))};"serviceWorker"in navigator?window.addEventListener("load",(function(){e("cache-worker-bundle.js"),e("sync-worker-bundle.js")})):console.log("service worker is not supported")})();

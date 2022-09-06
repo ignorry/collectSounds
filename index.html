@@ -7,15 +7,4 @@
             l.pathname.slice(0, -1) + decoded + l.hash
         );
       }
-    }(window.location))</script><script defer="defer" src="/collectSounds/index-bundle.js"></script><script defer="defer" src="/collectSounds/cache-worker-bundle.js"></script></head><body><noscript>JavaScript disabled :(. Please, enable it to run this app</noscript><div id="root"></div><script>if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('cache-worker-bundle.js').then(function(registration) {
-        }, function(err) {
-          console.log('ServiceWorker registration failed: ', err);
-        }).catch(function(err) {
-          console.log(err)
-        });
-      });
-    } else {
-      console.log('service worker is not supported');
-    }</script></body></html>
+    }(window.location))</script><script defer="defer" src="/collectSounds/index-bundle.js"></script><script defer="defer" src="/collectSounds/register-workers-bundle.js"></script><script defer="defer" src="/collectSounds/cache-worker-bundle.js"></script><script defer="defer" src="/collectSounds/sync-worker-bundle.js"></script></head><body><noscript>JavaScript disabled :(. Please, enable it to run this app</noscript><div id="root"></div><script href="register-workers-bundle.js"></script></body></html>
