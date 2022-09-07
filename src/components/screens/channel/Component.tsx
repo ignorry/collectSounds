@@ -74,9 +74,8 @@ const Component: React.FC<Props> = ( props: Props ) => {
               video,
             }));
           })}
-        } else {
-          setChannel( { ...channel, videos: items.map( video => ({ id: video.id, item: video }))});
         }
+        setChannel( { ...channel, videos: items.map( video => ({ id: video.id, item: video }))});
       });
     }
 

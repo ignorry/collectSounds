@@ -74,9 +74,8 @@ const Component: React.FC<Props> = ( props: Props ) => {
               video,
             }));
           })}
-        } else {
-          setPlaylist( { ...playlist, videos: items.map( video => ({ id: video.id, item: video }))});
         }
+        setPlaylist( { ...playlist, videos: items.map( video => ({ id: video.id, item: video }))});
       });
     }
   }, [playlist]);
