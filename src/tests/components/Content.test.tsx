@@ -32,7 +32,7 @@ const video = {
   description: 'description',
   channelTitle: 'channel title',
   thumbnails: {
-    standard: {
+    maxres: {
       url: 'some url',
     }
   },

@@ -133,7 +133,7 @@ const Content: React.FC<Props> = ( props: Props ) => {
           <ThumbContainer>
             <Thumbnail realWidth={ thumbnailRef.current ? thumbnailRef.current.getBoundingClientRect().width : 0 } ref={ thumbnailRef }>
               <Img
-                src={ props.video.thumbnails.standard?.url || props.video.thumbnails.default?.url || '' }
+                src={ props.video.thumbnails.maxres?.url || props.video.thumbnails.default?.url || '' }
               />
               { props.video.passed &&
                 <RangeContainer>
