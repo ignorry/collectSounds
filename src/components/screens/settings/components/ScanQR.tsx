@@ -5,7 +5,7 @@ import BarcodeScannerComponent from "react-qr-barcode-scanner";
 import { useDispatch } from "react-redux";
 import { setMessage } from "../../../../redux/slices/errorMessage";
 import { addConnectedPeer } from "../../../../redux/slices/options";
-import { synchronize } from "../../../../redux/middleware/synchronize";
+import { syncPeers } from "../../../../redux/middleware/syncPeers";
 
 import Collapse from "../../../primitives/Collapse";
 import Label from "../../../primitives/Label";
@@ -80,7 +80,9 @@ const ScanQR: React.FC = () => {
       dispatch( setMessage( intl.formatMessage({ id: 'syncronized' }) ) );
       dispatch( addConnectedPeer( data.text ) );
       setResult( data.text );
-      dispatch( synchronize() as any );
+      setTimeout( () => {
+        window.location.reload();
+      }, 1000);
     }
   }
 
