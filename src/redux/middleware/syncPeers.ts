@@ -6,6 +6,8 @@ import { addItem, deleteItem, SavedState } from "../slices/saved";
 import { getRandomPeerId } from "../../lib/getRandomPeerId";
 import { setPeer } from "../slices/options";
 
+let peer: any;
+
 /**
  * search for max lastModified value in collection of Content
  * @param {Map<string, Content>} data - collection of Content
@@ -24,11 +26,11 @@ export const getMaxLastModified = (): AppThunk => ( dispatch ) =>
   dispatch( getMaxLastModifiedInMap( dispatch( getAll() ) as any || [] ) );
 
 /**
- * @typedef syncResponse response of peer when synchronize
+ * @typedef SyncResponse response of peer when synchronize
  * @prop {Map<string, Content>} data - copy of saved.data map, containing only fresh content
  * @prop {Map<string, number>} deleted - list of deleted contents since putted timestamp
  */
-type syncResponse = SavedState;
+type SyncResponse = SavedState;
 
 /**
  * fetch for changes in other peers
@@ -38,23 +40,25 @@ export const syncPeers = (): AppThunk => ( dispatch, getState: Function ) => {
   if ( ! getState().options.peer )
     dispatch( setPeer( getRandomPeerId() ) );
     
-  const peer = new Peerjs( getState().options.peer );
+  peer = new Peerjs( getState().options.peer );
 
-  peer.on('connection', (conn) => {
-    console.log( 'conntected' );
-    conn.on( 'data', ( data: syncResponse ) => {
+  peer.on('connection', (conn: any) => {
+    conn.on( 'data', ( dataStr: string ) => { 
+      const data: SyncResponse = JSON.parse( dataStr );
       ( data && data.data ) && dispatch( addItem( Array.from( data.data, item => item.item )));
       ( data && data.deleted ) && dispatch( deleteItem( Array.from( data.deleted, item => item.id )));
     });
   });
 
   getState().options.connectedPeers.forEach( ( connected: string ) => {
-    const conn = peer.connect( connected );
+    setTimeout( () => {
+      const conn = peer.connect( connected + 'S' );
 
-    conn.on('open', () =>
-      conn.send({
-        id: getState().options.peer,
-        lastModified: dispatch( getMaxLastModified() ),
-      }));
+      conn.on('open', () => {
+        conn.send({
+          id: peer.id,
+          lastModified: dispatch( getMaxLastModified() ),
+        })});
+    }, 1000);
   });
 }
