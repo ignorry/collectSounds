@@ -8,7 +8,6 @@ const registerWorker = ( name: string ) => navigator.serviceWorker.register( nam
 if ( 'serviceWorker' in navigator ) {
   window.addEventListener( 'load', () => {
     registerWorker( 'cache-worker-bundle.js' );
-    registerWorker( 'sync-worker-bundle.js' );
   });
 } else {
   console.log( 'service worker is not supported' );

@@ -8,7 +8,6 @@ const config = {
     index: "./src/index.tsx",
     ['register-workers']: "./src/serviceWorkers/registerWorkers.ts",
     ['cache-worker']: "./src/serviceWorkers/cacheWorker.ts",
-    ['sync-worker']: "./src/serviceWorkers/syncWorker.ts",
   },
   output: {
     path: path.join(__dirname, "/dist"),
