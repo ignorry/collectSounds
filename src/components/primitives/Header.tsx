@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   width: 100%;
   background: ${ ({ theme }) => theme.colors.bgSecondary };
   padding: ${ ({ theme }) => `${ theme.gaps.small }rem ${ theme.gaps.small }rem`};
-  z-index: ${ ({ theme }) => theme.order.footer };
+  z-index: ${ ({ theme }) => theme.order.header };
 `;
 
 const Collumn = styled.div`
