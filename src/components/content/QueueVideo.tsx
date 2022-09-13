@@ -6,8 +6,9 @@ import { getDurationFromMs } from "../../lib/getDuration";
 import Range from "../primitives/Range";
 import Label from "../primitives/Label";
 import Button from "../primitives/Button";
+import { connect, ConnectedProps } from "react-redux";
 
-const Container = styled.button`
+const Container = styled.button<{ active: boolean }>`
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -15,6 +16,7 @@ const Container = styled.button`
   gap: ${ ({ theme }) => `${ theme.gaps.smallest }rem` };
   padding: ${ ({ theme }) => `${ theme.gaps.big/2 }rem ${ theme.gaps.big }rem` };
   border: none;
+  background-color: ${ props => props.active ? ({ theme }) => theme.colors.activeBg : 'rgba(0,0,0,0)' };
 `;
 
 const Left = styled.button`
@@ -67,14 +69,24 @@ const ButtonContainer = styled.div`
   opacity: ${ ({ theme }) => theme.miniThumbnail.opacity };
 `;
 
-export type Props = {
+const mapState = ( state: any ) => {
+  return {
+    current: state.queue.current
+  }
+}
+
+const connector = connect( mapState );
+
+type ReduxProps = ConnectedProps<typeof connector>;
+
+type Props = ReduxProps & {
   video: VideoType;
   callback: Function;
   deleteCallback: Function;
 };
 
 const Video: React.FC<Props> = ( props: Props ) => (
-  <Container onClick={ () => props.callback() }>
+  <Container onClick={ () => props.callback() } active={ props.video.id === props.current }>
     <Left>
       <Thumbnail>
         <Img
@@ -101,4 +113,4 @@ const Video: React.FC<Props> = ( props: Props ) => (
   </Container>
 );
 
-export default Video;
+export default connector( Video );

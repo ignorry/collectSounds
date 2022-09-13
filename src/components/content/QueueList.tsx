@@ -8,7 +8,7 @@ import { useIntl } from "react-intl";
 import Label from "../primitives/Label";
 import QueueVideo from "./QueueVideo";
 import Icon from "../primitives/Icon";
-import { setAll, deleteItem } from "../../redux/slices/queue";
+import { setAll, deleteItem, setCurrent } from "../../redux/slices/queue";
 
 const Div = styled.div`
   padding: ${ ({ theme }) => `${ theme.gaps.big/2 }rem 0`};
@@ -104,7 +104,7 @@ const List: React.FC<Props> = ( props: Props ) => {
                 { item.content.type === 'video' ?
                   <QueueVideo video={ item.content } callback={() => {}} deleteCallback={() => dispatch( deleteItem( item.content.id ))}/>  
                 : null }
-                <DragButton/>
+                <DragButton onClick={ () => dispatch( setCurrent( item.content.id ) ) }/>
               </DragItem>
             </div>
           )}
