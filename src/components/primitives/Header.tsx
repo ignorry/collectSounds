@@ -4,11 +4,14 @@ import styled from "styled-components";
 import Back from "./Back";
 
 const Wrapper = styled.div`
-  position: absolute;
   width: 100%;
   background: ${ ({ theme }) => theme.colors.bgSecondary };
   padding: ${ ({ theme }) => `${ theme.gaps.small }rem ${ theme.gaps.small }rem`};
   z-index: ${ ({ theme }) => theme.order.header };
+
+  @media ${ ({ theme }) => theme.media.small } {
+    position: absolute;
+  }
 `;
 
 const Collumn = styled.div`
@@ -17,7 +20,12 @@ const Collumn = styled.div`
 `;
 
 const Fix = styled.div<{ height: number }>`
+  display: none;
   height: ${ props => `${ props.height }px` };
+
+  @media ${ ({ theme }) => theme.media.small } {
+    display: block;
+  }
 `;
 
 /**
