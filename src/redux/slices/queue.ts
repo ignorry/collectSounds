@@ -3,13 +3,16 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 /**
  * @typedef QueueState
  * @prop {Array<string>} data - array of ids
+ * @prop {string} current - id of current track
  */
 export type QueueState = {
   data: Array<string>;
+  current: string | null;
 }
 
 const initialState: QueueState = {
   data: [],
+  current: null,
 }
 
 /**
@@ -33,6 +36,9 @@ const queue = createSlice({
     },
     cleanQueue: ( state ) => {
       state.data = [];
+    },
+    setCurrent: ( state, action: PayloadAction<string> ) => {
+      state.current = action.payload;
     }
   }
 });
@@ -41,7 +47,8 @@ export const {
   addItem,
   deleteItem,
   setAll,
-  cleanQueue
+  cleanQueue,
+  setCurrent
 } = queue.actions;
 
 export default queue.reducer; 
