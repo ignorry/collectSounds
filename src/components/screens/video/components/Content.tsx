@@ -4,6 +4,10 @@ import { Video } from "../../../../models/content";
 import { useIntl } from "react-intl";
 import { SearchFilters } from "../../../../lib/api";
 import { getDurationFromMs } from "../../../../lib/getDuration";
+import { useDispatch } from "react-redux";
+import { setCurrent } from "../../../../redux/slices/queue";
+import { addItem } from "../../../../redux/slices/saved";
+import { addItem as addToQueue } from "../../../../redux/slices/queue";
 
 import Range from "../../../primitives/Range";
 import Label from "../../../primitives/Label";
@@ -119,12 +123,20 @@ export type Props = {
 }
 
 const Content: React.FC<Props> = ( props: Props ) => {
+  const dispatch = useDispatch();
+
   const thumbnailRef: React.MutableRefObject<undefined | HTMLDivElement> = useRef();
   const [videoWidth, setVideoWidth] = useState<number>( 0 );
   
   useEffect( () => {
     setVideoWidth( thumbnailRef.current ? thumbnailRef.current.getBoundingClientRect().width : 0 );
   }, [thumbnailRef]);
+
+  const onPlay = () => {
+    dispatch( addItem([ props.video ]) );
+    dispatch( addToQueue( props.video.id ) );
+    dispatch( setCurrent( props.video.id ) );
+  }
 
   return (
     <Container>
@@ -141,7 +153,7 @@ const Content: React.FC<Props> = ( props: Props ) => {
                 </RangeContainer>
               }
               <Play>
-                <PlayerButton callback={() => {}} pic="play"/>
+                <PlayerButton callback={onPlay} pic="play"/>
               </Play>
               <Length>
                 <Label text={ getDurationFromMs( props.video.duration ) } secondary/>

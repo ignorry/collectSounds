@@ -61,7 +61,7 @@ const Component: React.FC<Props> = ( props: Props ) => {
       setVideo( savedVideo );
     } else 
       getVideoById( props.id ).then( items => items[0] ? setVideo( items[0] ) : null );
-  }, []);
+  }, [props.saved]);
 
   const content = video ? <Content
     video={ video }
