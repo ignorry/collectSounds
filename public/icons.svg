@@ -114,8 +114,7 @@
   <symbol id="back" width="inherit" height="inherit" viewBox="0 0 14 14">
     <g>
       <line x1="13.5" y1="7" x2="0.5" y2="7" fill="none" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"></line>
-      <polyline points="4 3.5 0.5 7 4 10.5" fill="none" stroke="inherit" stroke-linecap="round" stroke-linejoin="round">
-      </polyline>
+      <polyline points="4 3.5 0.5 7 4 10.5" fill="none" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"></polyline>
     </g>
   </symbol>
   <symbol id="favorite" width="inherit" height="inherit" viewBox="0 0 14 14">
@@ -127,6 +126,9 @@
       <path d="M2.5,3.5h9a0,0,0,0,1,0,0v9a1,1,0,0,1-1,1h-7a1,1,0,0,1-1-1v-9A0,0,0,0,1,2.5,3.5Z" fill="none" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"></path>
       <path d="M4.5,3.5V3a2.5,2.5,0,0,1,5,0v.5" fill="none" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"></path>
     </g>
+  </symbol>
+  <symbol id="collapse" width="inherit" height="inherit" viewBox="0 0 14 14">
+    <path d="M.5,3.85,6.65,10a.48.48,0,0,0,.7,0L13.5,3.85" fill="none" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
   <symbol id="logo" width="inherit" height="inherit" viewBox="0 0 512 512">
     <path d="M87.369828,479.716162C66.126151,416.110412,37.368332,308.187816,38.450048,256C36.181184,94.640038,164.488539,40.096516,256,41.261702c132.358101-1.484332,219.346108,93.260846,218.226898,207.265865-.370847,64.00651-24.032241,157.246509-49.366359,231.188595-1.959584,6.340882,1.502253,9.859812,11.062213,11.872831c6.829138,1.473459,17.77012-3.142983,21.232312-11.872831c3.471261-10.607872,49.892531-134.81466,47.470317-231.188595C502.961221,35.58077,309.369762,7.545718,256,10.271649C135.932166,5.481681,2.046479,91.848305,7.498219,248.527567c-4.04581,53.694982,22.266875,163.658751,46.968372,231.188595c1.957459,6.869153,10.022646,11.248831,17.907407,11.872831s17.496429-4.641724,14.99583-11.872831" transform="translate(.000002 0.000002)" fill="inherit" stroke="inherit" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"/>
