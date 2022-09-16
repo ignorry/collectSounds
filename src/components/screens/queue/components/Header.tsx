@@ -33,8 +33,6 @@ const Link: React.FC = () => {
   const wrapperRef: React.MutableRefObject<undefined | HTMLDivElement> = useRef();
   const intl = useIntl();
   const dispatch = useDispatch();
-
-  console.log( 'wrapper', [wrapperRef.current] );
   
   return (
     <>
