@@ -30,7 +30,7 @@ const DragButton = styled.div`
   left: 0;
   bottom: 0;
   right: 15%;
-  z-index: 100;
+  z-index: 10;
 `;
 
 const getItemStyle = ( isDragging: any, draggableStyle: any ) => ({
