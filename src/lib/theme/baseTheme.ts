@@ -47,6 +47,14 @@ export const baseTheme: Theme = {
 
   player: {
     iconSize: 2.5,
+    thumbWidth: 6.75,
+    thumbHeight: 3.75,
+    gap: 2,
+    sideGap: 2,
+    infoGap: 2,
+    buttonsGap: 2.5,
+    buttonScale: 0.8,
+    desktopWidth: 25,
   },
 
   qrfade: { //percents
@@ -68,10 +76,12 @@ export const baseTheme: Theme = {
   },
 
   durations: {
-    ms300: 300,
+    animation: 200,
   },
 
   order: {
+    player: 40,
+    header: 30,
     footer: 50,
     modal: 100,
   },

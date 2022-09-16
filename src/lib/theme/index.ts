@@ -12,7 +12,8 @@ export const lightTheme: DefaultTheme = {
     bg: '#ffffff',
     bgSecondary: '#d8d8d8',
     font: '#000000',
-    darkBg: '#d9d9d9'
+    darkBg: '#d9d9d9',
+    activeBg: 'rgba(0, 0, 0, 0.3)'
   },
 }
 
@@ -25,7 +26,8 @@ export const darkTheme: DefaultTheme = {
     bg: '#000000',
     bgSecondary: '#2a2a2a',
     font: '#ffffff',
-    darkBg: '#121212'
+    darkBg: '#121212',
+    activeBg: 'rgba(255, 255, 255, 0.3)'
   },
 }
 

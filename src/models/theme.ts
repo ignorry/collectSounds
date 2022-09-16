@@ -16,6 +16,7 @@ export type Theme = {
     bgSecondary?: string,
     font?: string,
     darkBg?: string,
+    activeBg?: string,
   },
   decorative: { // in px
     borderRadius: number;
@@ -47,6 +48,14 @@ export type Theme = {
   },
   player: {
     iconSize: number,
+    thumbWidth: number,
+    thumbHeight: number,
+    gap: number,
+    sideGap: number,
+    infoGap: number,
+    buttonsGap: number,
+    buttonScale: number,
+    desktopWidth: number,
   },
   qrfade: { //percents
     fadeColor: string,
@@ -65,10 +74,12 @@ export type Theme = {
     },
   },
   durations: {
-    ms300: number,
+    animation: number,
   },
   order: {
+    player: number,
     footer: number,
+    header: number,
     modal: number,
   },
 }
