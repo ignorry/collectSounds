@@ -10,6 +10,6 @@ describe( 'getDurationFromMs', () => {
   it( 'returns only seconds if duration is less than 60 seconds', () => {
     const res = getDurationFromMs( 59000 );
 
-    expect( res ).toBe( '59' );
+    expect( res ).toBe( '00:59' );
   })
 });
