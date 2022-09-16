@@ -17,5 +17,7 @@
   "long": "Long",
   "medium": "Medium",
   "short": "Short",
-  "save": "save"
+  "save": "save",
+  "addToQueue": "Add to queue",
+  "delete": " Delete"
 }
