@@ -75,6 +75,7 @@ export const fetchSearch = ( options: SearchRequest ): Promise<SearchResponse> =
   get<SearchResponse>( YOUTUBE_API_HOST, '/youtube/v3/search', assignKey(options), youtubeHeaders );
 
 const tOneHeaders: RequestInit = {
+  method: 'GET',
   headers: {
     'X-RapidAPI-Key': T_ONE_API_TOKEN,
     'X-RapidAPI-Host': 't-one-youtube-converter.p.rapidapi.com'
@@ -90,5 +91,5 @@ export const fetchTrack = ( url: string ): Promise<TrackResponse> =>
   get<TrackResponse>( T_ONE_API_HOST, '/api/v1/createProcess', {
     url,
     format: 'mp3',
-    responseFormat: 'json',
+    responseFormat: 'json'
   }, tOneHeaders );
