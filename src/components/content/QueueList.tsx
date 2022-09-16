@@ -81,8 +81,6 @@ const List: React.FC<Props> = ( props: Props ) => {
       result.destination.index
     );
 
-    console.log( 'new items', newItems );
-
     dispatch( setAll( newItems as Array<string> ) );
   }
 
