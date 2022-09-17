@@ -9,7 +9,7 @@ Object {
         class="sc-bczRLJ eUcSDq"
       >
         <use
-          href="http://localhost/icons.svg#icon"
+          href="http://localhost/collectSounds/icons.svg#icon"
         />
       </svg>
     </div>
@@ -19,7 +19,7 @@ Object {
       class="sc-bczRLJ eUcSDq"
     >
       <use
-        href="http://localhost/icons.svg#icon"
+        href="http://localhost/collectSounds/icons.svg#icon"
       />
     </svg>
   </div>,
