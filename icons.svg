@@ -112,7 +112,10 @@
     </g>
   </symbol>
   <symbol id="back" width="inherit" height="inherit" viewBox="0 0 14 14">
-    <path d="M10.15.5,4,6.65a.48.48,0,0,0,0,.7l6.15,6.15" fill="none" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"></path>
+    <g>
+      <line x1="13.5" y1="7" x2="0.5" y2="7" fill="none" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"></line>
+      <polyline points="4 3.5 0.5 7 4 10.5" fill="none" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"></polyline>
+    </g>
   </symbol>
   <symbol id="favorite" width="inherit" height="inherit" viewBox="0 0 14 14">
     <path d="M7,12.45l-5.52-5c-3-3,1.41-8.76,5.52-4.1,4.11-4.66,8.5,1.12,5.52,4.1Z" fill="none" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"></path>
